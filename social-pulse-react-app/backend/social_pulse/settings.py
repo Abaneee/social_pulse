@@ -6,6 +6,7 @@ from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,6 +34,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -125,11 +127,17 @@ SIMPLE_JWT = {
 
 # ── CORS ──
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'http://127.0.0.1:3000',
-    'http://127.0.0.1:5173',
+    "https://socialpuls.vercel.app",          # Frontend Production
+    "https://social-pulse-mxgn.onrender.com", # Backend Self
+    "http://localhost:5173",                  # Local React
+    "http://localhost:3000",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://socialpuls.vercel.app",
+    "https://social-pulse-mxgn.onrender.com",
+]
+
 CORS_ALLOW_CREDENTIALS = True
 
 # ── File Upload Limits ──

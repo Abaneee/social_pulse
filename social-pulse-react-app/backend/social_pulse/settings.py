@@ -68,21 +68,33 @@ WSGI_APPLICATION = 'social_pulse.wsgi.application'
 
 # ── Database (FIXED) ──
 # 1. Parse the database URL safely
+# ── Database (TiDB Cloud SSL Fix) ──
+
+# 1. Parse the database URL
 db_config = dj_database_url.config(
     default=os.getenv('DATABASE_URL', f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
     conn_max_age=600,
     ssl_require=True
 )
 
-# 2. SANITIZE: Remove 'sslmode' if present to prevent MySQL driver crash
+# 2. SANITIZE: Remove invalid 'sslmode' if present
 if 'OPTIONS' in db_config and 'sslmode' in db_config['OPTIONS']:
     del db_config['OPTIONS']['sslmode']
 
-# 3. Apply the sanitized config
+# 3. CONFIGURE SSL: TiDB Cloud Serverless requires a secure connection.
+# We add the 'ssl' key which mysqlclient uses to enable TLS.
+if 'sqlite' not in db_config['ENGINE']:
+    if 'OPTIONS' not in db_config:
+        db_config['OPTIONS'] = {}
+    
+    # Render and TiDB Serverless work best with this configuration:
+    db_config['OPTIONS']['ssl'] = {
+        'ca': '/etc/ssl/certs/ca-certificates.crt' # Standard path on Render/Ubuntu
+    }
+
 DATABASES = {
     'default': db_config
 }
-
 # ── Auth ──
 AUTH_USER_MODEL = 'api.User'
 

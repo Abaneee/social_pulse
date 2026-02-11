@@ -66,15 +66,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'social_pulse.wsgi.application'
 
-# ── Database ──
+# ── Database (FIXED) ──
+# 1. Parse the database URL safely
+db_config = dj_database_url.config(
+    default=os.getenv('DATABASE_URL', f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
+    conn_max_age=600,
+    ssl_require=True
+)
+
+# 2. SANITIZE: Remove 'sslmode' if present to prevent MySQL driver crash
+if 'OPTIONS' in db_config and 'sslmode' in db_config['OPTIONS']:
+    del db_config['OPTIONS']['sslmode']
+
+# 3. Apply the sanitized config
 DATABASES = {
-    'default': dj_database_url.config(
-        # On Render, this uses the DATABASE_URL environment variable.
-        # Locally, it falls back to db.sqlite3
-        default=os.getenv('DATABASE_URL', f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
-        conn_max_age=600,
-        ssl_require=True
-    )
+    'default': db_config
 }
 
 # ── Auth ──
@@ -93,10 +99,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# ── Static & Media (FIXED FOR RENDER) ──
+# ── Static & Media ──
 STATIC_URL = '/static/'
 
-# This matches the "collectstatic" error you saw. 
 # Django now knows where to put files during deployment.
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

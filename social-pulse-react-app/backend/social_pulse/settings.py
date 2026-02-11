@@ -6,10 +6,6 @@ from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
 import dj_database_url
-from pathlib import Path
-
-
-
 
 load_dotenv()
 
@@ -17,6 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-social-pulse-dev-key')
 
+# DEBUG is False on Render, True locally
 DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = ['*']
@@ -40,7 +37,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', # Crucial for Render
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -69,28 +66,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'social_pulse.wsgi.application'
 
-# ── Database (MySQL via .env) ──
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': os.getenv('DB_NAME', 'social_pulse'),
-#         'USER': os.getenv('DB_USER', 'root'),
-#         'PASSWORD': os.getenv('DB_PASSWORD', ''),
-#         'HOST': os.getenv('DB_HOST', 'localhost'),
-#         'PORT': os.getenv('DB_PORT', '3306'),
-#         'OPTIONS': {
-#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-#         },
-#     }
-# }
-
+# ── Database ──
 DATABASES = {
     'default': dj_database_url.config(
-        # This looks for a 'DATABASE_URL' environment variable.
-        # If not found (like on your laptop), it uses local sqlite.
+        # On Render, this uses the DATABASE_URL environment variable.
+        # Locally, it falls back to db.sqlite3
         default=os.getenv('DATABASE_URL', f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
         conn_max_age=600,
-        ssl_require=True  # Most cloud MySQL providers (Aiven/TiDB) require SSL
+        ssl_require=True
     )
 }
 
@@ -110,8 +93,21 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# ── Static & Media ──
-STATIC_URL = 'static/'
+# ── Static & Media (FIXED FOR RENDER) ──
+STATIC_URL = '/static/'
+
+# This matches the "collectstatic" error you saw. 
+# Django now knows where to put files during deployment.
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Optional: If you have a global static folder
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+# Enable WhiteNoise to compress and serve static files efficiently
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

@@ -158,8 +158,8 @@ npm run dev
 
 ## 🔗 Live Links & Resources
 
-* **🚀 Live App:** [Launch Social Pulse]((https://socialpuls.vercel.app/)/)
-* **📡 API Docs:** [View API]((https://social-pulse-n4r7.onrender.com/))
+* **🚀 Live App:** [Launch Social Pulse](https://socialpuls.vercel.app)
+* **📡 API Docs:** [View API](https://social-pulse-n4r7.onrender.com)
 * **👨‍💻 Portfolio:** [Abaneesh's Portfolio](https://abanee.vercel.app)
 * **💼 LinkedIn:** [Abaneesh M](https://www.linkedin.com/in/abaneesh-m)
 

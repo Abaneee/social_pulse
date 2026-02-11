@@ -6,6 +6,8 @@ from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
 import dj_database_url
+from pathlib import Path
+
 
 
 
@@ -14,7 +16,9 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-social-pulse-dev-key')
-DEBUG = os.getenv('DEBUG', 'True').lower() in ('true', '1', 'yes')
+
+DEBUG = 'RENDER' not in os.environ
+
 ALLOWED_HOSTS = ['*']
 
 # ── Installed Apps ──

@@ -157,7 +157,8 @@ SIMPLE_JWT = {
 # ── CORS ──
 CORS_ALLOWED_ORIGINS = [
     "https://socialpuls.vercel.app",          # Frontend Production
-    "https://social-pulse-mxgn.onrender.com", # Backend Self
+    "https://social-pulse-mxgn.onrender.com",# Backend Self
+    "https://social-pulse-n4r7.onrender.com", 
     "http://localhost:5173",                  # Local React
     "http://localhost:3000",
 ]

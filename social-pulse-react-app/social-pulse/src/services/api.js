@@ -1,18 +1,4 @@
-/**
- * Social Pulse - API Service Layer
- * Axios instance with JWT auth interceptors and all API call functions.
- */
-// import axios from 'axios';
 
-// const API_BASE_URL = import.meta.env.VITE_API_URL || 10000 ;
-
-// // Create axios instance
-// const api = axios.create({
-//     baseURL: API_BASE_URL,
-//     headers: {
-//         'Content-Type': 'application/json',
-//     },
-// });
 
 import axios from 'axios';
 

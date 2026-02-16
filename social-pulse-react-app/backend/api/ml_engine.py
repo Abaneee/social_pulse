@@ -304,6 +304,50 @@ def get_insights(df, platform='', content_type=''):
     except Exception:
         insights['predicted_engagement'] = None
 
+    # 4b. Predicted Class using CatBoost
+    insights['predicted_class'] = None
+    try:
+        model_path = os.path.join(settings.MEDIA_ROOT, 'models', 'catboost_classification.pkl')
+        if os.path.exists(model_path):
+            model_data = joblib.load(model_path)
+            model = model_data['model']
+            feature_columns = model_data['feature_columns']
+            le = model_data.get('label_encoder')
+            
+            if le:
+                input_row = {}
+                for col in feature_columns:
+                    if col.startswith('Platform_'):
+                        plat_name = col.replace('Platform_', '')
+                        input_row[col] = 1.0 if platform and plat_name == platform else 0.0
+                    elif col.startswith('Content_Type_'):
+                        ct_name = col.replace('Content_Type_', '')
+                        input_row[col] = 1.0 if content_type and ct_name == content_type else 0.0
+                    else:
+                        if col in filtered.columns:
+                            val = pd.to_numeric(filtered[col], errors='coerce').median()
+                            input_row[col] = float(val) if not np.isnan(val) else 0.0
+                        else:
+                            input_row[col] = 0.0
+
+                input_df = pd.DataFrame([input_row])[feature_columns]
+                pred_idx = model.predict(input_df).flatten()[0]
+                pred_label = le.inverse_transform([int(pred_idx)])[0]
+                insights['predicted_class'] = str(pred_label)
+    except Exception:
+        insights['predicted_class'] = None
+
+    # 4c. Average Reach (Historical)
+    insights['predicted_reach'] = 0
+    if 'Reach' in filtered.columns:
+        valid_reach = pd.to_numeric(filtered['Reach'], errors='coerce').dropna()
+        if not valid_reach.empty:
+            insights['predicted_reach'] = int(valid_reach.mean())
+    elif 'reach' in filtered.columns:
+        valid_reach = pd.to_numeric(filtered['reach'], errors='coerce').dropna()
+        if not valid_reach.empty:
+            insights['predicted_reach'] = int(valid_reach.mean())
+
     # 5. Engagement Distribution
     if eng_col:
         engagement_vals = pd.to_numeric(filtered[eng_col], errors='coerce').dropna()

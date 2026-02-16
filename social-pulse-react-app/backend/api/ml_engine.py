@@ -352,8 +352,9 @@ def get_insights(df, platform='', content_type=''):
     return insights
 
 
-def get_dashboard_data(df):
-    """Compute aggregated dashboard data for VisionDeck."""
+def get_dashboard_data(df, platform=None):
+    """Compute aggregated dashboard data for VisionDeck with platform filtering."""
+    # Common column names
     eng_col = 'Engagement_Rate' if 'Engagement_Rate' in df.columns else 'engagement_rate' if 'engagement_rate' in df.columns else None
     platform_col = 'Platform' if 'Platform' in df.columns else 'platform' if 'platform' in df.columns else None
     ctype_col = 'Content_Type' if 'Content_Type' in df.columns else 'content_type' if 'content_type' in df.columns else None
@@ -361,67 +362,176 @@ def get_dashboard_data(df):
     reach_col = 'Reach' if 'Reach' in df.columns else 'reach' if 'reach' in df.columns else None
     hashtag_col = 'Hashtags' if 'Hashtags' in df.columns else 'hashtag' if 'hashtag' in df.columns else None
     hour_col = 'Hour' if 'Hour' in df.columns else 'hour' if 'hour' in df.columns else None
+    day_col = 'Day_of_Week' if 'Day_of_Week' in df.columns else 'day_of_week' if 'day_of_week' in df.columns else None
+    caption_len_col = 'Caption_Length' if 'Caption_Length' in df.columns else 'caption_length' if 'caption_length' in df.columns else None
 
+    # Filter by platform if provided
+    filtered_df = df.copy()
+    if platform and platform_col:
+        filtered_df = filtered_df[filtered_df[platform_col] == platform]
+    
+    # If filtering results in empty dataframe, fallback to original to show something (or show zeros)
+    # But usually we want to show zeros/empty if filter excludes everything.
+    # Let's keep it empty if filter matches nothing to be accurate with "No Data".
+    
     result = {}
 
-    # Content Type Distribution (pie chart)
-    if ctype_col:
-        ct_counts = df[ctype_col].value_counts()
-        result['pieData'] = [{'name': str(k), 'value': int(v)} for k, v in ct_counts.items()]
+    # 1. PIE CHART: Engagement Rate by Content Type
+    if ctype_col and eng_col:
+        ct_eng = filtered_df.groupby(ctype_col)[eng_col].mean()
+        result['pieData'] = [{'name': str(k), 'value': round(float(v), 2)} for k, v in ct_eng.items()]
     else:
         result['pieData'] = []
 
-    # Reach Over Time (area chart)
+    # 2. VERTICAL BAR CHART: Engagement Rate by Day of Week
+    if day_col and eng_col:
+        day_map = {0: 'Mon', 1: 'Tue', 2: 'Wed', 3: 'Thu', 4: 'Fri', 5: 'Sat', 6: 'Sun'}
+        day_eng = filtered_df.groupby(day_col)[eng_col].mean().sort_index()
+        result['dayBarData'] = [
+            {'day': day_map.get(int(k), str(k)), 'engagement': round(float(v), 2)}
+            for k, v in day_eng.items()
+        ]
+    else:
+        result['dayBarData'] = []
+
+    # 3. LINE CHART: Engagement Rate by Month (last 12 months)
+    if date_col and eng_col:
+        df_copy = filtered_df.copy()
+        # Ensure date column is datetime
+        df_copy['dt'] = pd.to_datetime(df_copy[date_col], errors='coerce')
+        # Drop invalid dates
+        df_copy = df_copy.dropna(subset=['dt'])
+        # Create month period
+        df_copy['month_key'] = df_copy['dt'].dt.to_period('M')
+        
+        # Group by month_key
+        month_eng = df_copy.groupby('month_key')[eng_col].mean().reset_index()
+        # Sort and take last 12 months
+        month_eng = month_eng.sort_values('month_key').tail(12)
+        
+        result['lineData'] = [
+            {'date': str(row['month_key']), 'engagement': round(float(row[eng_col]), 2)}
+            for _, row in month_eng.iterrows()
+        ]
+    else:
+        result['lineData'] = []
+
+    # 4. HISTOGRAM -> BAR CHART: Average Reach by Top Hashtags
+    if hashtag_col and reach_col:
+        # Explode hashtags
+        hashtag_df = filtered_df[[hashtag_col, reach_col]].copy()
+        hashtag_df[hashtag_col] = hashtag_df[hashtag_col].astype(str)
+        hashtag_df = hashtag_df.assign(
+            **{hashtag_col: hashtag_df[hashtag_col].str.split(r'[\s,]+')}
+        ).explode(hashtag_col)
+        
+        # Clean hashtags
+        hashtag_df[hashtag_col] = hashtag_df[hashtag_col].str.strip()
+        hashtag_df = hashtag_df[hashtag_df[hashtag_col] != '']
+
+        # Group by hashtag, calc mean reach
+        hash_reach = hashtag_df.groupby(hashtag_col)[reach_col].mean().sort_values(ascending=False).head(10)
+        result['hashtagData'] = [
+            {'hashtag': str(k), 'reach': int(v)}
+            for k, v in hash_reach.items()
+        ]
+    else:
+        result['hashtagData'] = []
+
+    # 5. AREA CHART: Total Reach Over Time (Month-wise, last 12 months)
     if date_col and reach_col:
-        df_copy = df.copy()
-        df_copy[reach_col] = pd.to_numeric(df_copy[reach_col], errors='coerce').fillna(0)
-        reach_by_date = df_copy.groupby(date_col)[reach_col].sum().reset_index()
-        reach_by_date = reach_by_date.sort_values(date_col).head(20)
+        df_copy = filtered_df.copy()
+        df_copy['dt'] = pd.to_datetime(df_copy[date_col], errors='coerce')
+        df_copy = df_copy.dropna(subset=['dt'])
+        df_copy['month_key'] = df_copy['dt'].dt.to_period('M')
+        
+        reach_by_month = df_copy.groupby('month_key')[reach_col].sum().reset_index()
+        reach_by_month = reach_by_month.sort_values('month_key').tail(12)
+        
         result['areaData'] = [
-            {'date': str(row[date_col]), 'reach': int(row[reach_col])}
-            for _, row in reach_by_date.iterrows()
+            {'date': str(row['month_key']), 'reach': int(row[reach_col])}
+            for _, row in reach_by_month.iterrows()
         ]
     else:
         result['areaData'] = []
 
-    # Engagement by Platform (bar chart)
-    if platform_col and eng_col:
-        plat_eng = df.groupby(platform_col)[eng_col].mean()
-        result['barData'] = [
-            {'platform': str(p), 'engagement': round(float(v), 2)}
-            for p, v in plat_eng.items()
+    # 6. BAR CHART: Posts by Hour of Day
+    if hour_col:
+        hour_counts = filtered_df[hour_col].value_counts().sort_index()
+        result['hourData'] = [
+            {'hour': f"{int(k)}:00", 'posts': int(v)}
+            for k, v in hour_counts.items()
         ]
     else:
-        result['barData'] = []
+        result['hourData'] = []
 
-    # KPIs
+    # 7. SCATTER CHART: Reach vs Engagement Rate
+    if reach_col and eng_col:
+        # Limit to 100 points for performance
+        sample_df = filtered_df.sample(n=min(100, len(filtered_df)), random_state=42)
+        result['scatterData'] = [
+            {'reach': int(row[reach_col]), 'engagement': round(float(row[eng_col]), 2)}
+            for _, row in sample_df.iterrows()
+        ]
+    else:
+        result['scatterData'] = []
+
+    # 8. BAR CHART: Engagement Rate by Caption Length Category
+    if caption_len_col and eng_col:
+        temp_df = filtered_df[[caption_len_col, eng_col]].copy()
+        
+        def get_len_cat(x):
+            try:
+                val = float(x)
+                if val < 50: return 'Short'
+                elif val <= 150: return 'Medium'
+                else: return 'Long'
+            except:
+                return 'Medium'
+
+        temp_df['Length_Cat'] = temp_df[caption_len_col].apply(get_len_cat)
+        len_eng = temp_df.groupby('Length_Cat')[eng_col].mean()
+        # Order: Short, Medium, Long
+        order = ['Short', 'Medium', 'Long']
+        result['captionData'] = []
+        for cat in order:
+            if cat in len_eng:
+                result['captionData'].append({'category': cat, 'engagement': round(float(len_eng[cat]), 2)})
+    else:
+        result['captionData'] = []
+
+
+    # KPIs (Calculated based on filtered data)
     kpis = {}
     if reach_col:
-        kpis['totalReach'] = int(pd.to_numeric(df[reach_col], errors='coerce').fillna(0).sum())
+        kpis['totalReach'] = int(pd.to_numeric(filtered_df[reach_col], errors='coerce').fillna(0).sum())
     else:
         kpis['totalReach'] = 0
 
     if eng_col:
-        eng_vals = pd.to_numeric(df[eng_col], errors='coerce').fillna(0)
+        eng_vals = pd.to_numeric(filtered_df[eng_col], errors='coerce').fillna(0)
         kpis['avgEngagement'] = round(float(eng_vals.mean()), 2)
     else:
         kpis['avgEngagement'] = 0
 
     if hashtag_col:
-        hashtag_counts = df[hashtag_col].value_counts()
-        kpis['topHashtag'] = str(hashtag_counts.index[0]) if len(hashtag_counts) > 0 else '#trending'
+        # Recalculate top hashtag for filtered data
+        hashtag_series = filtered_df[hashtag_col].astype(str).str.split(r'[\s,]+').explode()
+        hashtag_series = hashtag_series[hashtag_series.str.strip() != '']
+        hashtag_counts = hashtag_series.value_counts()
+        kpis['topHashtag'] = str(hashtag_counts.index[0]) if len(hashtag_counts) > 0 else 'N/A'
     else:
-        kpis['topHashtag'] = '#trending'
+        kpis['topHashtag'] = 'N/A'
 
     if hour_col and eng_col:
-        hour_eng = df.groupby(hour_col)[eng_col].mean()
+        hour_eng = filtered_df.groupby(hour_col)[eng_col].mean()
         if len(hour_eng) > 0:
             peak = hour_eng.idxmax()
             kpis['peakTime'] = f"{int(peak)}:00"
         else:
-            kpis['peakTime'] = '12:00'
+            kpis['peakTime'] = 'N/A'
     else:
-        kpis['peakTime'] = '12:00'
+        kpis['peakTime'] = 'N/A'
 
     result['kpis'] = kpis
 

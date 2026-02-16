@@ -491,7 +491,8 @@ def dashboard_view(request):
 
     try:
         df = pd.read_csv(file_path)
-        dashboard = get_dashboard_data(df)
+        platform = request.query_params.get('platform')
+        dashboard = get_dashboard_data(df, platform=platform)
 
         return Response(dashboard)
 

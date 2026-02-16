@@ -93,7 +93,7 @@ export const trainModels = (data) => api.post('/train/', data);
 export const predictInsights = (filters) => api.post('/predict/insights/', filters);
 
 // Dashboard Service
-export const getDashboardData = () => api.get('/dashboard/');
+export const getDashboardData = (params) => api.get('/dashboard/', { params });
 export const getFilters = () => api.get('/filters/');
 
 export default api;

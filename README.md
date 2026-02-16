@@ -1,173 +1,149 @@
 
-# 📈 Social Pulse
-> **Social Media Engagement Intelligence**
+<div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=36BCF7&background=00000000&center=false&vCenter=false&width=435&lines=Predict+Engagement;Analyze+Trends;Optimize+Content+Strategy)](https://git.io/typing-svg)
+# 📈 Social Pulse
+### *Social Media Engagement Intelligence*
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=36BCF7&background=00000000&center=true&vCenter=true&width=600&lines=Analyze+Social+Engagement+Data;Predict+Future+Interactions;Optimize+Content+Strategies;Scale+Your+Digital+Presence)](https://git.io/typing-svg)
 
 ---
 
-## 🚀 Introduction
+![License](https://img.shields.io/github/license/abaneesh/Social-Pulse?style=for-the-badge&color=36BCF7)
+![GitHub stars](https://img.shields.io/github/stars/abaneesh/Social-Pulse?style=for-the-badge&color=FDCB6E)
+![GitHub forks](https://img.shields.io/github/forks/abaneesh/Social-Pulse?style=for-the-badge&color=55EFC4)
+![Issues](https://img.shields.io/github/issues/abaneesh/Social-Pulse?style=for-the-badge&color=FAB1A0)
 
-**Social Pulse** is a full-stack intelligence platform designed to help teams measure, understand, and predict social media engagement. By combining a robust **Django** backend with a reactive **Vite + React** frontend, we enable data-driven decisions for marketers and content creators.
+[🚀 Live Demo](https://socialpuls.vercel.app) • [📡 API Documentation](https://social-pulse-n4r7.onrender.com) • [👨‍💻 Creator Portfolio](https://abanee.vercel.app)
 
-| **For Data Analysts** | **For Developers** |
-| :--- | :--- |
-| Preprocessed datasets, EDA tools, and ML explainability visualizations. | Production-ready Django REST API, modular ML pipeline, and scalable architecture. |
+</div>
+
+---
+
+## � Introduction
+
+**Social Pulse** is a cutting-edge full-stack intelligence platform meticulously crafted for teams to measure, decipher, and forecast social media engagement. By orchestrating a robust **Django** backend with a lightning-fast **Vite + React** frontend, we empower marketers and content creators to transition from guesswork to data-driven precision.
+
+### Why Social Pulse?
+- **Predictive Analytics:** Leverage CatBoost-powered models for high-fidelity engagement forecasting.
+- **Deep Insights:** Uncover hidden patterns with interactive Exploratory Data Analysis (EDA).
+- **Production Ready:** Scalable architecture with a documented REST API.
 
 ---
 
 ## 🛠 Tech Stack
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
-![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![CatBoost](https://img.shields.io/badge/CatBoost-orange?style=for-the-badge&logo=python&logoColor=white)
+<div align="center">
+
+| **Frontend** | **Backend** | **Data Science** |
+| :---: | :---: | :---: |
+| ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) | ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) |
+| ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) | ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) | ![CatBoost](https://img.shields.io/badge/CatBoost-orange?style=for-the-badge&logo=python&logoColor=white) |
+| ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) |
+
+</div>
 
 ---
 
-## 📸 Demo & Features
+## 🎯 Features & Capabilities
 
-![Dashboard Demo](https://placehold.co/600x400/png?text=Place+Your+Dashboard+GIF+Here)
-
-### 🔑 Key Capabilities
-* **Data Ingestion:** Automated pipelines for cleaning and processing engagement data.
-* **ML Engine:** Integrated **CatBoost** models for high-accuracy engagement prediction.
-* **Interactive EDA:** Visual exploratory data analysis tools built with React.
-* **REST API:** Fully documented API endpoints for model serving.
-
----
-
-## 🏗 Architecture & File Structure
-
-```mermaid
-graph TD;
-    A[Frontend (React/Vite)] -->|HTTP Requests| B[Django REST API];
-    B --> C[PostgreSQL / SQLite];
-    B --> D[ML Pipeline (CatBoost)];
-    D --> E[Processed Models];
-
-```
+<details open>
+<summary><b>🔍 Engagement Prediction</b></summary>
+<br>
+Utilizes the integrated ML Studio to train and predict social metrics using Regression and Classification models. Get instant insights into reach, likes, and shareability.
+</details>
 
 <details>
-<summary>📂 <b>Click to view detailed file structure</b></summary>
+<summary><b>📊 Interactive Visualization</b></summary>
+<br>
+The VisionDeck dashboard provides real-time visualizations including:
+- 🥧 Interactive Pie Charts for platform distribution.
+- 📉 Trend Analysis with Line Graphs.
+- 📊 Comparative Bar Charts for performance metrics.
+</details>
 
-```text
-
-social_pulse
-├── LICENSE
-├── README_PROFESSIONAL.md
-├── README.md
-└── social-pulse-react-app
-    ├── backend
-    │   ├── build.sh
-    │   ├── manage.py
-    │   ├── requirements.txt
-    │   ├── social_pulse
-    │   │   ├── __init__.py
-    │   │   ├── asgi.py
-    │   │   ├── settings.py
-    │   │   ├── urls.py
-    │   │   └── wsgi.py
-    │   └── api
-    │       ├── __init__.py
-    │       ├── admin.py
-    │       ├── apps.py
-    │       ├── models.py
-    │       ├── pipeline.py
-    │       ├── ml_engine.py
-    │       ├── serializers.py
-    │       ├── views.py
-    │       ├── urls.py
-    │       └── migrations
-    │           ├── __init__.py
-    │           └── 0001_initial.py
-    └── social-pulse
-        ├── index.html
-        ├── package.json
-        ├── package-lock.json
-        ├── postcss.config.js
-        ├── PROJECT_STRUCTURE.md
-        ├── README.md
-        ├── tailwind.config.js
-        ├── vite.config.js
-        └── src
-            ├── App.jsx
-            ├── main.jsx
-            ├── styles
-            │   └── index.css
-            ├── context
-            │   └── DataContext.jsx
-            ├── services
-            │   └── api.js
-            └── components
-                ├── auth
-                │   └── AuthPage.jsx
-                ├── common
-                │   ├── Layout.jsx
-                │   └── ErrorBoundary.jsx
-                ├── dataset
-                │   └── DatasetStudio.jsx
-                ├── eda
-                │   └── EDA.jsx
-                ├── insights
-                │   └── InsightsLab.jsx
-                ├── ml
-                │   └── MLStudio.jsx
-                ├── refinery
-                │   └── Refinery.jsx
-                └── visualization
-                    └── VisionDeck.jsx
-```
-
+<details>
+<summary><b>🛠 Refinery & ML Studio</b></summary>
+<br>
+- **DatasetStudio:** Seamlessly manage and explore your raw data.
+- **Refinery:** Advanced cleaning and preprocessing pipelines.
+- **ML Studio:** A playground for building, training, and evaluating ML models.
 </details>
 
 ---
 
-## ⚡ Quick Start
+## 🏗 System Architecture
+
+```mermaid
+graph TD;
+    subgraph Frontend [Client - React/Vite]
+        UI[User Interface]
+        VD[VisionDeck]
+        MS[ML Studio]
+    end
+    
+    subgraph Backend [Server - Django REST]
+        API[REST Endpoints]
+        Pipeline[ML Pipeline]
+        Engine[ML Engine - CatBoost]
+    end
+    
+    subgraph Data [Storage]
+        DB[(Database)]
+    end
+
+    UI -->|HTTPs| API
+    API --> DB
+    API --> Pipeline
+    Pipeline --> Engine
+```
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
+- Python 3.10+
+- Node.js 18+
+- npm or yarn
 
-* Python 3.10+
-* Node.js 16+
-
-### 1. Backend Setup (Django)
+### 1. Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/abaneesh/Social-Pulse.git
+cd Social-Pulse
+```
+
+### 2. Backend Setup
+```bash
 cd backend
-python3 -m venv .venv
-source .venv/bin/activate
+python -m venv venv
+# Windows: venv\Scripts\activate | Unix: source venv/bin/activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
-
 ```
 
-### 2. Frontend Setup (React)
-
+### 3. Frontend Setup
 ```bash
 cd social-pulse
 npm install
 npm run dev
-
 ```
 
 ---
 
-## 🔗 Live Links & Resources
-
-* **🚀 Live App:** [Launch Social Pulse](https://socialpuls.vercel.app)
-* **📡 API Docs:** [View API](https://social-pulse-n4r7.onrender.com)
-* **👨‍💻 Portfolio:** [Abaneesh's Portfolio](https://abanee.vercel.app)
-* **💼 LinkedIn:** [Abaneesh M](https://www.linkedin.com/in/abaneesh-m)
+## � Roadmap & Future Work
+- [ ] **Real-time API Integration:** Direct hooks for Meta & Twitter APIs.
+- [ ] **Multi-tenant Support:** Collaboration tools for marketing teams.
+- [ ] **Advanced NLP:** Sentiment analysis for comment sections.
+- [ ] **Mobile App:** React Native extension for on-the-go monitoring.
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing & Support
 
-Contributions are welcome! Please fork the repository and create a pull request.
+Contributions make the open-source community an amazing place! Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -177,23 +153,13 @@ Contributions are welcome! Please fork the repository and create a pull request.
 
 ---
 
-*Licensed under MIT*
+<div align="center">
 
-```
+Developed with ❤️ by [Abaneesh M](https://www.linkedin.com/in/abaneesh-m)
 
-### **Ideas to make this even better (Next Steps)**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abaneesh-m)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/abaneesh)
 
-1.  **The "Hero" GIF (Crucial):**
-    * You need to record your screen while using the app (clicking the "Predict" button, showing the graphs).
-    * Use a free tool like **ScreenToGif** (Windows) or **Kap** (Mac).
-    * Save it as a `.gif` file, upload it to your repo, and replace the `![Dashboard Demo]` link in the code above. **Do you want me to explain how to optimize a GIF so it loads fast?**
-
-2.  **Architecture Diagram:**
-    * I included a `mermaid` graph code block above. GitHub renders this natively as a flowchart. It looks very technical and impressive.
-
-3.  **Collapsible Sections:**
-    * I wrapped the file structure in `<details>` tags. This keeps the README clean but allows interested developers to "click to expand" for more info.
-
-**Would you like me to generate a specific banner image for the top, or help you write the text for the "How to use" section?**
+</div>
 
 ```

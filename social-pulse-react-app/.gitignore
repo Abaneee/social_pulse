@@ -1,0 +1,14 @@
+# Ignore Node.js dependencies
+node_modules/
+npm-debug.log*
+
+# Ignore Python virtual environments
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db

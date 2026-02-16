@@ -1,0 +1,1001 @@
+postID,date,time,platform,content_type,caption,hashtags,likes,comments,shares,saves,reach,engagement_rate
+P00001,14-06-2024,17:06,twiter,video,Post about growth,#growth #marketing #socialmedia #trends,1285,I wish more posts explained it this clearly,404,49,3678,0.5881
+P00002,05-02-2024,18:07,facebook,video,Post about brand building,#trends #content,2021,I tried something similar and got decent results,92,564,29862,0.0908
+P00003,23-04-2024,04:34,youtube,video,Post about content strategy,#analytics #socialmedia #growth #trends,431,This aligns with what I’ve been seeing lately,570,136,2823,0.4803
+P00004,07-10-2024,15:43,instagram,image,Post about engagement tips,#engagement #digital #branding #socialmedia,564,Appreciate the practical example here,577,61,10725,0.1223
+P00005,23-12-2024,15:56,twiter,video,Post about engagement tips,#trends #socialmedia #strategy,2049,"Not groundbreaking, but very solid advice",83,588,21746,0.1376
+P00006,02-08-2024,15:26,youtube,video,Post about growth,#trends #digital #strategy #engagement,1401,"Interesting approach, might test this soon",775,350,6401,0.4699
+P00007,31-10-2024,02:17,instagram,video,Post about growth,#branding #engagement,4118,This actually answered a question I had,593,467,13150,0.4268
+P00008,16-07-2024,19:07,instagram,image_caurosel,Post about analytics,#analytics #growth #content,2892,Makes sense when you see it laid out like this,23,472,26207,0.1327
+P00009,11-09-2024,08:56,facebook,image,Post about brand building,#content #digital #trends,710,"Straight to the point, well done",170,459,7310,0.2223
+P00010,18-03-2024,07:00,instagram,video,Post about analytics,#branding #marketing #analytics,729,I wish more posts explained it this clearly,180,154,4549,0.3089
+P00011,30-09-2024,04:44,youtube,image,Post about brand building,#content #trends #strategy,3074,This aligns with what I’ve been seeing lately,624,579,23974,0.1989
+P00012,03-09-2024,14:10,youtube,image,Post about brand building,#socialmedia #marketing,3330,"Short and informative, I like it",63,195,7763,0.4765
+P00013,18-03-2024,02:55,facebook,video,Post about engagement tips,#branding #digital,4445,Easy to understand and practical,103,372,84908,0.0582
+P00014,05-07-2024,15:30,twiter,image_caurosel,Post about analytics,#digital #branding,3934,"Helpful context, thanks for sharing",125,118,67926,0.0651
+P00015,20-12-2024,16:23,facebook,video,Post about brand building,#strategy #branding,1372,Clear explanation without unnecessary hype,528,23,8116,0.2974
+P00016,22-12-2024,07:34,twiter,video,Post about analytics,#growth #trends #content #digital,2189,"Straight to the point, well done",530,375,13156,0.2494
+P00017,12-04-2024,08:30,twiter,image_caurosel,Post about brand building,#engagement #digital #strategy,4290,Clear explanation without unnecessary hype,504,364,8108,0.6385
+P00018,22-04-2024,06:30,youtube,image,Post about content strategy,#socialmedia #trends #content #engagement,886,This gave me a new angle to think about,232,481,7351,0.2416
+P00019,01-09-2024,23:25,instagram,image,Post about growth,#analytics #trends #strategy #marketing,1512,Simple but effective insight,444,340,4374,0.6198
+P00020,29-10-2024,11:09,facebook,image_caurosel,Post about growth,#socialmedia #strategy #analytics #growth,3862,This gave me a new angle to think about,671,149,66056,0.076
+P00021,18-04-2024,07:48,twiter,image,Post about brand building,#analytics #marketing #digital,279,This saves a lot of trial and error,257,217,2698,0.3758
+P00022,05-12-2024,17:09,youtube,image,Post about analytics,#marketing #analytics #strategy #socialmedia,4828,"Helpful context, thanks for sharing",529,430,70600,0.083
+P00023,12-11-2024,16:33,instagram,image_caurosel,Post about brand building,#growth #trends,1035,"Useful breakdown, especially the last part",569,63,11736,0.1722
+P00024,22-01-2024,02:28,twiter,video,Post about brand building,#strategy #growth #branding #trends,850,"Not groundbreaking, but very solid advice",519,463,10073,0.1838
+P00025,30-09-2024,08:59,facebook,image,Post about analytics,#socialmedia #content #engagement,3966,Good reminder of the basics,519,253,72564,0.0715
+P00026,07-02-2024,09:50,youtube,image_caurosel,Post about content strategy,#branding #analytics,2021,This saves a lot of trial and error,438,74,15979,0.1802
+P00027,22-04-2024,07:10,instagram,video,Post about engagement tips,#content #growth #digital,821,Good reminder of the basics,407,498,3508,0.5906
+P00028,17-02-2024,14:45,youtube,image,Post about content strategy,#trends #branding #socialmedia #marketing,3047,"Straight to the point, well done",19,346,39377,0.0927
+P00029,23-02-2024,05:17,facebook,image,Post about content strategy,#analytics #strategy #engagement,738,Good reminder of the basics,271,278,1406,1.2482
+P00030,15-02-2024,02:17,youtube,video,Post about growth,#socialmedia #growth #trends,2336,"Useful breakdown, especially the last part",58,187,30229,0.1007
+P00031,03-03-2024,08:39,facebook,image_caurosel,Post about brand building,#growth #socialmedia #analytics #engagement,3767,I tried something similar and got decent results,11,347,58543,0.0786
+P00032,02-04-2024,06:18,instagram,video,Post about analytics,#digital #marketing #branding,1702,I tried something similar and got decent results,319,312,19124,0.1425
+P00033,08-01-2024,16:30,facebook,image,Post about growth,#content #engagement #trends #branding,201,This actually answered a question I had,750,517,2478,0.6336
+P00034,18-12-2024,22:46,facebook,image,Post about content strategy,#analytics #marketing,1812,Clear explanation without unnecessary hype,235,350,14849,0.1905
+P00035,16-11-2024,21:53,instagram,video,Post about content strategy,#growth #branding #marketing #trends,2143,Appreciate the practical example here,441,167,5793,0.4832
+P00036,21-03-2024,10:35,twiter,image_caurosel,Post about growth,#growth #digital #analytics,2253,This was genuinely helpful for my workflow,456,3,19524,0.1487
+P00037,20-06-2024,20:12,facebook,video,Post about growth,#branding #socialmedia,3176,Simple but effective insight,85,486,21475,0.1867
+P00038,23-07-2024,09:40,facebook,image_caurosel,Post about brand building,#analytics #content #digital #engagement,4857,"Helpful context, thanks for sharing",42,403,7825,0.6978
+P00039,17-03-2024,22:57,instagram,video,Post about brand building,#strategy #trends,2377,"Short and informative, I like it",741,148,5266,0.7013
+P00040,09-01-2024,01:08,twiter,image_caurosel,Post about engagement tips,#strategy #marketing #trends,4834,This confirms what our data showed,728,235,16007,0.3634
+P00041,14-12-2024,02:47,youtube,video,Post about brand building,#engagement #branding,2053,Clear explanation without unnecessary hype,501,270,2290,1.3371
+P00042,15-05-2024,20:29,instagram,image,Post about growth,#branding #marketing #growth,1973,Clear explanation without unnecessary hype,746,210,17114,0.1935
+P00043,03-11-2024,22:19,facebook,image_caurosel,Post about engagement tips,#engagement #branding,1257,This aligns with what I’ve been seeing lately,339,260,22626,0.099
+P00044,20-12-2024,16:18,instagram,image,Post about engagement tips,#strategy #growth,1833,This actually answered a question I had,691,501,20914,0.1622
+P00045,13-02-2024,16:28,twiter,image,Post about analytics,#socialmedia #trends,3924,Simple but effective insight,17,296,64102,0.0668
+P00046,25-09-2024,20:32,twiter,image_caurosel,Post about content strategy,#engagement #trends,2194,Makes sense when you see it laid out like this,368,135,41756,0.0747
+P00047,13-01-2024,12:19,facebook,image,Post about content strategy,#digital #socialmedia #trends,1353,This was genuinely helpful for my workflow,3,503,23707,0.0883
+P00048,15-06-2024,00:57,twiter,image,Post about content strategy,#content #trends,2821,"Short and informative, I like it",407,122,15669,0.2374
+P00049,09-02-2024,08:06,youtube,video,Post about content strategy,#analytics #growth #branding #strategy,3004,"Not groundbreaking, but very solid advice",438,281,59008,0.0636
+P00050,10-06-2024,13:56,youtube,video,Post about engagement tips,#strategy #growth #socialmedia #marketing,1605,I wish more posts explained it this clearly,791,382,27352,0.1196
+P00051,18-08-2024,17:08,facebook,image,Post about engagement tips,#branding #trends #strategy,1185,"Useful breakdown, especially the last part",659,293,17116,0.1266
+P00052,26-07-2024,12:07,facebook,video,Post about analytics,#growth #strategy,2005,"Helpful context, thanks for sharing",308,494,38549,0.0818
+P00053,08-10-2024,04:35,facebook,image_caurosel,Post about growth,#digital #strategy,1852,Clear explanation without unnecessary hype,463,340,31360,0.0918
+P00054,12-06-2024,00:47,instagram,image,Post about engagement tips,#strategy #growth #content #analytics,2008,Good reminder of the basics,377,264,39358,0.07
+P00055,01-02-2024,21:32,facebook,image_caurosel,Post about content strategy,#content #trends,4130,This saves a lot of trial and error,284,588,51354,0.0987
+P00056,09-08-2024,22:48,instagram,video,Post about engagement tips,#socialmedia #content,2606,"Not groundbreaking, but very solid advice",22,130,4739,0.6288
+P00057,27-08-2024,04:33,youtube,video,Post about engagement tips,#strategy #marketing,3727,This was genuinely helpful for my workflow,254,111,33080,0.1262
+P00058,05-03-2024,04:40,twiter,video,Post about engagement tips,#socialmedia #trends #strategy #analytics,1955,"Not groundbreaking, but very solid advice",583,38,21883,0.1404
+P00059,25-10-2024,19:00,youtube,video,Post about content strategy,#branding #digital #growth,1620,"Helpful context, thanks for sharing",397,267,8966,0.3004
+P00060,26-09-2024,13:45,twiter,image_caurosel,Post about growth,#engagement #content,1973,Clear explanation without unnecessary hype,560,252,3911,0.8389
+P00061,11-05-2024,15:02,twiter,video,Post about engagement tips,#content #growth #marketing,1916,This actually answered a question I had,683,434,26198,0.1204
+P00062,15-09-2024,06:14,instagram,image_caurosel,Post about content strategy,#socialmedia #engagement #analytics,602,"Straight to the point, well done",210,507,3905,0.3798
+P00063,05-09-2024,12:03,facebook,image_caurosel,Post about brand building,#content #marketing,3466,I tried something similar and got decent results,681,57,22672,0.2065
+P00064,04-04-2024,02:59,facebook,image,Post about analytics,#strategy #engagement,3272,I tried something similar and got decent results,460,321,51311,0.0802
+P00065,08-06-2024,03:00,youtube,image,Post about growth,#content #socialmedia #growth,3151,Makes sense when you see it laid out like this,382,339,32166,0.1232
+P00066,01-07-2024,15:12,twiter,video,Post about engagement tips,#digital #trends,2578,"Helpful context, thanks for sharing",442,89,5826,0.5965
+P00067,16-01-2024,01:29,youtube,image_caurosel,Post about content strategy,#socialmedia #digital,3415,"Interesting approach, might test this soon",253,414,6099,0.7016
+P00068,19-05-2024,22:44,twiter,image,Post about content strategy,#trends #socialmedia,2794,This was genuinely helpful for my workflow,631,44,19995,0.1928
+P00069,29-04-2024,08:58,instagram,image,Post about analytics,#analytics #marketing #branding,928,Simple but effective insight,486,476,13613,0.1689
+P00070,06-11-2024,19:05,facebook,image,Post about analytics,#content #socialmedia,1984,I tried something similar and got decent results,335,327,32201,0.0881
+P00071,03-09-2024,03:04,twiter,video,Post about growth,#socialmedia #content,4576,"Helpful context, thanks for sharing",557,333,25658,0.2217
+P00072,29-12-2024,14:39,facebook,video,Post about brand building,#socialmedia #branding #strategy #analytics,3711,"Short and informative, I like it",177,239,21154,0.2054
+P00073,17-05-2024,07:11,facebook,image_caurosel,Post about analytics,#trends #growth #digital,3105,Clear explanation without unnecessary hype,260,266,16179,0.2386
+P00074,21-07-2024,20:51,youtube,video,Post about engagement tips,#socialmedia #marketing,2111,"Helpful context, thanks for sharing",251,519,36623,0.082
+P00075,28-04-2024,03:03,facebook,video,Post about brand building,#socialmedia #digital,3722,"Not groundbreaking, but very solid advice",382,41,42234,0.1011
+P00076,01-04-2024,20:38,twiter,image_caurosel,Post about growth,#digital #analytics #marketing,3729,This gave me a new angle to think about,617,266,4579,1.0201
+P00077,10-05-2024,10:26,twiter,image_caurosel,Post about brand building,#socialmedia #growth #marketing,363,"Helpful context, thanks for sharing",613,208,7057,0.1692
+P00078,07-10-2024,12:42,facebook,video,Post about brand building,#analytics #content,4010,"Useful breakdown, especially the last part",64,417,17319,0.2831
+P00079,28-07-2024,01:19,twiter,image,Post about engagement tips,#digital #growth,2370,Makes sense when you see it laid out like this,683,314,29773,0.1296
+P00080,26-07-2024,13:07,youtube,image,Post about brand building,#engagement #analytics #strategy,1718,This was genuinely helpful for my workflow,6,444,31282,0.072
+P00081,27-01-2024,19:59,twiter,video,Post about brand building,#analytics #digital,4568,This actually answered a question I had,145,406,16257,0.3332
+P00082,23-03-2024,15:48,facebook,image,Post about analytics,#engagement #digital,4319,I tried something similar and got decent results,175,68,18598,0.2561
+P00083,07-11-2024,07:39,instagram,video,Post about analytics,#analytics #growth #marketing,3227,Makes sense when you see it laid out like this,88,164,45211,0.086
+P00084,22-09-2024,07:46,facebook,image_caurosel,Post about brand building,#marketing #digital #socialmedia #growth,1331,Easy to understand and practical,392,367,5383,0.4033
+P00085,21-08-2024,09:37,facebook,image,Post about engagement tips,#digital #engagement #strategy #socialmedia,4556,This was genuinely helpful for my workflow,642,313,89645,0.0639
+P00086,02-01-2024,19:49,instagram,image_caurosel,Post about engagement tips,#socialmedia #trends #analytics,4059,"Interesting approach, might test this soon",476,240,62644,0.0825
+P00087,08-08-2024,21:02,youtube,video,Post about analytics,#digital #strategy,3042,Clear explanation without unnecessary hype,93,452,36114,0.1067
+P00088,28-01-2024,02:39,youtube,image_caurosel,Post about analytics,#branding #analytics #growth,4178,Clear explanation without unnecessary hype,386,139,7587,0.6783
+P00089,28-06-2024,14:09,twiter,video,Post about engagement tips,#trends #branding,2116,Easy to understand and practical,162,331,20157,0.1527
+P00090,16-09-2024,05:25,facebook,video,Post about content strategy,#digital #content #analytics #strategy,1994,"Useful breakdown, especially the last part",326,381,4427,0.6341
+P00091,28-02-2024,16:37,youtube,image,Post about brand building,#content #digital #branding #growth,4397,"Interesting approach, might test this soon",49,368,63797,0.08
+P00092,22-10-2024,07:11,youtube,image,Post about brand building,#branding #digital #marketing,1247,I tried something similar and got decent results,368,338,3933,0.5553
+P00093,23-04-2024,11:57,youtube,image_caurosel,Post about engagement tips,#trends #marketing,1273,This was genuinely helpful for my workflow,297,442,14979,0.1521
+P00094,28-01-2024,16:22,facebook,image,Post about brand building,#trends #analytics #growth,71,"Interesting approach, might test this soon",580,363,713,1.5049
+P00095,15-11-2024,07:45,facebook,image,Post about growth,#analytics #branding,3940,Makes sense when you see it laid out like this,162,137,5809,0.813
+P00096,15-05-2024,20:37,instagram,video,Post about brand building,#engagement #growth #analytics #marketing,144,I tried something similar and got decent results,57,575,1598,0.679
+P00097,01-02-2024,05:03,youtube,image_caurosel,Post about brand building,#growth #analytics #content #socialmedia,4404,"Not groundbreaking, but very solid advice",25,415,28758,0.1728
+P00098,07-11-2024,09:04,twiter,video,Post about growth,#engagement #strategy #marketing #growth,4202,I wish more posts explained it this clearly,663,425,27112,0.2049
+P00099,26-08-2024,03:16,facebook,video,Post about growth,#digital #branding,709,I tried something similar and got decent results,759,463,3602,0.5694
+P00100,16-05-2024,09:41,facebook,image_caurosel,Post about brand building,#analytics #branding,4586,"Straight to the point, well done",695,446,73188,0.0802
+P00101,13-04-2024,12:21,facebook,image,Post about brand building,#engagement #strategy #marketing,1354,This was genuinely helpful for my workflow,764,334,7663,0.3794
+P00102,11-08-2024,19:37,youtube,video,Post about analytics,#marketing #trends,1965,This aligns with what I’ve been seeing lately,584,315,15876,0.1933
+P00103,24-02-2024,00:02,facebook,video,Post about growth,#socialmedia #marketing #trends #content,1375,"Short and informative, I like it",353,145,24356,0.0777
+P00104,05-07-2024,22:24,youtube,image_caurosel,Post about analytics,#socialmedia #marketing,1682,I tried something similar and got decent results,546,67,30528,0.0899
+P00105,20-11-2024,04:06,facebook,image,Post about content strategy,#content #branding #marketing,766,"Interesting approach, might test this soon",769,294,8603,0.2191
+P00106,11-05-2024,19:32,instagram,image,Post about brand building,#marketing #content #trends #growth,2365,"Not groundbreaking, but very solid advice",49,376,23410,0.1362
+P00107,20-02-2024,06:45,youtube,video,Post about content strategy,#content #marketing,2890,"Not groundbreaking, but very solid advice",480,49,38160,0.0973
+P00108,13-04-2024,15:06,instagram,video,Post about analytics,#trends #digital #branding,2412,"Short and informative, I like it",780,55,2717,1.2624
+P00109,22-03-2024,03:40,youtube,image,Post about brand building,#digital #trends,2374,This aligns with what I’ve been seeing lately,219,237,35051,0.0833
+P00110,24-07-2024,20:01,twiter,image_caurosel,Post about content strategy,#content #strategy #analytics,3282,Makes sense when you see it laid out like this,763,88,30966,0.1483
+P00111,18-11-2024,22:48,youtube,image,Post about brand building,#strategy #analytics #engagement,1963,This confirms what our data showed,471,129,36818,0.078
+P00112,14-06-2024,08:37,facebook,image_caurosel,Post about content strategy,#growth #strategy #trends,1438,"Useful breakdown, especially the last part",474,449,24037,0.1149
+P00113,03-06-2024,10:38,twiter,image_caurosel,Post about analytics,#growth #branding #socialmedia,1316,Appreciate the practical example here,740,159,9448,0.2741
+P00114,02-12-2024,09:46,twiter,image,Post about content strategy,#socialmedia #trends,882,"Useful breakdown, especially the last part",200,393,5848,0.2659
+P00115,15-04-2024,13:44,facebook,video,Post about content strategy,#marketing #analytics #branding,3231,Easy to understand and practical,475,34,4077,0.9686
+P00116,26-07-2024,22:36,instagram,image_caurosel,Post about brand building,#analytics #socialmedia,95,This saves a lot of trial and error,758,248,1861,0.7125
+P00117,09-08-2024,12:45,facebook,image,Post about engagement tips,#engagement #marketing #content,2614,"Not groundbreaking, but very solid advice",266,100,30131,0.1032
+P00118,11-12-2024,12:53,instagram,image_caurosel,Post about growth,#strategy #growth #analytics,1549,This gave me a new angle to think about,670,335,27068,0.0947
+P00119,22-09-2024,06:45,instagram,video,Post about growth,#digital #strategy #trends #growth,2902,This saves a lot of trial and error,103,588,32857,0.1179
+P00120,17-04-2024,03:46,twiter,video,Post about growth,#branding #content #strategy,1555,I tried something similar and got decent results,401,526,26567,0.1116
+P00121,07-01-2024,21:22,twiter,image_caurosel,Post about analytics,#content #strategy #growth,665,Makes sense when you see it laid out like this,428,430,10983,0.1716
+P00122,24-08-2024,20:12,instagram,video,Post about brand building,#growth #analytics #digital #engagement,1786,I wish more posts explained it this clearly,168,132,6321,0.3963
+P00123,27-08-2024,15:22,facebook,image,Post about engagement tips,#branding #content #analytics #growth,2461,This was genuinely helpful for my workflow,778,561,45053,0.0859
+P00124,23-05-2024,15:27,youtube,video,Post about content strategy,#branding #content,2982,I tried something similar and got decent results,250,309,23994,0.158
+P00125,13-02-2024,11:40,youtube,video,Post about growth,#socialmedia #branding,4675,"Useful breakdown, especially the last part",332,143,74248,0.0752
+P00126,07-11-2024,14:22,facebook,image_caurosel,Post about engagement tips,#analytics #socialmedia #branding #strategy,881,"Helpful context, thanks for sharing",592,146,8556,0.2009
+P00127,20-12-2024,03:35,youtube,image,Post about engagement tips,#analytics #engagement,1795,"Helpful context, thanks for sharing",543,80,30558,0.0905
+P00128,12-10-2024,15:15,instagram,image_caurosel,Post about brand building,#marketing #analytics #digital #growth,528,"Short and informative, I like it",495,478,2914,0.6397
+P00129,11-09-2024,21:04,facebook,video,Post about content strategy,#marketing #trends #strategy #digital,2481,Good reminder of the basics,476,383,30407,0.117
+P00130,18-02-2024,06:45,instagram,video,Post about analytics,#socialmedia #digital #strategy,4233,"Helpful context, thanks for sharing",495,496,23191,0.2262
+P00131,26-09-2024,10:27,twiter,video,Post about growth,#branding #digital #engagement,4589,Makes sense when you see it laid out like this,789,215,41853,0.1391
+P00132,19-06-2024,20:31,youtube,image,Post about analytics,#branding #analytics #socialmedia,4176,I tried something similar and got decent results,278,518,49390,0.1029
+P00133,23-07-2024,12:19,youtube,image_caurosel,Post about growth,#engagement #marketing,4590,"Not groundbreaking, but very solid advice",415,558,79851,0.07
+P00134,05-10-2024,22:44,youtube,image_caurosel,Post about growth,#engagement #analytics #socialmedia #digital,3130,Appreciate the practical example here,631,150,44228,0.0963
+P00135,19-01-2024,04:50,twiter,video,Post about content strategy,#analytics #content #marketing,3503,Good reminder of the basics,793,103,5282,0.8694
+P00136,11-01-2024,18:33,youtube,image_caurosel,Post about engagement tips,#content #engagement #socialmedia #marketing,3578,Makes sense when you see it laid out like this,579,592,10756,0.4656
+P00137,31-10-2024,13:35,youtube,image_caurosel,Post about engagement tips,#analytics #marketing,4899,I wish more posts explained it this clearly,675,159,67236,0.0912
+P00138,03-01-2024,03:08,instagram,image_caurosel,Post about content strategy,#trends #growth #engagement #digital,126,Appreciate the practical example here,700,124,507,2.1026
+P00139,26-01-2024,02:18,instagram,image,Post about content strategy,#marketing #trends,3047,I tried something similar and got decent results,792,148,50890,0.0861
+P00140,08-01-2024,19:10,instagram,video,Post about growth,#digital #engagement #strategy,702,Appreciate the practical example here,398,318,5841,0.3075
+P00141,15-03-2024,12:49,instagram,image,Post about brand building,#branding #trends #marketing,1006,Easy to understand and practical,371,167,14721,0.1218
+P00142,29-11-2024,09:37,instagram,image_caurosel,Post about engagement tips,#content #growth #engagement,4964,This actually answered a question I had,340,15,24791,0.2271
+P00143,18-12-2024,05:37,youtube,image,Post about analytics,#analytics #branding #engagement #trends,63,This confirms what our data showed,329,269,631,1.3978
+P00144,13-02-2024,23:59,facebook,image,Post about brand building,#content #engagement,4473,This gave me a new angle to think about,566,496,54528,0.1035
+P00145,10-05-2024,17:05,twiter,image_caurosel,Post about analytics,#trends #strategy #branding,4853,"Not groundbreaking, but very solid advice",769,9,55332,0.1061
+P00146,13-06-2024,06:05,facebook,video,Post about content strategy,#trends #digital #content,3954,"Not groundbreaking, but very solid advice",518,206,28766,0.1666
+P00147,17-03-2024,03:23,instagram,image_caurosel,Post about analytics,#trends #marketing #digital,2067,"Useful breakdown, especially the last part",45,505,26600,0.1152
+P00148,22-09-2024,18:31,facebook,image,Post about content strategy,#socialmedia #engagement #analytics,218,"Useful breakdown, especially the last part",96,34,1914,0.4169
+P00149,20-01-2024,00:03,youtube,video,Post about content strategy,#engagement #trends #socialmedia #content,2825,Easy to understand and practical,205,185,27630,0.1181
+P00150,23-11-2024,18:14,youtube,video,Post about brand building,#analytics #engagement #trends,3305,"Interesting approach, might test this soon",122,92,20180,0.1827
+P00151,30-04-2024,11:03,youtube,image_caurosel,Post about content strategy,#engagement #marketing #socialmedia #trends,1866,Good reminder of the basics,176,39,18654,0.1376
+P00152,03-01-2024,14:48,youtube,image,Post about content strategy,#branding #content #socialmedia,1679,"Interesting approach, might test this soon",693,305,21025,0.1419
+P00153,03-09-2024,04:58,youtube,image,Post about analytics,#analytics #growth,3160,Clear explanation without unnecessary hype,172,451,18807,0.2234
+P00154,12-11-2024,03:59,instagram,image_caurosel,Post about growth,#digital #trends #growth,3106,"Helpful context, thanks for sharing",767,143,54133,0.0785
+P00155,29-02-2024,01:11,instagram,video,Post about analytics,#analytics #branding #content,3048,I wish more posts explained it this clearly,146,339,17594,0.2225
+P00156,06-05-2024,09:21,facebook,image,Post about engagement tips,#digital #engagement,1325,"Helpful context, thanks for sharing",26,277,20055,0.1028
+P00157,28-02-2024,21:59,facebook,video,Post about engagement tips,#socialmedia #branding #growth,1306,"Interesting approach, might test this soon",525,58,22002,0.1069
+P00158,09-08-2024,09:26,facebook,image_caurosel,Post about content strategy,#marketing #engagement,2192,"Not groundbreaking, but very solid advice",244,243,8606,0.335
+P00159,23-06-2024,16:18,facebook,image,Post about engagement tips,#content #growth,4234,"Useful breakdown, especially the last part",143,453,4506,1.1627
+P00160,19-10-2024,07:45,facebook,image_caurosel,Post about brand building,#socialmedia #engagement,1530,"Useful breakdown, especially the last part",141,184,18643,0.1209
+P00161,30-03-2024,00:04,instagram,video,Post about growth,#digital #trends #branding #content,1737,"Helpful context, thanks for sharing",140,196,21944,0.0994
+P00162,16-02-2024,21:17,facebook,image_caurosel,Post about brand building,#marketing #analytics #digital,176,"Short and informative, I like it",419,488,741,2.0702
+P00163,31-10-2024,16:04,youtube,image,Post about analytics,#content #marketing #branding,88,This aligns with what I’ve been seeing lately,364,532,1020,1.4549
+P00164,10-09-2024,17:08,youtube,image_caurosel,Post about growth,#trends #analytics,3707,Appreciate the practical example here,525,26,73262,0.0638
+P00165,22-02-2024,03:59,facebook,image,Post about growth,#trends #engagement #growth #digital,2605,This saves a lot of trial and error,256,568,4595,0.7493
+P00166,22-02-2024,03:29,instagram,video,Post about brand building,#socialmedia #trends #strategy,2922,Makes sense when you see it laid out like this,96,183,5902,0.5668
+P00167,11-03-2024,21:36,instagram,video,Post about engagement tips,#marketing #content,4486,I wish more posts explained it this clearly,606,232,34263,0.1577
+P00168,01-11-2024,01:49,twiter,image,Post about engagement tips,#digital #content,4988,"Short and informative, I like it",538,37,56864,0.1064
+P00169,13-06-2024,04:43,twiter,image_caurosel,Post about engagement tips,#marketing #digital #socialmedia #branding,3331,Appreciate the practical example here,574,54,24642,0.1716
+P00170,05-02-2024,00:14,facebook,image,Post about engagement tips,#marketing #trends #strategy,2707,Easy to understand and practical,443,205,35807,0.1034
+P00171,16-05-2024,03:16,youtube,video,Post about growth,#growth #marketing #branding,2289,This aligns with what I’ve been seeing lately,643,555,4653,0.8188
+P00172,05-06-2024,19:58,twiter,image_caurosel,Post about engagement tips,#strategy #analytics #engagement #marketing,2897,"Not groundbreaking, but very solid advice",663,170,10806,0.3484
+P00173,08-03-2024,07:47,youtube,video,Post about brand building,#engagement #growth #content,2455,This gave me a new angle to think about,416,591,21369,0.1688
+P00174,07-10-2024,15:30,twiter,image_caurosel,Post about analytics,#growth #trends #content,3054,"Short and informative, I like it",471,561,22977,0.1917
+P00175,21-07-2024,17:20,instagram,image,Post about content strategy,#branding #marketing,147,This was genuinely helpful for my workflow,361,166,1144,0.7378
+P00176,22-03-2024,01:33,instagram,image,Post about content strategy,#socialmedia #strategy #growth #digital,4564,Simple but effective insight,68,356,62253,0.0856
+P00177,01-08-2024,06:39,twiter,video,Post about growth,#engagement #branding #analytics #growth,2810,This aligns with what I’ve been seeing lately,684,360,12026,0.3496
+P00178,03-01-2024,15:25,facebook,image,Post about content strategy,#trends #socialmedia #content #engagement,3412,This saves a lot of trial and error,784,563,41825,0.1153
+P00179,20-12-2024,12:33,instagram,video,Post about content strategy,#engagement #content,3801,This saves a lot of trial and error,294,361,42214,0.1099
+P00180,02-06-2024,13:36,instagram,video,Post about analytics,#digital #trends,1559,Easy to understand and practical,549,311,27890,0.0896
+P00181,04-05-2024,01:16,instagram,image,Post about brand building,#strategy #content #trends,2719,Makes sense when you see it laid out like this,209,436,3439,0.9834
+P00182,25-08-2024,00:43,youtube,video,Post about analytics,#content #digital,2980,"Not groundbreaking, but very solid advice",41,359,32692,0.1184
+P00183,24-07-2024,13:31,instagram,image,Post about brand building,#digital #strategy #socialmedia #engagement,4648,"Interesting approach, might test this soon",587,157,29337,0.2008
+P00184,11-06-2024,03:41,twiter,video,Post about content strategy,#content #analytics #branding #trends,3053,"Not groundbreaking, but very solid advice",76,318,36666,0.0966
+P00185,16-04-2024,20:36,youtube,image,Post about brand building,#marketing #content #trends #strategy,4186,This was genuinely helpful for my workflow,192,422,28114,0.172
+P00186,06-06-2024,03:37,youtube,video,Post about growth,#analytics #engagement,4579,This confirms what our data showed,4,311,56708,0.094
+P00187,17-10-2024,18:12,instagram,video,Post about growth,#analytics #strategy,2229,"Not groundbreaking, but very solid advice",662,544,35956,0.0977
+P00188,24-02-2024,16:31,instagram,video,Post about engagement tips,#marketing #digital,287,Simple but effective insight,102,77,1704,0.561
+P00189,01-05-2024,20:06,youtube,image,Post about analytics,#trends #content #marketing,2948,I tried something similar and got decent results,282,173,5123,0.6918
+P00190,22-04-2024,19:15,facebook,image_caurosel,Post about growth,#trends #analytics,3293,Good reminder of the basics,596,44,32125,0.1234
+P00191,04-01-2024,15:04,facebook,video,Post about engagement tips,#trends #growth #content #analytics,3780,Makes sense when you see it laid out like this,310,428,36825,0.1362
+P00192,30-12-2024,05:22,instagram,image_caurosel,Post about growth,#content #strategy #digital,4018,This aligns with what I’ve been seeing lately,22,249,15502,0.2827
+P00193,20-06-2024,02:07,instagram,image,Post about brand building,#content #growth,4422,This saves a lot of trial and error,394,343,57289,0.096
+P00194,25-05-2024,21:01,twiter,image_caurosel,Post about analytics,#analytics #socialmedia #growth #trends,2871,This confirms what our data showed,242,446,5179,0.7156
+P00195,06-03-2024,11:22,facebook,video,Post about engagement tips,#trends #growth #branding,4596,"Helpful context, thanks for sharing",453,478,36097,0.1555
+P00196,15-09-2024,22:16,instagram,video,Post about content strategy,#growth #content #trends #socialmedia,1724,This aligns with what I’ve been seeing lately,232,463,23872,0.1043
+P00197,13-12-2024,12:01,facebook,image,Post about growth,#socialmedia #analytics #growth,4252,Good reminder of the basics,93,555,39715,0.133
+P00198,06-04-2024,16:48,twiter,image_caurosel,Post about growth,#branding #socialmedia #growth #analytics,942,Simple but effective insight,69,575,12807,0.1564
+P00199,23-07-2024,20:56,facebook,image,Post about analytics,#digital #trends,2363,I wish more posts explained it this clearly,364,413,32822,0.1079
+P00200,13-01-2024,20:06,facebook,image,Post about growth,#trends #growth #marketing,3839,Makes sense when you see it laid out like this,254,410,50011,0.0994
+P00201,21-01-2024,04:24,youtube,video,Post about content strategy,#analytics #growth #engagement #digital,1377,"Not groundbreaking, but very solid advice",441,202,26201,0.0832
+P00202,10-05-2024,00:07,twiter,image_caurosel,Post about brand building,#marketing #growth #socialmedia #trends,3612,Good reminder of the basics,686,589,49381,0.1088
+P00203,17-04-2024,23:25,facebook,image,Post about brand building,#digital #content,2881,This saves a lot of trial and error,767,88,30244,0.1354
+P00204,23-06-2024,21:44,facebook,image,Post about brand building,#engagement #growth,4171,I tried something similar and got decent results,756,463,70861,0.0765
+P00205,25-12-2024,20:15,twiter,image_caurosel,Post about growth,#digital #trends,4630,I wish more posts explained it this clearly,267,178,76268,0.0677
+P00206,17-02-2024,21:45,instagram,video,Post about engagement tips,#growth #marketing,1699,"Not groundbreaking, but very solid advice",651,318,6214,0.4413
+P00207,20-12-2024,22:09,facebook,image,Post about growth,#content #analytics #strategy #branding,3695,This saves a lot of trial and error,136,359,42954,0.0992
+P00208,26-07-2024,15:13,youtube,image_caurosel,Post about content strategy,#growth #socialmedia #branding,1740,This saves a lot of trial and error,117,296,2570,0.9113
+P00209,27-02-2024,11:18,facebook,video,Post about growth,#marketing #engagement,1371,"Helpful context, thanks for sharing",332,455,16748,0.1465
+P00210,12-02-2024,20:31,instagram,image,Post about analytics,#digital #marketing #trends #strategy,2767,This actually answered a question I had,756,577,20116,0.2068
+P00211,17-11-2024,23:01,youtube,image,Post about analytics,#digital #analytics #strategy,2109,This aligns with what I’ve been seeing lately,668,251,7250,0.428
+P00212,07-06-2024,11:20,facebook,image,Post about analytics,#digital #branding #growth #marketing,2726,I tried something similar and got decent results,388,188,45167,0.0826
+P00213,24-02-2024,06:31,instagram,image,Post about analytics,#trends #socialmedia #analytics,4693,"Straight to the point, well done",643,412,11338,0.55
+P00214,24-03-2024,14:30,facebook,image_caurosel,Post about content strategy,#marketing #strategy,1182,I wish more posts explained it this clearly,453,411,4140,0.5002
+P00215,14-03-2024,13:56,twiter,image_caurosel,Post about engagement tips,#analytics #trends,2370,Makes sense when you see it laid out like this,73,56,36116,0.0794
+P00216,31-05-2024,18:12,instagram,image_caurosel,Post about brand building,#strategy #engagement #content,84,This confirms what our data showed,453,576,1486,0.8721
+P00217,16-11-2024,21:21,twiter,video,Post about brand building,#digital #engagement #analytics,1314,This actually answered a question I had,410,83,3300,0.6612
+P00218,24-06-2024,21:47,instagram,video,Post about growth,#trends #digital,4395,This confirms what our data showed,648,28,29167,0.1779
+P00219,24-10-2024,14:25,twiter,image_caurosel,Post about analytics,#growth #strategy,3460,This aligns with what I’ve been seeing lately,368,542,34968,0.1334
+P00220,23-04-2024,21:16,instagram,image_caurosel,Post about brand building,#growth #strategy #socialmedia,2126,"Not groundbreaking, but very solid advice",665,97,14436,0.2192
+P00221,28-10-2024,14:08,youtube,video,Post about brand building,#engagement #content,4693,This confirms what our data showed,82,417,93775,0.0558
+P00222,28-03-2024,04:23,youtube,image,Post about analytics,#digital #marketing,1619,This was genuinely helpful for my workflow,576,486,27033,0.1011
+P00223,25-12-2024,22:08,instagram,image_caurosel,Post about brand building,#trends #socialmedia,4918,"Interesting approach, might test this soon",218,470,44250,0.1282
+P00224,27-03-2024,23:43,youtube,image,Post about growth,#digital #strategy,3056,"Not groundbreaking, but very solid advice",763,349,55774,0.0818
+P00225,01-07-2024,17:20,youtube,image_caurosel,Post about analytics,#digital #growth #engagement,4055,This was genuinely helpful for my workflow,44,361,17135,0.2712
+P00226,24-10-2024,02:51,twiter,image_caurosel,Post about analytics,#branding #content #analytics #trends,3653,"Useful breakdown, especially the last part",116,21,67642,0.0569
+P00227,02-10-2024,04:31,instagram,image_caurosel,Post about growth,#analytics #content,2251,"Helpful context, thanks for sharing",454,14,3893,0.7447
+P00228,22-03-2024,11:21,facebook,image,Post about analytics,#trends #marketing #growth #socialmedia,3724,"Interesting approach, might test this soon",402,234,71507,0.0616
+P00229,27-08-2024,11:20,youtube,image,Post about brand building,#digital #growth #marketing,2764,"Straight to the point, well done",590,479,28204,0.1531
+P00230,23-08-2024,04:17,instagram,image,Post about growth,#branding #digital #analytics #strategy,421,I tried something similar and got decent results,646,149,6396,0.2445
+P00231,14-10-2024,20:06,twiter,image,Post about analytics,#socialmedia #branding,830,Good reminder of the basics,204,436,11222,0.1575
+P00232,04-07-2024,17:45,instagram,image,Post about growth,#digital #trends #engagement #branding,4218,"Interesting approach, might test this soon",650,251,50169,0.111
+P00233,04-05-2024,00:56,instagram,image,Post about engagement tips,#trends #branding #analytics,1973,"Short and informative, I like it",357,154,10880,0.2384
+P00234,03-02-2024,18:35,twiter,image_caurosel,Post about analytics,#socialmedia #analytics #branding #engagement,1228,"Interesting approach, might test this soon",308,315,9509,0.2343
+P00235,27-08-2024,02:53,instagram,image,Post about analytics,#branding #strategy #marketing,2974,Appreciate the practical example here,793,438,50258,0.0926
+P00236,16-11-2024,12:28,facebook,video,Post about content strategy,#socialmedia #growth #strategy #digital,2245,I tried something similar and got decent results,242,20,16572,0.153
+P00237,07-03-2024,18:21,facebook,image_caurosel,Post about analytics,#strategy #marketing #digital,4973,This was genuinely helpful for my workflow,49,81,14619,0.3777
+P00238,18-04-2024,12:39,twiter,image_caurosel,Post about growth,#marketing #socialmedia #digital,2684,"Helpful context, thanks for sharing",334,27,45232,0.0729
+P00239,02-11-2024,00:59,twiter,video,Post about content strategy,#content #digital,3323,Appreciate the practical example here,263,474,60576,0.0672
+P00240,17-02-2024,02:22,twiter,image,Post about content strategy,#trends #strategy #analytics #digital,202,Easy to understand and practical,159,215,806,1.0571
+P00241,21-10-2024,01:49,twiter,video,Post about brand building,#engagement #strategy #branding #analytics,2760,"Not groundbreaking, but very solid advice",235,264,49404,0.071
+P00242,28-09-2024,15:06,twiter,image_caurosel,Post about analytics,#socialmedia #marketing #analytics,2294,This aligns with what I’ve been seeing lately,135,258,2906,1.0244
+P00243,31-01-2024,05:16,twiter,video,Post about analytics,#analytics #strategy,4500,This was genuinely helpful for my workflow,513,209,77297,0.0728
+P00244,28-06-2024,11:57,instagram,image,Post about analytics,#marketing #socialmedia #trends,2037,Clear explanation without unnecessary hype,452,510,16025,0.2077
+P00245,26-11-2024,18:24,instagram,image,Post about analytics,#branding #marketing,3341,"Useful breakdown, especially the last part",690,359,7292,0.6186
+P00246,29-12-2024,10:48,instagram,video,Post about content strategy,#engagement #growth #analytics,3603,"Helpful context, thanks for sharing",247,236,50062,0.0838
+P00247,16-05-2024,00:31,facebook,image_caurosel,Post about content strategy,#trends #engagement #growth #branding,1168,I tried something similar and got decent results,307,289,4085,0.4744
+P00248,17-04-2024,04:59,twiter,video,Post about growth,#analytics #marketing,3002,Simple but effective insight,47,449,14969,0.2488
+P00249,03-06-2024,05:29,instagram,image_caurosel,Post about engagement tips,#content #digital #marketing,1285,"Short and informative, I like it",514,360,4501,0.5661
+P00250,30-04-2024,16:38,facebook,video,Post about engagement tips,#socialmedia #marketing #strategy #analytics,1699,Clear explanation without unnecessary hype,642,15,2960,0.8209
+P00251,26-02-2024,00:11,facebook,video,Post about brand building,#strategy #trends,1036,This aligns with what I’ve been seeing lately,499,139,18272,0.1039
+P00252,28-09-2024,07:46,youtube,image,Post about analytics,#branding #trends,2946,Clear explanation without unnecessary hype,508,79,25867,0.141
+P00253,23-01-2024,17:23,twiter,image_caurosel,Post about content strategy,#marketing #engagement #branding #strategy,1659,Good reminder of the basics,520,49,15052,0.1752
+P00254,19-12-2024,10:34,instagram,image,Post about analytics,#content #trends #analytics,3411,This was genuinely helpful for my workflow,763,275,29598,0.1578
+P00255,02-05-2024,06:42,youtube,image_caurosel,Post about brand building,#marketing #content,4154,This confirms what our data showed,260,386,35731,0.1463
+P00256,15-06-2024,00:30,instagram,video,Post about content strategy,#strategy #content #growth #trends,3674,Makes sense when you see it laid out like this,562,323,63396,0.0766
+P00257,30-06-2024,21:43,twiter,image_caurosel,Post about brand building,#growth #branding #strategy #content,575,"Helpful context, thanks for sharing",402,538,4959,0.3696
+P00258,27-06-2024,04:04,twiter,video,Post about analytics,#analytics #digital #growth #strategy,4326,Appreciate the practical example here,603,488,79149,0.0699
+P00259,19-03-2024,11:53,instagram,image_caurosel,Post about engagement tips,#branding #content,3820,This aligns with what I’ve been seeing lately,181,44,46040,0.0922
+P00260,05-07-2024,14:42,youtube,image,Post about engagement tips,#engagement #socialmedia #trends,2971,"Helpful context, thanks for sharing",678,535,37158,0.1169
+P00261,30-03-2024,15:33,facebook,video,Post about content strategy,#digital #content #branding #marketing,4288,This confirms what our data showed,153,6,21415,0.2166
+P00262,12-04-2024,05:19,twiter,image,Post about content strategy,#branding #engagement,56,Clear explanation without unnecessary hype,584,265,194,6.2474
+P00263,25-09-2024,09:39,twiter,image_caurosel,Post about engagement tips,#digital #marketing #branding,4091,I wish more posts explained it this clearly,90,206,20927,0.2202
+P00264,08-08-2024,18:08,facebook,video,Post about brand building,#socialmedia #growth #digital,2153,Clear explanation without unnecessary hype,360,244,27427,0.1166
+P00265,10-02-2024,15:59,youtube,image_caurosel,Post about brand building,#engagement #trends #content #growth,3699,"Helpful context, thanks for sharing",388,402,72638,0.0648
+P00266,31-03-2024,16:48,youtube,video,Post about analytics,#growth #content #marketing #digital,583,This actually answered a question I had,450,407,8651,0.175
+P00267,10-10-2024,03:05,facebook,image_caurosel,Post about brand building,#socialmedia #engagement,2754,Clear explanation without unnecessary hype,787,396,53228,0.0785
+P00268,20-04-2024,10:30,youtube,video,Post about engagement tips,#analytics #content #marketing #strategy,4673,Simple but effective insight,465,56,30885,0.1801
+P00269,13-06-2024,17:17,twiter,image_caurosel,Post about content strategy,#branding #trends #content,2788,"Not groundbreaking, but very solid advice",194,530,3202,1.128
+P00270,03-08-2024,12:51,instagram,video,Post about content strategy,#growth #analytics #marketing,469,This gave me a new angle to think about,314,311,4560,0.3382
+P00271,01-10-2024,04:23,twiter,image_caurosel,Post about engagement tips,#strategy #marketing #digital #trends,3112,This confirms what our data showed,475,500,49654,0.0884
+P00272,04-02-2024,07:50,instagram,image,Post about analytics,#growth #engagement #content #digital,3399,This saves a lot of trial and error,578,331,5733,0.7767
+P00273,14-04-2024,20:07,youtube,image_caurosel,Post about growth,#engagement #analytics #marketing #digital,1714,This confirms what our data showed,59,184,15946,0.1506
+P00274,25-03-2024,05:09,facebook,video,Post about growth,#socialmedia #growth #trends,4131,I tried something similar and got decent results,226,301,31810,0.1552
+P00275,31-07-2024,13:09,youtube,video,Post about analytics,#analytics #engagement,1883,This actually answered a question I had,674,263,30896,0.1028
+P00276,29-04-2024,08:20,facebook,image_caurosel,Post about analytics,#marketing #digital #content,4818,Simple but effective insight,326,574,25021,0.235
+P00277,24-11-2024,06:29,facebook,video,Post about analytics,#digital #content #socialmedia,2434,I tried something similar and got decent results,228,558,47948,0.0682
+P00278,29-06-2024,02:18,instagram,image,Post about growth,#socialmedia #growth #engagement,1050,"Useful breakdown, especially the last part",673,215,18250,0.1212
+P00279,04-06-2024,04:30,twiter,image_caurosel,Post about brand building,#marketing #socialmedia #trends,4946,"Interesting approach, might test this soon",597,553,16557,0.3747
+P00280,09-04-2024,10:22,instagram,image,Post about analytics,#digital #analytics #socialmedia,1296,This actually answered a question I had,672,307,2956,0.8011
+P00281,05-02-2024,05:38,instagram,image,Post about growth,#marketing #strategy,4630,"Short and informative, I like it",465,97,76945,0.0683
+P00282,19-02-2024,11:04,twiter,video,Post about analytics,#analytics #socialmedia #digital,3433,This was genuinely helpful for my workflow,662,135,30671,0.1477
+P00283,26-11-2024,03:56,facebook,image_caurosel,Post about analytics,#branding #strategy #socialmedia,3984,Good reminder of the basics,310,152,38250,0.1176
+P00284,27-08-2024,16:16,twiter,image_caurosel,Post about content strategy,#strategy #growth #analytics,2064,"Straight to the point, well done",167,582,37176,0.0764
+P00285,30-09-2024,01:31,facebook,video,Post about analytics,#analytics #trends,4160,"Useful breakdown, especially the last part",245,97,6160,0.7404
+P00286,16-01-2024,18:56,youtube,image_caurosel,Post about brand building,#growth #trends,3523,Easy to understand and practical,402,530,17910,0.2573
+P00287,19-09-2024,03:02,facebook,video,Post about analytics,#digital #socialmedia #engagement,559,"Short and informative, I like it",251,74,10395,0.1021
+P00288,03-04-2024,02:50,facebook,image_caurosel,Post about brand building,#analytics #trends #digital #content,138,Simple but effective insight,325,421,1825,0.4959
+P00289,14-04-2024,00:50,instagram,image_caurosel,Post about engagement tips,#digital #socialmedia #strategy #engagement,1673,I tried something similar and got decent results,224,339,24912,0.0913
+P00290,06-07-2024,15:43,instagram,image_caurosel,Post about content strategy,#branding #marketing #engagement #content,3419,"Short and informative, I like it",94,357,41631,0.0951
+P00291,25-03-2024,18:34,youtube,image_caurosel,Post about content strategy,#growth #trends,3616,"Short and informative, I like it",395,525,42822,0.115
+P00292,22-08-2024,21:56,youtube,image,Post about engagement tips,#digital #content #strategy #marketing,4650,"Straight to the point, well done",242,504,80036,0.0733
+P00293,30-11-2024,00:19,instagram,video,Post about growth,#engagement #content,2831,I wish more posts explained it this clearly,679,436,54817,0.0749
+P00294,05-11-2024,06:05,twiter,image,Post about engagement tips,#marketing #branding #digital #trends,2503,"Useful breakdown, especially the last part",468,149,24504,0.1389
+P00295,05-04-2024,06:43,youtube,image,Post about analytics,#branding #digital #analytics,3671,"Interesting approach, might test this soon",417,551,35375,0.133
+P00296,26-03-2024,10:56,facebook,image_caurosel,Post about engagement tips,#marketing #trends #analytics #strategy,1886,"Straight to the point, well done",359,403,22128,0.1314
+P00297,20-08-2024,03:35,instagram,image_caurosel,Post about content strategy,#content #socialmedia #digital #growth,4680,"Useful breakdown, especially the last part",672,256,50877,0.1171
+P00298,31-05-2024,21:03,instagram,image,Post about content strategy,#marketing #trends #socialmedia #branding,3014,Makes sense when you see it laid out like this,312,384,37255,0.1108
+P00299,17-08-2024,19:47,instagram,image_caurosel,Post about content strategy,#analytics #marketing #branding,2598,Simple but effective insight,769,524,12598,0.3389
+P00300,06-04-2024,05:47,twiter,video,Post about analytics,#strategy #marketing #content,4863,This confirms what our data showed,590,520,11000,0.5616
+P00301,27-07-2024,22:23,twiter,image,Post about analytics,#engagement #marketing #digital #socialmedia,740,This gave me a new angle to think about,692,389,8837,0.2624
+P00302,21-09-2024,21:19,youtube,video,Post about content strategy,#digital #analytics #branding,555,This actually answered a question I had,166,315,9103,0.1239
+P00303,31-08-2024,12:06,twiter,image,Post about engagement tips,#content #engagement #branding,1666,This aligns with what I’ve been seeing lately,635,328,32096,0.089
+P00304,14-04-2024,10:02,facebook,image,Post about brand building,#strategy #content #socialmedia,3738,"Useful breakdown, especially the last part",513,418,24709,0.2053
+P00305,19-07-2024,09:54,youtube,image,Post about engagement tips,#marketing #strategy,3021,"Short and informative, I like it",734,405,37732,0.1214
+P00306,05-06-2024,02:56,youtube,video,Post about engagement tips,#socialmedia #branding #analytics #digital,2947,Appreciate the practical example here,616,368,20368,0.1993
+P00307,20-11-2024,23:53,twiter,image,Post about engagement tips,#digital #trends #analytics,1015,Simple but effective insight,793,413,13961,0.1902
+P00308,29-09-2024,10:43,youtube,image,Post about growth,#marketing #growth #content #strategy,4319,This gave me a new angle to think about,423,295,21845,0.2358
+P00309,20-10-2024,21:54,facebook,video,Post about growth,#marketing #content #branding,2293,Simple but effective insight,695,135,12219,0.2652
+P00310,27-11-2024,19:38,twiter,video,Post about analytics,#branding #socialmedia,3198,"Interesting approach, might test this soon",627,281,49881,0.0831
+P00311,12-12-2024,16:04,youtube,image,Post about analytics,#engagement #analytics,4711,This saves a lot of trial and error,80,368,7787,0.7091
+P00312,20-05-2024,19:51,youtube,image_caurosel,Post about brand building,#socialmedia #engagement #growth,4173,This actually answered a question I had,60,456,81557,0.061
+P00313,18-11-2024,06:35,facebook,image,Post about brand building,#marketing #growth #analytics #trends,2836,"Not groundbreaking, but very solid advice",338,543,40110,0.0957
+P00314,17-05-2024,02:37,youtube,image,Post about engagement tips,#trends #content #growth #digital,3522,I tried something similar and got decent results,383,64,39420,0.1102
+P00315,09-07-2024,15:36,facebook,image,Post about engagement tips,#trends #engagement #growth #analytics,4404,Easy to understand and practical,337,257,13780,0.3869
+P00316,07-04-2024,06:04,youtube,image,Post about analytics,#growth #branding #trends #strategy,966,This actually answered a question I had,412,169,10245,0.1894
+P00317,12-01-2024,00:53,twiter,video,Post about content strategy,#analytics #digital #strategy #trends,179,This aligns with what I’ve been seeing lately,64,362,1041,0.7906
+P00318,23-01-2024,00:51,instagram,image_caurosel,Post about content strategy,#analytics #digital,1485,"Helpful context, thanks for sharing",707,363,15300,0.1974
+P00319,05-09-2024,04:54,youtube,video,Post about brand building,#strategy #content #growth,727,"Interesting approach, might test this soon",345,326,8549,0.2178
+P00320,08-05-2024,23:46,instagram,image_caurosel,Post about engagement tips,#analytics #marketing,223,This aligns with what I’ve been seeing lately,197,284,3820,0.2893
+P00321,19-04-2024,02:29,youtube,image_caurosel,Post about brand building,#socialmedia #digital #strategy #branding,4845,This confirms what our data showed,544,388,8483,0.6821
+P00322,24-08-2024,06:57,twiter,image,Post about growth,#trends #analytics,4019,This gave me a new angle to think about,787,210,5000,1.029
+P00323,13-08-2024,02:36,youtube,image,Post about analytics,#growth #engagement #strategy,3788,Easy to understand and practical,585,599,61431,0.0874
+P00324,13-03-2024,07:51,facebook,image_caurosel,Post about engagement tips,#growth #marketing #trends #strategy,1019,This gave me a new angle to think about,509,390,3094,0.7372
+P00325,01-01-2024,07:49,youtube,video,Post about brand building,#branding #marketing #analytics,361,This saves a lot of trial and error,477,49,3674,0.2763
+P00326,10-01-2024,04:51,facebook,video,Post about brand building,#socialmedia #strategy #content,3972,This was genuinely helpful for my workflow,775,106,16650,0.2975
+P00327,06-02-2024,19:39,youtube,video,Post about growth,#strategy #branding #engagement #growth,293,This was genuinely helpful for my workflow,569,87,4429,0.2802
+P00328,13-10-2024,14:13,youtube,video,Post about analytics,#content #socialmedia #strategy #branding,1758,"Not groundbreaking, but very solid advice",24,191,35005,0.0684
+P00329,29-06-2024,03:05,twiter,image,Post about content strategy,#branding #analytics #engagement,820,Easy to understand and practical,89,244,14761,0.109
+P00330,22-10-2024,02:02,youtube,video,Post about brand building,#strategy #content,2793,This saves a lot of trial and error,787,196,3268,1.1692
+P00331,27-07-2024,00:53,youtube,video,Post about growth,#analytics #content #marketing #socialmedia,4756,Easy to understand and practical,664,215,15236,0.4008
+P00332,30-05-2024,09:54,twiter,image_caurosel,Post about content strategy,#socialmedia #analytics #engagement,3668,Appreciate the practical example here,261,137,36802,0.1216
+P00333,30-11-2024,07:00,instagram,video,Post about growth,#growth #strategy #digital,3927,Good reminder of the basics,780,333,39886,0.1368
+P00334,01-01-2024,03:02,twiter,image,Post about content strategy,#socialmedia #strategy #trends,2006,This saves a lot of trial and error,350,81,36892,0.0684
+P00335,23-03-2024,13:59,youtube,video,Post about analytics,#branding #marketing,1782,"Useful breakdown, especially the last part",543,54,17855,0.1604
+P00336,08-08-2024,23:18,instagram,image_caurosel,Post about content strategy,#marketing #socialmedia #growth,1019,"Useful breakdown, especially the last part",180,448,6492,0.3088
+P00337,12-11-2024,22:25,twiter,image_caurosel,Post about growth,#socialmedia #strategy #marketing #engagement,4892,"Interesting approach, might test this soon",145,71,83274,0.0618
+P00338,08-02-2024,16:44,twiter,image,Post about analytics,#branding #trends,1215,Makes sense when you see it laid out like this,570,115,17412,0.1284
+P00339,28-07-2024,10:53,facebook,image_caurosel,Post about engagement tips,#socialmedia #growth,1469,"Interesting approach, might test this soon",455,97,16582,0.1327
+P00340,09-12-2024,02:10,twiter,video,Post about content strategy,#marketing #analytics,2798,"Helpful context, thanks for sharing",284,10,15266,0.2053
+P00341,19-02-2024,18:14,youtube,image_caurosel,Post about content strategy,#branding #analytics,518,"Interesting approach, might test this soon",392,260,1995,0.7348
+P00342,05-07-2024,23:16,twiter,image,Post about analytics,#socialmedia #growth #analytics #engagement,4491,Makes sense when you see it laid out like this,739,180,22646,0.2475
+P00343,16-01-2024,12:54,twiter,image_caurosel,Post about engagement tips,#marketing #trends #socialmedia,1884,Makes sense when you see it laid out like this,664,198,16257,0.1932
+P00344,08-07-2024,15:07,youtube,image,Post about brand building,#engagement #socialmedia #content #marketing,1973,"Helpful context, thanks for sharing",288,30,32964,0.0764
+P00345,02-09-2024,03:12,youtube,image,Post about content strategy,#engagement #growth #digital,1473,This confirms what our data showed,236,436,15919,0.137
+P00346,30-01-2024,06:36,instagram,image_caurosel,Post about growth,#strategy #marketing #growth,635,"Not groundbreaking, but very solid advice",521,227,8584,0.2061
+P00347,28-03-2024,15:16,instagram,image,Post about analytics,#engagement #digital,4231,This aligns with what I’ve been seeing lately,323,217,17554,0.2745
+P00348,15-04-2024,22:30,instagram,image,Post about analytics,#marketing #strategy #trends #digital,2348,"Helpful context, thanks for sharing",678,369,6834,0.5064
+P00349,17-12-2024,19:08,twiter,image_caurosel,Post about engagement tips,#marketing #digital #analytics,313,"Straight to the point, well done",550,239,4420,0.3274
+P00350,09-01-2024,01:18,instagram,image_caurosel,Post about analytics,#digital #growth #socialmedia,4948,Makes sense when you see it laid out like this,469,83,63869,0.0879
+P00351,13-01-2024,02:30,twiter,video,Post about engagement tips,#growth #trends #strategy #content,1403,"Helpful context, thanks for sharing",12,368,17289,0.1103
+P00352,13-04-2024,10:02,instagram,image_caurosel,Post about content strategy,#marketing #digital #analytics,2588,"Straight to the point, well done",467,277,17437,0.2196
+P00353,01-01-2024,15:35,instagram,image_caurosel,Post about content strategy,#strategy #socialmedia,1318,"Useful breakdown, especially the last part",622,264,21216,0.1151
+P00354,01-08-2024,10:56,youtube,image_caurosel,Post about analytics,#analytics #socialmedia #engagement,1271,I wish more posts explained it this clearly,140,534,5723,0.3926
+P00355,09-05-2024,23:17,instagram,image_caurosel,Post about growth,#socialmedia #marketing #branding,4720,Clear explanation without unnecessary hype,677,228,24500,0.2498
+P00356,27-05-2024,12:54,twiter,video,Post about brand building,#socialmedia #engagement #growth #strategy,1485,"Not groundbreaking, but very solid advice",141,430,3908,0.5967
+P00357,27-10-2024,02:37,twiter,video,Post about engagement tips,#branding #growth,3077,I wish more posts explained it this clearly,534,571,15724,0.2805
+P00358,06-07-2024,21:30,facebook,video,Post about content strategy,#engagement #trends,4341,Good reminder of the basics,263,75,11842,0.4225
+P00359,13-12-2024,13:05,facebook,video,Post about engagement tips,#analytics #growth #digital,1526,"Interesting approach, might test this soon",476,332,27291,0.0901
+P00360,13-07-2024,20:13,twiter,image_caurosel,Post about growth,#analytics #content #strategy #digital,4099,Clear explanation without unnecessary hype,785,373,20839,0.2579
+P00361,28-08-2024,11:22,instagram,image,Post about analytics,#marketing #analytics #content,4820,"Interesting approach, might test this soon",465,340,80463,0.0734
+P00362,29-02-2024,22:37,facebook,image,Post about content strategy,#branding #analytics #socialmedia #trends,2443,This saves a lot of trial and error,563,208,44051,0.076
+P00363,06-12-2024,17:26,twiter,image_caurosel,Post about growth,#analytics #socialmedia,4873,"Straight to the point, well done",46,203,6859,0.7918
+P00364,03-01-2024,22:50,facebook,image_caurosel,Post about growth,#socialmedia #trends,1472,This gave me a new angle to think about,235,178,10179,0.231
+P00365,17-03-2024,10:18,instagram,video,Post about engagement tips,#digital #marketing #socialmedia,3899,"Useful breakdown, especially the last part",343,75,72381,0.0622
+P00366,24-03-2024,22:16,facebook,video,Post about content strategy,#strategy #engagement #analytics,2225,This gave me a new angle to think about,93,64,43142,0.0559
+P00367,05-11-2024,09:45,youtube,image_caurosel,Post about content strategy,#engagement #socialmedia,4640,Clear explanation without unnecessary hype,52,157,60079,0.0841
+P00368,27-10-2024,07:39,youtube,video,Post about engagement tips,#content #analytics #marketing #socialmedia,1297,"Short and informative, I like it",195,463,16666,0.1419
+P00369,20-04-2024,08:32,instagram,video,Post about brand building,#marketing #trends #growth,933,This was genuinely helpful for my workflow,649,468,8847,0.2757
+P00370,23-04-2024,06:57,facebook,image_caurosel,Post about content strategy,#branding #analytics #strategy #marketing,4250,"Straight to the point, well done",297,216,63808,0.0796
+P00371,25-08-2024,16:46,twiter,image_caurosel,Post about brand building,#socialmedia #branding #marketing,2826,Good reminder of the basics,720,317,28832,0.1397
+P00372,20-09-2024,00:12,twiter,image_caurosel,Post about brand building,#strategy #digital #engagement #branding,1986,This actually answered a question I had,154,179,18073,0.1416
+P00373,08-02-2024,15:04,twiter,video,Post about brand building,#engagement #digital,920,"Helpful context, thanks for sharing",674,71,13622,0.139
+P00374,30-12-2024,23:59,twiter,video,Post about growth,#engagement #socialmedia,3477,"Useful breakdown, especially the last part",788,380,62065,0.0814
+P00375,09-03-2024,21:39,youtube,image,Post about growth,#digital #content #socialmedia #engagement,356,Makes sense when you see it laid out like this,570,132,893,1.4569
+P00376,23-12-2024,21:08,youtube,video,Post about growth,#analytics #strategy #content,820,Appreciate the practical example here,733,52,1362,1.29
+P00377,02-05-2024,11:07,facebook,image,Post about brand building,#socialmedia #branding,1472,Makes sense when you see it laid out like this,396,436,24688,0.1005
+P00378,30-08-2024,22:12,facebook,video,Post about analytics,#socialmedia #strategy #digital,1905,"Straight to the point, well done",189,295,32414,0.0801
+P00379,15-01-2024,19:20,twiter,image_caurosel,Post about content strategy,#growth #content #marketing #strategy,2140,This was genuinely helpful for my workflow,525,480,11893,0.3016
+P00380,28-04-2024,01:57,youtube,image,Post about analytics,#branding #digital #trends,4759,"Interesting approach, might test this soon",352,10,38114,0.1426
+P00381,12-11-2024,07:00,instagram,video,Post about brand building,#marketing #analytics,2940,Simple but effective insight,403,387,21569,0.1758
+P00382,06-06-2024,09:08,facebook,video,Post about content strategy,#marketing #digital #analytics #content,2124,Good reminder of the basics,516,333,27091,0.1182
+P00383,12-03-2024,10:30,instagram,video,Post about analytics,#digital #trends #growth #marketing,4494,This aligns with what I’ve been seeing lately,668,49,76311,0.0714
+P00384,01-03-2024,02:39,youtube,image,Post about growth,#engagement #content,2729,This actually answered a question I had,26,26,17631,0.1687
+P00385,01-09-2024,11:46,twiter,video,Post about content strategy,#socialmedia #strategy #trends #growth,3147,This saves a lot of trial and error,317,590,33999,0.1242
+P00386,01-08-2024,11:34,twiter,video,Post about growth,#trends #marketing #engagement #branding,146,"Short and informative, I like it",681,232,1017,1.1504
+P00387,09-08-2024,05:33,twiter,video,Post about content strategy,#growth #marketing,243,"Straight to the point, well done",734,134,3779,0.3078
+P00388,06-07-2024,13:12,twiter,image,Post about content strategy,#analytics #engagement #marketing #digital,3600,Simple but effective insight,161,389,13712,0.3377
+P00389,05-11-2024,20:35,youtube,video,Post about content strategy,#marketing #growth,3146,"Not groundbreaking, but very solid advice",574,168,15181,0.257
+P00390,12-01-2024,04:35,facebook,image_caurosel,Post about analytics,#engagement #marketing #content #socialmedia,4165,Easy to understand and practical,731,220,71136,0.0753
+P00391,18-12-2024,06:32,instagram,image_caurosel,Post about growth,#digital #analytics,2172,"Straight to the point, well done",618,282,17513,0.188
+P00392,02-10-2024,19:11,facebook,video,Post about growth,#engagement #growth #branding #content,2144,I wish more posts explained it this clearly,237,529,13662,0.222
+P00393,18-09-2024,02:55,youtube,video,Post about engagement tips,#digital #engagement,480,Appreciate the practical example here,500,1,7751,0.1846
+P00394,23-11-2024,23:15,facebook,image_caurosel,Post about analytics,#digital #content #branding,1823,This actually answered a question I had,556,344,28598,0.1091
+P00395,23-03-2024,18:20,youtube,video,Post about content strategy,#content #engagement,1840,This saves a lot of trial and error,456,87,11202,0.2219
+P00396,30-10-2024,06:30,facebook,video,Post about analytics,#socialmedia #digital,4033,Makes sense when you see it laid out like this,484,283,65843,0.077
+P00397,05-02-2024,10:22,instagram,video,Post about analytics,#trends #strategy #marketing,3354,I tried something similar and got decent results,102,362,51480,0.0785
+P00398,01-09-2024,09:10,youtube,video,Post about analytics,#digital #content #trends #branding,2953,"Short and informative, I like it",521,411,31321,0.1343
+P00399,12-12-2024,05:18,youtube,image_caurosel,Post about growth,#digital #engagement #strategy #growth,1849,"Useful breakdown, especially the last part",348,160,28248,0.0954
+P00400,05-07-2024,10:40,instagram,image_caurosel,Post about content strategy,#content #branding #marketing,4321,"Interesting approach, might test this soon",20,358,76298,0.0652
+P00401,17-07-2024,10:18,instagram,image_caurosel,Post about engagement tips,#socialmedia #growth,600,This gave me a new angle to think about,371,551,816,2.0441
+P00402,31-01-2024,01:27,twiter,image_caurosel,Post about growth,#strategy #trends,1201,Clear explanation without unnecessary hype,150,318,8691,0.2055
+P00403,17-03-2024,23:24,instagram,image_caurosel,Post about analytics,#analytics #branding #marketing #engagement,3605,I tried something similar and got decent results,197,40,68750,0.0623
+P00404,23-03-2024,22:40,facebook,image_caurosel,Post about engagement tips,#socialmedia #analytics,1067,This gave me a new angle to think about,39,22,11828,0.1264
+P00405,07-11-2024,13:20,instagram,image,Post about content strategy,#growth #engagement #marketing,2982,Appreciate the practical example here,688,202,26636,0.1478
+P00406,25-03-2024,20:03,instagram,video,Post about brand building,#marketing #engagement #trends #growth,1523,This saves a lot of trial and error,155,359,22056,0.1097
+P00407,12-01-2024,16:09,youtube,video,Post about brand building,#engagement #analytics,4973,Makes sense when you see it laid out like this,648,345,91525,0.0674
+P00408,21-03-2024,11:26,facebook,video,Post about engagement tips,#content #digital #engagement #branding,87,Easy to understand and practical,512,527,118,13.2458
+P00409,23-03-2024,06:50,youtube,video,Post about content strategy,#strategy #branding #digital,2641,Appreciate the practical example here,385,195,20286,0.1818
+P00410,20-10-2024,01:09,instagram,image_caurosel,Post about brand building,#branding #strategy #content,4523,This was genuinely helpful for my workflow,500,281,15418,0.3606
+P00411,14-02-2024,08:56,youtube,video,Post about engagement tips,#branding #socialmedia #engagement,4874,"Interesting approach, might test this soon",795,136,18381,0.3265
+P00412,19-02-2024,20:16,twiter,image,Post about analytics,#strategy #trends #content #engagement,342,"Short and informative, I like it",505,306,2119,0.5621
+P00413,20-12-2024,22:30,youtube,image_caurosel,Post about analytics,#branding #marketing #analytics #engagement,2324,Makes sense when you see it laid out like this,467,325,28640,0.1212
+P00414,07-05-2024,00:05,youtube,image_caurosel,Post about analytics,#trends #engagement #socialmedia,2177,This actually answered a question I had,518,34,31348,0.095
+P00415,24-06-2024,16:16,twiter,image_caurosel,Post about analytics,#engagement #growth,1568,"Useful breakdown, especially the last part",139,122,22725,0.0849
+P00416,12-05-2024,02:40,instagram,video,Post about brand building,#growth #socialmedia #content,549,"Helpful context, thanks for sharing",226,164,10610,0.1035
+P00417,09-06-2024,14:30,facebook,image,Post about analytics,#socialmedia #strategy #digital #growth,545,Appreciate the practical example here,762,392,4366,0.4668
+P00418,11-03-2024,11:06,instagram,video,Post about content strategy,#digital #socialmedia,3902,"Interesting approach, might test this soon",480,504,39029,0.1327
+P00419,13-07-2024,10:24,facebook,image,Post about growth,#growth #engagement #socialmedia,969,This actually answered a question I had,143,510,10249,0.207
+P00420,21-08-2024,20:12,facebook,image,Post about analytics,#growth #branding #strategy #digital,3076,"Straight to the point, well done",576,371,34599,0.1305
+P00421,29-12-2024,17:04,facebook,video,Post about brand building,#socialmedia #growth #trends #digital,4855,This actually answered a question I had,65,430,6164,0.8861
+P00422,21-02-2024,00:17,youtube,image,Post about growth,#digital #marketing #content,1632,"Interesting approach, might test this soon",694,594,25021,0.1305
+P00423,29-12-2024,06:11,facebook,image_caurosel,Post about analytics,#branding #strategy,4879,Good reminder of the basics,545,185,6611,0.8935
+P00424,11-12-2024,22:27,youtube,video,Post about content strategy,#analytics #content #digital #strategy,3196,This was genuinely helpful for my workflow,414,27,7625,0.5176
+P00425,14-01-2024,11:46,twiter,video,Post about analytics,#digital #branding #analytics,496,Appreciate the practical example here,437,544,6827,0.2291
+P00426,21-03-2024,03:10,twiter,video,Post about brand building,#socialmedia #strategy #engagement #growth,1292,This saves a lot of trial and error,152,113,20597,0.0956
+P00427,05-10-2024,04:15,youtube,image_caurosel,Post about content strategy,#socialmedia #engagement,173,"Short and informative, I like it",744,59,1160,1.0319
+P00428,17-07-2024,21:53,youtube,image,Post about brand building,#marketing #analytics,3567,This gave me a new angle to think about,343,487,9035,0.4997
+P00429,05-02-2024,20:05,instagram,image,Post about growth,#engagement #growth #analytics #socialmedia,2178,This actually answered a question I had,84,339,8020,0.3465
+P00430,09-08-2024,05:37,youtube,image,Post about growth,#analytics #marketing #branding #engagement,2706,I tried something similar and got decent results,108,525,30830,0.1239
+P00431,20-06-2024,12:10,facebook,video,Post about analytics,#branding #engagement #socialmedia,441,"Straight to the point, well done",104,533,3594,0.374
+P00432,27-08-2024,03:12,instagram,image_caurosel,Post about brand building,#branding #digital #strategy #socialmedia,79,"Useful breakdown, especially the last part",718,228,1454,0.848
+P00433,04-12-2024,22:54,instagram,image_caurosel,Post about analytics,#socialmedia #marketing,2754,This confirms what our data showed,227,38,29037,0.1115
+P00434,08-04-2024,21:31,twiter,image_caurosel,Post about growth,#engagement #trends #branding #marketing,2205,"Short and informative, I like it",643,102,27288,0.1177
+P00435,30-08-2024,04:42,youtube,video,Post about analytics,#marketing #socialmedia #strategy #content,1089,Good reminder of the basics,144,68,16958,0.0902
+P00436,02-05-2024,05:44,twiter,image,Post about content strategy,#engagement #trends,490,Appreciate the practical example here,226,596,4905,0.3048
+P00437,02-01-2024,07:40,facebook,video,Post about content strategy,#socialmedia #trends #content #marketing,1131,"Straight to the point, well done",93,556,15263,0.1459
+P00438,02-01-2024,09:37,twiter,video,Post about brand building,#engagement #strategy #growth #analytics,1303,"Not groundbreaking, but very solid advice",43,362,4082,0.5292
+P00439,14-04-2024,11:32,facebook,video,Post about content strategy,#strategy #analytics #marketing #growth,4006,I wish more posts explained it this clearly,744,345,20589,0.257
+P00440,06-12-2024,08:07,instagram,image,Post about brand building,#growth #strategy #content,4947,This confirms what our data showed,189,44,74674,0.0714
+P00441,28-05-2024,10:46,facebook,video,Post about engagement tips,#branding #engagement #digital,2450,Clear explanation without unnecessary hype,411,32,19299,0.163
+P00442,03-07-2024,11:44,youtube,image,Post about brand building,#digital #trends,1748,I wish more posts explained it this clearly,239,442,18532,0.1489
+P00443,17-01-2024,07:21,twiter,image,Post about growth,#analytics #engagement #socialmedia #trends,3633,This gave me a new angle to think about,622,537,43699,0.1192
+P00444,18-05-2024,13:55,instagram,image,Post about engagement tips,#digital #analytics,4041,Appreciate the practical example here,44,134,48479,0.0961
+P00445,30-12-2024,21:54,facebook,image,Post about growth,#marketing #content,1342,I wish more posts explained it this clearly,360,287,3349,0.7363
+P00446,08-04-2024,03:57,twiter,image,Post about brand building,#trends #branding #marketing,1297,Makes sense when you see it laid out like this,791,383,18003,0.1409
+P00447,18-07-2024,03:48,twiter,image,Post about analytics,#marketing #growth #strategy #trends,1572,"Short and informative, I like it",388,11,25701,0.0843
+P00448,11-12-2024,06:45,facebook,image_caurosel,Post about engagement tips,#trends #digital #socialmedia #marketing,4741,"Short and informative, I like it",625,237,43269,0.1308
+P00449,15-06-2024,03:15,facebook,image,Post about content strategy,#digital #marketing #growth,4277,This aligns with what I’ve been seeing lately,659,92,71147,0.074
+P00450,18-06-2024,18:15,instagram,video,Post about growth,#strategy #branding #trends #growth,3322,"Helpful context, thanks for sharing",246,432,19304,0.2163
+P00451,27-08-2024,19:39,facebook,video,Post about engagement tips,#content #analytics #socialmedia #strategy,161,This saves a lot of trial and error,55,389,2073,0.3502
+P00452,16-02-2024,02:05,youtube,image_caurosel,Post about content strategy,#content #trends,2594,"Not groundbreaking, but very solid advice",472,217,48040,0.0685
+P00453,21-08-2024,22:10,youtube,video,Post about brand building,#socialmedia #digital #branding,2419,This confirms what our data showed,718,356,36262,0.1016
+P00454,17-04-2024,19:35,twiter,image,Post about growth,#digital #socialmedia #trends #engagement,1856,This confirms what our data showed,396,366,23861,0.1228
+P00455,24-11-2024,03:21,facebook,image,Post about growth,#growth #content #marketing,2733,Appreciate the practical example here,140,336,46923,0.0777
+P00456,05-12-2024,12:16,facebook,image_caurosel,Post about engagement tips,#digital #marketing,1669,This was genuinely helpful for my workflow,680,544,16314,0.1889
+P00457,11-07-2024,17:30,facebook,video,Post about analytics,#analytics #trends,1849,"Useful breakdown, especially the last part",328,411,4633,0.6145
+P00458,26-11-2024,10:18,facebook,video,Post about engagement tips,#trends #socialmedia #analytics #engagement,4160,This actually answered a question I had,139,175,70965,0.0694
+P00459,03-06-2024,21:28,twiter,video,Post about analytics,#engagement #trends #analytics,1697,I tried something similar and got decent results,559,585,29028,0.1019
+P00460,30-11-2024,04:17,youtube,image_caurosel,Post about brand building,#marketing #growth,922,This saves a lot of trial and error,82,33,17724,0.0798
+P00461,14-02-2024,10:57,twiter,video,Post about growth,#digital #trends,3768,Clear explanation without unnecessary hype,545,244,27705,0.1684
+P00462,06-02-2024,22:18,twiter,image,Post about growth,#engagement #branding,234,This confirms what our data showed,639,123,668,1.6198
+P00463,03-01-2024,02:59,instagram,video,Post about brand building,#content #strategy,532,This saves a lot of trial and error,749,293,4281,0.4055
+P00464,11-07-2024,23:53,facebook,image_caurosel,Post about content strategy,#marketing #growth #socialmedia,3785,This gave me a new angle to think about,201,225,40657,0.1071
+P00465,13-08-2024,15:01,twiter,image,Post about analytics,#digital #engagement,3066,Makes sense when you see it laid out like this,472,522,25888,0.1669
+P00466,21-03-2024,05:30,facebook,image_caurosel,Post about analytics,#trends #socialmedia #branding,4347,"Useful breakdown, especially the last part",782,157,60081,0.0959
+P00467,27-06-2024,18:53,facebook,image,Post about engagement tips,#branding #trends,1042,Simple but effective insight,493,288,13411,0.1589
+P00468,09-10-2024,04:44,facebook,image,Post about growth,#content #engagement #trends #strategy,4576,I wish more posts explained it this clearly,615,576,86651,0.0719
+P00469,06-04-2024,04:20,facebook,video,Post about engagement tips,#branding #analytics #socialmedia,875,Appreciate the practical example here,159,421,6541,0.263
+P00470,22-10-2024,06:28,instagram,image_caurosel,Post about growth,#engagement #marketing,1606,"Short and informative, I like it",165,486,20840,0.1217
+P00471,22-02-2024,23:38,facebook,video,Post about analytics,#digital #trends #socialmedia #growth,4456,Clear explanation without unnecessary hype,445,222,44636,0.1221
+P00472,25-11-2024,17:51,youtube,image_caurosel,Post about brand building,#growth #trends,1341,This gave me a new angle to think about,707,314,6387,0.3908
+P00473,13-02-2024,05:16,youtube,image,Post about engagement tips,#digital #growth,2144,I wish more posts explained it this clearly,258,88,19392,0.1416
+P00474,28-02-2024,03:28,instagram,image_caurosel,Post about analytics,#digital #marketing,1880,Good reminder of the basics,8,117,23480,0.1019
+P00475,17-07-2024,09:26,youtube,video,Post about brand building,#engagement #content #trends #analytics,3423,Appreciate the practical example here,667,546,29163,0.163
+P00476,27-07-2024,14:36,facebook,video,Post about brand building,#socialmedia #digital,3389,I wish more posts explained it this clearly,216,50,40090,0.094
+P00477,05-01-2024,06:30,facebook,image,Post about engagement tips,#growth #analytics #content #digital,158,This was genuinely helpful for my workflow,265,499,2766,0.3641
+P00478,02-12-2024,10:33,facebook,image,Post about growth,#marketing #socialmedia,2477,This actually answered a question I had,22,391,31439,0.1038
+P00479,23-01-2024,05:07,youtube,video,Post about growth,#marketing #digital #analytics,2469,Easy to understand and practical,313,558,47606,0.0789
+P00480,21-07-2024,16:29,twiter,image,Post about engagement tips,#socialmedia #content #growth,4156,Makes sense when you see it laid out like this,757,424,20213,0.2673
+P00481,12-04-2024,17:17,youtube,video,Post about growth,#engagement #branding #growth #socialmedia,2685,This saves a lot of trial and error,491,387,28472,0.1346
+P00482,18-07-2024,05:27,facebook,image,Post about analytics,#strategy #marketing,2312,I wish more posts explained it this clearly,370,156,41869,0.0742
+P00483,11-02-2024,09:58,instagram,video,Post about growth,#socialmedia #content,327,This actually answered a question I had,628,455,5782,0.3257
+P00484,16-09-2024,15:05,youtube,image_caurosel,Post about analytics,#growth #socialmedia #strategy #branding,208,This gave me a new angle to think about,384,372,746,1.8458
+P00485,05-11-2024,13:28,twiter,video,Post about analytics,#marketing #socialmedia #content,4290,This actually answered a question I had,72,140,42270,0.1166
+P00486,01-11-2024,18:44,facebook,video,Post about content strategy,#engagement #branding #analytics #strategy,528,I wish more posts explained it this clearly,114,102,7558,0.1033
+P00487,11-01-2024,17:17,youtube,image_caurosel,Post about brand building,#digital #growth #trends,2357,This aligns with what I’ve been seeing lately,467,599,23698,0.1511
+P00488,11-06-2024,07:26,twiter,video,Post about brand building,#content #engagement,4217,"Useful breakdown, especially the last part",515,298,44615,0.1171
+P00489,09-11-2024,17:00,youtube,image,Post about analytics,#branding #growth #content,1721,This saves a lot of trial and error,138,560,22964,0.1084
+P00490,30-03-2024,20:41,instagram,image_caurosel,Post about analytics,#content #trends #growth,836,"Interesting approach, might test this soon",307,106,3877,0.3861
+P00491,07-12-2024,18:25,instagram,image_caurosel,Post about engagement tips,#strategy #digital,4651,This confirms what our data showed,758,292,57407,0.1053
+P00492,26-08-2024,02:45,facebook,image,Post about content strategy,#engagement #digital #branding,350,Easy to understand and practical,83,246,5965,0.1784
+P00493,07-07-2024,04:57,facebook,image,Post about content strategy,#strategy #analytics,1556,Simple but effective insight,558,181,7156,0.3277
+P00494,09-10-2024,08:13,instagram,image_caurosel,Post about engagement tips,#content #engagement,1882,This was genuinely helpful for my workflow,336,295,21734,0.1178
+P00495,13-08-2024,08:15,youtube,video,Post about growth,#content #strategy #socialmedia,3123,"Straight to the point, well done",0,96,18113,0.1894
+P00496,17-08-2024,01:56,youtube,video,Post about growth,#trends #engagement #analytics #content,2398,Makes sense when you see it laid out like this,218,59,26812,0.1109
+P00497,20-03-2024,05:12,youtube,video,Post about brand building,#digital #content #growth #strategy,4471,This actually answered a question I had,473,272,49805,0.1089
+P00498,17-10-2024,03:02,twiter,image,Post about content strategy,#branding #content #engagement #growth,2721,This saves a lot of trial and error,48,512,27061,0.131
+P00499,27-08-2024,03:15,facebook,image_caurosel,Post about analytics,#engagement #digital,4691,This gave me a new angle to think about,325,112,85930,0.0608
+P00500,19-06-2024,01:11,instagram,image_caurosel,Post about growth,#marketing #trends #engagement,3700,I wish more posts explained it this clearly,493,47,26452,0.1762
+P00501,15-09-2024,01:37,instagram,image_caurosel,Post about content strategy,#engagement #content #strategy,755,I tried something similar and got decent results,423,237,14697,0.1014
+P00502,26-11-2024,13:12,facebook,image,Post about growth,#socialmedia #marketing,4189,I wish more posts explained it this clearly,9,330,9097,0.5324
+P00503,07-09-2024,18:20,youtube,image,Post about content strategy,#trends #socialmedia #engagement,4089,This confirms what our data showed,382,101,80900,0.059
+P00504,26-09-2024,21:06,instagram,video,Post about engagement tips,#trends #marketing #socialmedia #digital,3126,Easy to understand and practical,106,503,9565,0.4127
+P00505,28-08-2024,08:42,youtube,image,Post about analytics,#trends #engagement #content,2541,This aligns with what I’ve been seeing lately,46,431,46143,0.0721
+P00506,31-05-2024,17:15,instagram,video,Post about growth,#engagement #strategy #analytics,4992,Easy to understand and practical,631,53,48503,0.1204
+P00507,01-09-2024,09:42,youtube,image_caurosel,Post about content strategy,#marketing #growth #trends #digital,2539,Appreciate the practical example here,649,546,5516,0.7431
+P00508,14-05-2024,22:45,twiter,video,Post about brand building,#socialmedia #growth,2000,This saves a lot of trial and error,750,390,16858,0.2092
+P00509,21-09-2024,05:54,twiter,image,Post about growth,#branding #engagement #marketing #strategy,3209,Appreciate the practical example here,354,157,55881,0.0708
+P00510,01-01-2024,02:09,instagram,image_caurosel,Post about content strategy,#marketing #socialmedia #engagement #branding,3303,Simple but effective insight,560,65,24714,0.1659
+P00511,06-09-2024,00:03,twiter,image_caurosel,Post about analytics,#strategy #digital #analytics,1039,Appreciate the practical example here,221,157,11126,0.1383
+P00512,09-06-2024,18:28,twiter,image,Post about brand building,#analytics #trends #digital #socialmedia,3266,"Straight to the point, well done",700,148,58915,0.0758
+P00513,21-12-2024,09:49,youtube,image,Post about content strategy,#branding #engagement,216,This confirms what our data showed,689,124,1062,1.3484
+P00514,22-03-2024,05:10,facebook,image_caurosel,Post about growth,#content #socialmedia,3676,Simple but effective insight,109,95,49440,0.0827
+P00515,06-05-2024,14:07,youtube,image,Post about content strategy,#growth #content,3766,"Interesting approach, might test this soon",679,53,57419,0.084
+P00516,20-08-2024,09:26,twiter,image,Post about growth,#content #digital,4405,This saves a lot of trial and error,370,130,54896,0.0901
+P00517,24-05-2024,19:58,youtube,image_caurosel,Post about engagement tips,#trends #engagement,1586,I wish more posts explained it this clearly,653,492,11557,0.2535
+P00518,11-05-2024,16:44,facebook,video,Post about engagement tips,#marketing #engagement,4100,Makes sense when you see it laid out like this,264,404,17635,0.2773
+P00519,24-06-2024,23:47,youtube,image,Post about analytics,#content #strategy #analytics,3131,This actually answered a question I had,656,126,39660,0.107
+P00520,15-06-2024,19:08,facebook,image,Post about brand building,#content #marketing,3703,"Useful breakdown, especially the last part",479,294,66378,0.0722
+P00521,01-10-2024,00:29,instagram,video,Post about analytics,#socialmedia #trends #growth #analytics,4121,Makes sense when you see it laid out like this,383,218,60115,0.085
+P00522,13-04-2024,21:29,instagram,image,Post about engagement tips,#growth #socialmedia,3447,This actually answered a question I had,380,590,46851,0.1041
+P00523,22-09-2024,11:36,instagram,video,Post about analytics,#trends #strategy,990,This confirms what our data showed,597,457,14563,0.1639
+P00524,06-08-2024,23:28,youtube,image,Post about brand building,#growth #marketing #analytics #strategy,2749,"Interesting approach, might test this soon",256,394,23439,0.156
+P00525,01-06-2024,09:28,instagram,video,Post about growth,#socialmedia #analytics,694,This gave me a new angle to think about,220,242,8879,0.1757
+P00526,18-12-2024,23:19,twiter,image_caurosel,Post about analytics,#digital #content #growth #marketing,806,I tried something similar and got decent results,389,156,15883,0.1024
+P00527,10-02-2024,23:17,twiter,image,Post about analytics,#analytics #engagement #trends,4040,Appreciate the practical example here,332,35,56884,0.0832
+P00528,20-08-2024,20:51,instagram,video,Post about growth,#branding #digital,2897,"Useful breakdown, especially the last part",777,137,41965,0.0996
+P00529,29-09-2024,12:14,twiter,image_caurosel,Post about growth,#content #digital #branding,1984,"Helpful context, thanks for sharing",654,102,38370,0.076
+P00530,28-04-2024,23:40,twiter,video,Post about engagement tips,#digital #content #socialmedia #strategy,4741,This was genuinely helpful for my workflow,721,225,43906,0.1321
+P00531,21-10-2024,20:20,instagram,image_caurosel,Post about engagement tips,#strategy #growth #engagement #marketing,293,"Helpful context, thanks for sharing",603,558,3493,0.5099
+P00532,21-04-2024,09:42,facebook,video,Post about engagement tips,#trends #growth #branding #engagement,2722,"Helpful context, thanks for sharing",483,0,48300,0.0692
+P00533,02-11-2024,10:01,youtube,image,Post about content strategy,#growth #analytics #strategy #trends,1555,This actually answered a question I had,746,202,11757,0.2306
+P00534,29-02-2024,08:48,instagram,image,Post about engagement tips,#strategy #digital #branding,3109,This was genuinely helpful for my workflow,769,151,9448,0.4434
+P00535,23-04-2024,13:16,twiter,image_caurosel,Post about content strategy,#marketing #strategy #branding,2754,Simple but effective insight,234,328,53856,0.0635
+P00536,18-04-2024,16:11,instagram,image,Post about growth,#engagement #trends #branding #analytics,3042,"Not groundbreaking, but very solid advice",119,376,25493,0.1413
+P00537,21-09-2024,08:35,facebook,image,Post about engagement tips,#analytics #growth #branding,398,Easy to understand and practical,351,430,7938,0.1892
+P00538,19-12-2024,01:12,facebook,image_caurosel,Post about brand building,#engagement #digital #trends #analytics,857,I tried something similar and got decent results,241,253,15411,0.0962
+P00539,08-04-2024,01:45,twiter,image_caurosel,Post about growth,#digital #socialmedia #engagement,1939,Simple but effective insight,435,530,33165,0.0906
+P00540,19-09-2024,04:55,instagram,image_caurosel,Post about content strategy,#trends #digital,4377,"Helpful context, thanks for sharing",178,98,72147,0.069
+P00541,10-02-2024,11:01,instagram,image,Post about analytics,#strategy #trends,3971,This aligns with what I’ve been seeing lately,346,407,31148,0.1676
+P00542,18-12-2024,04:06,facebook,video,Post about content strategy,#socialmedia #content #trends,3821,This confirms what our data showed,792,229,16945,0.2962
+P00543,23-01-2024,08:51,twiter,image,Post about brand building,#growth #engagement,2483,Appreciate the practical example here,640,393,32838,0.1146
+P00544,10-02-2024,23:04,youtube,video,Post about growth,#analytics #marketing #engagement #growth,1723,Easy to understand and practical,352,595,15671,0.1768
+P00545,04-12-2024,18:17,youtube,image,Post about analytics,#growth #trends #strategy,2123,Simple but effective insight,281,29,29045,0.1002
+P00546,15-01-2024,11:57,youtube,image,Post about engagement tips,#marketing #strategy #socialmedia #growth,4826,"Short and informative, I like it",276,134,68641,0.0794
+P00547,22-01-2024,15:11,facebook,video,Post about engagement tips,#strategy #content,3369,"Useful breakdown, especially the last part",712,139,35696,0.1294
+P00548,16-05-2024,20:23,youtube,video,Post about brand building,#analytics #strategy #growth #socialmedia,746,This was genuinely helpful for my workflow,244,118,8298,0.1913
+P00549,17-02-2024,01:26,facebook,image_caurosel,Post about growth,#engagement #growth #content,2741,This actually answered a question I had,236,320,17736,0.1897
+P00550,20-11-2024,15:10,youtube,image,Post about brand building,#digital #socialmedia,1738,This gave me a new angle to think about,146,568,32151,0.0888
+P00551,13-08-2024,16:37,facebook,video,Post about growth,#branding #marketing #engagement #trends,923,I wish more posts explained it this clearly,120,342,17985,0.0995
+P00552,20-10-2024,13:04,instagram,image_caurosel,Post about brand building,#digital #strategy #content #socialmedia,489,I wish more posts explained it this clearly,132,337,7486,0.1715
+P00553,13-05-2024,10:46,youtube,image,Post about engagement tips,#analytics #socialmedia #digital,3092,I tried something similar and got decent results,304,92,31987,0.1095
+P00554,02-05-2024,22:18,instagram,video,Post about content strategy,#growth #trends,4680,This saves a lot of trial and error,15,154,11432,0.4666
+P00555,10-05-2024,05:51,twiter,image_caurosel,Post about content strategy,#engagement #analytics #marketing #growth,3897,This gave me a new angle to think about,454,396,19214,0.2535
+P00556,05-02-2024,19:08,youtube,video,Post about brand building,#content #trends,3696,"Straight to the point, well done",681,593,65776,0.0818
+P00557,14-09-2024,06:36,twiter,image_caurosel,Post about engagement tips,#analytics #strategy #digital #engagement,1047,Clear explanation without unnecessary hype,601,234,15469,0.1333
+P00558,16-06-2024,19:11,twiter,image_caurosel,Post about engagement tips,#digital #strategy,205,This gave me a new angle to think about,113,256,1906,0.5551
+P00559,28-03-2024,08:58,twiter,image,Post about analytics,#branding #engagement #growth,2557,Easy to understand and practical,548,152,36345,0.0935
+P00560,25-03-2024,06:46,twiter,image_caurosel,Post about engagement tips,#content #engagement #trends,4862,Simple but effective insight,196,454,22143,0.2694
+P00561,05-07-2024,16:21,facebook,image,Post about content strategy,#analytics #digital,446,This saves a lot of trial and error,435,256,3354,0.4803
+P00562,19-09-2024,20:21,twiter,image_caurosel,Post about engagement tips,#socialmedia #branding,4364,Clear explanation without unnecessary hype,611,211,22391,0.2359
+P00563,18-04-2024,19:15,twiter,image,Post about content strategy,#marketing #socialmedia #trends #engagement,943,Appreciate the practical example here,303,563,17326,0.1143
+P00564,16-10-2024,13:12,facebook,image,Post about brand building,#engagement #marketing #branding,2164,"Useful breakdown, especially the last part",540,80,40571,0.0797
+P00565,01-03-2024,17:19,youtube,video,Post about analytics,#digital #branding #strategy #analytics,3307,Easy to understand and practical,668,364,54600,0.0879
+P00566,14-02-2024,12:22,facebook,video,Post about engagement tips,#branding #growth #analytics,1967,"Not groundbreaking, but very solid advice",797,44,7549,0.4141
+P00567,18-09-2024,05:01,facebook,image,Post about brand building,#engagement #analytics #content #branding,2468,This saves a lot of trial and error,183,591,9752,0.362
+P00568,25-03-2024,10:53,facebook,image_caurosel,Post about brand building,#analytics #trends,393,This actually answered a question I had,381,88,564,2.1259
+P00569,30-05-2024,04:34,twiter,image,Post about analytics,#engagement #analytics,938,This saves a lot of trial and error,518,161,14345,0.1362
+P00570,25-07-2024,17:20,facebook,image,Post about content strategy,#strategy #digital,1527,Easy to understand and practical,129,310,14166,0.144
+P00571,21-08-2024,20:36,youtube,video,Post about content strategy,#socialmedia #analytics #digital #strategy,825,I wish more posts explained it this clearly,783,548,9922,0.2584
+P00572,10-01-2024,13:50,twiter,image,Post about growth,#branding #socialmedia,4459,"Interesting approach, might test this soon",100,103,28085,0.179
+P00573,26-06-2024,20:51,youtube,image,Post about content strategy,#strategy #socialmedia #digital,2862,I tried something similar and got decent results,667,157,32822,0.1196
+P00574,29-06-2024,18:23,instagram,image,Post about analytics,#branding #socialmedia,4396,This gave me a new angle to think about,413,364,77017,0.0709
+P00575,02-12-2024,17:11,instagram,video,Post about brand building,#analytics #growth,3577,This aligns with what I’ve been seeing lately,40,41,40678,0.097
+P00576,14-12-2024,22:00,facebook,image_caurosel,Post about analytics,#growth #analytics,1186,Makes sense when you see it laid out like this,688,452,22204,0.1193
+P00577,29-09-2024,15:51,twiter,image_caurosel,Post about analytics,#digital #branding #engagement #content,1272,I tried something similar and got decent results,160,540,20171,0.1081
+P00578,05-07-2024,19:51,twiter,video,Post about growth,#engagement #strategy #analytics #marketing,3623,Good reminder of the basics,129,461,20579,0.219
+P00579,01-09-2024,15:02,youtube,image,Post about growth,#trends #content,3309,Good reminder of the basics,381,580,5131,0.8979
+P00580,29-04-2024,17:53,instagram,video,Post about content strategy,#trends #strategy #digital #growth,2188,This gave me a new angle to think about,670,458,7330,0.484
+P00581,08-08-2024,22:08,instagram,video,Post about analytics,#growth #trends,666,"Straight to the point, well done",423,126,9036,0.1545
+P00582,23-06-2024,00:33,instagram,image,Post about brand building,#trends #branding #analytics,241,"Helpful context, thanks for sharing",410,280,2607,0.3698
+P00583,20-08-2024,14:39,twiter,image_caurosel,Post about brand building,#engagement #analytics,3850,"Straight to the point, well done",292,410,9124,0.5048
+P00584,18-05-2024,18:22,twiter,image,Post about brand building,#digital #trends,3074,Good reminder of the basics,755,113,24638,0.1603
+P00585,05-06-2024,02:29,twiter,image_caurosel,Post about brand building,#marketing #digital,1214,This gave me a new angle to think about,180,23,20549,0.0903
+P00586,28-07-2024,00:04,twiter,video,Post about brand building,#digital #socialmedia #content #branding,4431,"Useful breakdown, especially the last part",264,339,37674,0.141
+P00587,10-01-2024,00:23,youtube,video,Post about growth,#strategy #trends,2886,This saves a lot of trial and error,426,25,22259,0.156
+P00588,18-02-2024,08:22,youtube,image_caurosel,Post about growth,#engagement #trends #growth #socialmedia,4918,This confirms what our data showed,346,73,74718,0.0763
+P00589,20-05-2024,19:35,facebook,image_caurosel,Post about growth,#strategy #marketing #analytics #content,4297,This saves a lot of trial and error,348,485,37197,0.1437
+P00590,24-06-2024,09:27,facebook,image_caurosel,Post about growth,#strategy #analytics #trends #engagement,1566,This saves a lot of trial and error,418,421,29329,0.0925
+P00591,30-10-2024,19:54,twiter,image,Post about growth,#content #branding,1479,"Straight to the point, well done",731,5,26214,0.0852
+P00592,03-05-2024,02:40,facebook,image_caurosel,Post about analytics,#socialmedia #engagement,4866,"Short and informative, I like it",108,461,32325,0.183
+P00593,27-02-2024,05:50,instagram,image,Post about analytics,#content #engagement #analytics,2706,This confirms what our data showed,445,323,33866,0.1168
+P00594,21-02-2024,03:04,facebook,video,Post about content strategy,#socialmedia #content,842,"Helpful context, thanks for sharing",463,574,15904,0.1343
+P00595,29-08-2024,13:31,facebook,image,Post about content strategy,#socialmedia #strategy #analytics #engagement,3142,"Interesting approach, might test this soon",702,140,43098,0.1028
+P00596,24-04-2024,22:52,instagram,video,Post about engagement tips,#strategy #analytics #growth,4933,"Straight to the point, well done",645,242,37431,0.1617
+P00597,25-06-2024,15:11,instagram,video,Post about engagement tips,#content #socialmedia,2762,"Short and informative, I like it",66,72,22847,0.1298
+P00598,19-01-2024,20:08,facebook,image,Post about engagement tips,#growth #digital #trends,4320,This confirms what our data showed,442,192,7883,0.6632
+P00599,14-05-2024,10:47,youtube,image_caurosel,Post about content strategy,#trends #socialmedia,1703,This was genuinely helpful for my workflow,798,4,32572,0.081
+P00600,18-07-2024,00:58,instagram,image_caurosel,Post about brand building,#analytics #engagement,4343,Good reminder of the basics,431,448,51056,0.1108
+P00601,19-10-2024,09:21,twiter,image_caurosel,Post about growth,#engagement #marketing,2238,"Not groundbreaking, but very solid advice",784,544,32945,0.1087
+P00602,01-08-2024,03:17,youtube,image,Post about growth,#strategy #growth #content #engagement,964,"Straight to the point, well done",743,491,3974,0.6563
+P00603,02-03-2024,13:44,facebook,video,Post about growth,#analytics #growth,2711,"Straight to the point, well done",622,1,47844,0.0753
+P00604,30-03-2024,13:42,facebook,video,Post about engagement tips,#branding #strategy,2709,This was genuinely helpful for my workflow,349,400,6681,0.5448
+P00605,13-04-2024,22:59,facebook,image,Post about growth,#content #growth #trends,2807,"Short and informative, I like it",423,210,51613,0.0712
+P00606,16-07-2024,17:07,instagram,image_caurosel,Post about growth,#trends #marketing #growth #strategy,679,Simple but effective insight,93,99,2431,0.4258
+P00607,13-11-2024,07:17,twiter,image_caurosel,Post about content strategy,#engagement #analytics #trends #strategy,4385,"Not groundbreaking, but very solid advice",232,578,59564,0.0907
+P00608,26-08-2024,15:19,twiter,video,Post about growth,#strategy #analytics #socialmedia #marketing,534,"Straight to the point, well done",309,223,9402,0.1262
+P00609,02-12-2024,00:34,twiter,image,Post about engagement tips,#engagement #marketing,1123,"Useful breakdown, especially the last part",20,164,17335,0.0804
+P00610,17-12-2024,11:20,twiter,image_caurosel,Post about growth,#branding #engagement #marketing #digital,2046,"Straight to the point, well done",332,138,29230,0.0908
+P00611,11-02-2024,04:07,instagram,video,Post about growth,#digital #analytics,3914,Easy to understand and practical,468,210,67394,0.075
+P00612,04-10-2024,21:01,facebook,video,Post about content strategy,#socialmedia #analytics,1604,This saves a lot of trial and error,643,387,19006,0.1407
+P00613,26-06-2024,06:16,instagram,video,Post about growth,#content #growth #branding #strategy,1000,I wish more posts explained it this clearly,205,577,13519,0.1427
+P00614,21-02-2024,08:09,facebook,video,Post about analytics,#strategy #analytics #growth,3529,"Straight to the point, well done",542,188,24884,0.1741
+P00615,04-04-2024,22:56,twiter,video,Post about growth,#socialmedia #strategy,1253,This was genuinely helpful for my workflow,400,78,16640,0.1151
+P00616,14-01-2024,02:06,twiter,image_caurosel,Post about brand building,#strategy #digital #trends,819,Makes sense when you see it laid out like this,588,579,10688,0.2224
+P00617,16-10-2024,21:34,youtube,image,Post about analytics,#analytics #content,3516,This saves a lot of trial and error,573,553,24803,0.2032
+P00618,28-04-2024,22:04,instagram,image,Post about engagement tips,#branding #trends #content #engagement,3578,"Useful breakdown, especially the last part",800,480,32584,0.1608
+P00619,29-12-2024,11:32,youtube,video,Post about engagement tips,#strategy #branding,4109,This actually answered a question I had,712,44,62725,0.0817
+P00620,23-02-2024,05:28,instagram,image,Post about engagement tips,#branding #strategy #digital #growth,4059,Easy to understand and practical,495,76,13328,0.3816
+P00621,09-03-2024,09:09,twiter,image,Post about content strategy,#content #engagement #marketing #socialmedia,3807,Simple but effective insight,18,572,15104,0.3038
+P00622,15-04-2024,04:36,instagram,video,Post about brand building,#marketing #growth #digital #engagement,3071,I tried something similar and got decent results,230,409,24772,0.1579
+P00623,14-03-2024,23:19,twiter,image,Post about engagement tips,#content #strategy #digital,4427,This gave me a new angle to think about,596,578,13182,0.4602
+P00624,21-05-2024,05:31,youtube,image_caurosel,Post about engagement tips,#content #strategy,4281,"Useful breakdown, especially the last part",238,227,67804,0.0721
+P00625,06-02-2024,07:30,youtube,image,Post about content strategy,#analytics #engagement #trends,1010,I tried something similar and got decent results,784,102,12728,0.1692
+P00626,24-03-2024,04:14,instagram,image,Post about engagement tips,#socialmedia #content,1700,"Useful breakdown, especially the last part",587,509,30003,0.1036
+P00627,30-04-2024,09:38,youtube,image,Post about analytics,#analytics #strategy,4219,"Short and informative, I like it",624,291,18167,0.3097
+P00628,23-08-2024,22:50,twiter,image,Post about content strategy,#digital #engagement,1145,Clear explanation without unnecessary hype,481,9,5781,0.3022
+P00629,27-04-2024,23:55,youtube,image_caurosel,Post about analytics,#growth #engagement #analytics #marketing,3233,Good reminder of the basics,260,460,13486,0.3032
+P00630,21-08-2024,04:17,instagram,image_caurosel,Post about brand building,#socialmedia #trends #strategy,2702,I wish more posts explained it this clearly,530,387,14618,0.2544
+P00631,23-03-2024,01:20,youtube,video,Post about growth,#strategy #digital #socialmedia,1879,I tried something similar and got decent results,758,107,16812,0.1707
+P00632,21-09-2024,18:47,instagram,image,Post about growth,#socialmedia #trends #content,1074,This aligns with what I’ve been seeing lately,552,520,4305,0.5559
+P00633,21-06-2024,11:07,instagram,image_caurosel,Post about brand building,#socialmedia #growth #strategy,479,Simple but effective insight,241,269,1267,0.9187
+P00634,03-01-2024,05:16,twiter,image_caurosel,Post about growth,#digital #growth,1148,This confirms what our data showed,639,10,1488,1.2372
+P00635,07-11-2024,16:33,youtube,image_caurosel,Post about growth,#analytics #marketing,98,Clear explanation without unnecessary hype,185,200,1374,0.5116
+P00636,24-02-2024,11:30,youtube,video,Post about analytics,#trends #engagement,2415,I tried something similar and got decent results,256,387,38249,0.0854
+P00637,07-07-2024,20:27,facebook,image_caurosel,Post about brand building,#trends #engagement #marketing,3609,Simple but effective insight,474,591,53556,0.0931
+P00638,11-01-2024,15:52,instagram,video,Post about growth,#socialmedia #branding #analytics,4208,"Not groundbreaking, but very solid advice",267,321,74187,0.0688
+P00639,15-01-2024,11:21,twiter,image_caurosel,Post about content strategy,#digital #growth #branding #marketing,4412,"Short and informative, I like it",228,394,69910,0.0738
+P00640,19-11-2024,14:16,twiter,image_caurosel,Post about engagement tips,#growth #socialmedia #engagement,252,"Short and informative, I like it",26,307,3032,0.2985
+P00641,22-02-2024,01:19,instagram,image,Post about brand building,#content #engagement #marketing #branding,1008,"Interesting approach, might test this soon",222,528,9434,0.2334
+P00642,24-05-2024,00:20,twiter,image_caurosel,Post about growth,#marketing #strategy #engagement #analytics,309,"Straight to the point, well done",475,54,4324,0.2414
+P00643,23-03-2024,12:38,youtube,video,Post about brand building,#marketing #trends #content #growth,765,"Not groundbreaking, but very solid advice",400,31,6903,0.2258
+P00644,10-01-2024,21:57,youtube,video,Post about analytics,#socialmedia #branding,4980,This saves a lot of trial and error,150,45,50194,0.1045
+P00645,29-07-2024,18:45,twiter,image_caurosel,Post about growth,#strategy #engagement,2846,This aligns with what I’ve been seeing lately,690,147,14820,0.2787
+P00646,07-11-2024,04:57,instagram,video,Post about growth,#growth #analytics #socialmedia #marketing,4768,"Short and informative, I like it",335,186,48296,0.1193
+P00647,04-10-2024,22:58,facebook,video,Post about analytics,#strategy #digital #branding,3151,This actually answered a question I had,368,503,8497,0.4932
+P00648,29-12-2024,13:19,facebook,image_caurosel,Post about analytics,#engagement #digital #content,1868,Clear explanation without unnecessary hype,471,577,19947,0.17
+P00649,18-05-2024,02:06,instagram,image_caurosel,Post about content strategy,#trends #content,3969,"Helpful context, thanks for sharing",60,273,44051,0.099
+P00650,06-12-2024,22:30,facebook,video,Post about content strategy,#socialmedia #strategy #engagement,1753,"Helpful context, thanks for sharing",534,597,13766,0.2126
+P00651,06-03-2024,12:02,twiter,video,Post about growth,#digital #analytics #engagement #content,3195,"Straight to the point, well done",565,22,47496,0.0835
+P00652,24-05-2024,17:53,facebook,image,Post about growth,#digital #trends #socialmedia,3643,"Short and informative, I like it",116,162,38711,0.1053
+P00653,17-12-2024,14:04,youtube,image,Post about growth,#analytics #strategy #marketing #growth,2233,"Useful breakdown, especially the last part",501,445,37989,0.0907
+P00654,24-04-2024,22:21,twiter,video,Post about brand building,#socialmedia #trends,549,"Interesting approach, might test this soon",349,23,10797,0.1285
+P00655,28-05-2024,14:48,facebook,image,Post about content strategy,#trends #growth,660,Clear explanation without unnecessary hype,553,513,2681,0.828
+P00656,14-12-2024,11:33,twiter,video,Post about content strategy,#marketing #strategy,1798,"Short and informative, I like it",398,435,22158,0.133
+P00657,08-02-2024,15:00,facebook,video,Post about analytics,#digital #strategy,4082,"Not groundbreaking, but very solid advice",77,192,51796,0.089
+P00658,22-09-2024,11:45,facebook,video,Post about engagement tips,#strategy #analytics #digital #marketing,1339,Good reminder of the basics,133,378,5789,0.4042
+P00659,03-09-2024,01:03,instagram,image,Post about growth,#analytics #digital #content #trends,1688,Clear explanation without unnecessary hype,297,492,19345,0.1299
+P00660,29-09-2024,17:17,instagram,image_caurosel,Post about analytics,#strategy #trends,1775,Clear explanation without unnecessary hype,645,450,31952,0.1031
+P00661,26-07-2024,04:54,youtube,video,Post about brand building,#branding #strategy,3589,I wish more posts explained it this clearly,44,60,57073,0.0732
+P00662,25-02-2024,16:54,twiter,image_caurosel,Post about brand building,#analytics #strategy,3843,"Interesting approach, might test this soon",445,428,46701,0.1055
+P00663,09-04-2024,11:11,twiter,image,Post about analytics,#strategy #trends #socialmedia,2894,"Useful breakdown, especially the last part",40,355,47256,0.0787
+P00664,08-12-2024,14:37,twiter,video,Post about brand building,#content #trends #socialmedia #analytics,4079,This aligns with what I’ve been seeing lately,421,338,42307,0.1172
+P00665,03-09-2024,21:48,twiter,image_caurosel,Post about analytics,#analytics #engagement,1251,Simple but effective insight,357,188,21355,0.0887
+P00666,24-12-2024,02:43,instagram,image,Post about brand building,#strategy #engagement #socialmedia #content,4788,"Interesting approach, might test this soon",773,257,15796,0.3948
+P00667,31-08-2024,02:55,twiter,image,Post about content strategy,#branding #marketing #growth #content,3109,Simple but effective insight,119,75,8920,0.3937
+P00668,03-02-2024,05:53,instagram,image_caurosel,Post about analytics,#digital #branding,4222,Easy to understand and practical,243,383,63988,0.0834
+P00669,17-05-2024,04:42,instagram,image,Post about analytics,#branding #content,2618,"Short and informative, I like it",446,141,30478,0.1151
+P00670,25-10-2024,02:13,facebook,video,Post about content strategy,#socialmedia #analytics,2458,"Helpful context, thanks for sharing",590,283,5209,0.722
+P00671,24-09-2024,06:51,youtube,image_caurosel,Post about analytics,#analytics #marketing #socialmedia #digital,1714,This confirms what our data showed,385,189,18527,0.1322
+P00672,11-09-2024,12:45,youtube,image,Post about brand building,#marketing #content #digital #trends,2987,This actually answered a question I had,115,526,34003,0.1116
+P00673,05-04-2024,06:34,youtube,image_caurosel,Post about analytics,#strategy #marketing #content #trends,3150,Appreciate the practical example here,617,55,39378,0.1058
+P00674,23-04-2024,00:26,instagram,image_caurosel,Post about analytics,#socialmedia #growth #trends,972,Makes sense when you see it laid out like this,574,446,18101,0.1153
+P00675,08-02-2024,22:29,facebook,image,Post about engagement tips,#socialmedia #content #branding #growth,4853,I tried something similar and got decent results,594,474,33585,0.1771
+P00676,22-07-2024,19:15,twiter,image,Post about growth,#analytics #digital,3073,"Not groundbreaking, but very solid advice",512,600,53138,0.0842
+P00677,08-01-2024,12:18,instagram,video,Post about brand building,#growth #marketing #strategy #socialmedia,4029,This saves a lot of trial and error,636,597,63623,0.0903
+P00678,05-11-2024,18:14,youtube,image_caurosel,Post about content strategy,#content #marketing #digital #engagement,847,"Not groundbreaking, but very solid advice",542,130,2311,0.6672
+P00679,26-02-2024,05:44,youtube,video,Post about engagement tips,#socialmedia #strategy #engagement #analytics,4470,"Interesting approach, might test this soon",426,473,28979,0.1927
+P00680,19-02-2024,22:55,facebook,image,Post about engagement tips,#engagement #analytics,806,"Helpful context, thanks for sharing",539,552,13182,0.1784
+P00681,05-04-2024,13:19,instagram,image,Post about growth,#content #growth #engagement,1744,I wish more posts explained it this clearly,343,526,17603,0.1617
+P00682,27-12-2024,11:18,twiter,image_caurosel,Post about analytics,#socialmedia #growth,3903,"Interesting approach, might test this soon",370,505,5478,0.893
+P00683,19-03-2024,08:58,twiter,image_caurosel,Post about content strategy,#engagement #strategy,790,"Straight to the point, well done",529,147,1497,1.2098
+P00684,01-11-2024,19:05,instagram,image,Post about brand building,#trends #analytics #strategy #growth,955,Appreciate the practical example here,115,532,1309,1.4805
+P00685,13-02-2024,09:29,youtube,video,Post about content strategy,#trends #content,1284,"Useful breakdown, especially the last part",64,542,14965,0.1279
+P00686,30-08-2024,05:00,twiter,video,Post about content strategy,#marketing #analytics #growth #trends,665,I tried something similar and got decent results,543,155,3443,0.4682
+P00687,22-12-2024,22:07,facebook,image,Post about content strategy,#strategy #engagement,513,Simple but effective insight,165,198,4855,0.1821
+P00688,26-06-2024,16:53,youtube,image_caurosel,Post about engagement tips,#growth #strategy,3684,Appreciate the practical example here,756,114,68309,0.0726
+P00689,28-03-2024,06:21,youtube,image,Post about growth,#trends #digital #socialmedia,1827,"Interesting approach, might test this soon",328,126,16272,0.1632
+P00690,26-05-2024,23:37,twiter,image_caurosel,Post about analytics,#marketing #analytics #branding,4209,Clear explanation without unnecessary hype,360,244,57452,0.0891
+P00691,17-06-2024,23:49,youtube,video,Post about analytics,#trends #branding #engagement,102,This gave me a new angle to think about,488,526,1098,1.2805
+P00692,23-03-2024,08:17,youtube,video,Post about growth,#strategy #engagement #trends #digital,1947,This actually answered a question I had,477,372,2207,1.4395
+P00693,17-09-2024,15:56,facebook,image,Post about content strategy,#socialmedia #content #marketing #engagement,4603,"Useful breakdown, especially the last part",637,456,14149,0.4091
+P00694,07-05-2024,10:36,facebook,video,Post about brand building,#content #engagement #growth #analytics,306,"Helpful context, thanks for sharing",552,199,4140,0.3051
+P00695,22-03-2024,16:40,facebook,video,Post about brand building,#engagement #branding,2833,I wish more posts explained it this clearly,714,282,47978,0.0807
+P00696,15-04-2024,08:29,facebook,image_caurosel,Post about content strategy,#content #analytics #branding #engagement,2917,I wish more posts explained it this clearly,478,62,8017,0.45
+P00697,09-07-2024,00:07,youtube,image_caurosel,Post about content strategy,#socialmedia #trends #growth,4391,This confirms what our data showed,461,557,49736,0.1159
+P00698,24-11-2024,02:46,youtube,image_caurosel,Post about brand building,#digital #growth,1621,Simple but effective insight,771,325,28985,0.1032
+P00699,15-06-2024,07:58,instagram,image_caurosel,Post about growth,#marketing #socialmedia #engagement #digital,3642,Simple but effective insight,576,181,21314,0.2088
+P00700,16-05-2024,01:39,instagram,video,Post about brand building,#branding #trends #content,1104,Good reminder of the basics,352,323,18885,0.11
+P00701,29-11-2024,19:23,twiter,video,Post about growth,#engagement #branding,1033,"Short and informative, I like it",186,518,4568,0.4135
+P00702,07-11-2024,18:43,instagram,image,Post about content strategy,#analytics #socialmedia #marketing,3301,"Straight to the point, well done",333,466,11929,0.3672
+P00703,05-03-2024,09:31,youtube,image_caurosel,Post about analytics,#marketing #branding #engagement #strategy,3001,Simple but effective insight,16,548,23986,0.155
+P00704,04-03-2024,22:06,youtube,video,Post about engagement tips,#trends #branding,4216,This aligns with what I’ve been seeing lately,338,93,22228,0.2121
+P00705,24-07-2024,11:14,facebook,video,Post about growth,#socialmedia #content #analytics #strategy,716,This actually answered a question I had,483,47,2717,0.64
+P00706,10-12-2024,06:24,facebook,image_caurosel,Post about content strategy,#strategy #growth #engagement #digital,4019,This confirms what our data showed,237,409,66504,0.0776
+P00707,29-09-2024,06:29,youtube,image,Post about brand building,#analytics #growth #marketing #strategy,2220,"Not groundbreaking, but very solid advice",284,222,36074,0.0871
+P00708,18-12-2024,01:43,instagram,image_caurosel,Post about content strategy,#digital #branding #trends,3795,This gave me a new angle to think about,7,528,4926,0.9614
+P00709,08-09-2024,17:44,twiter,image_caurosel,Post about content strategy,#strategy #socialmedia #digital,2462,Simple but effective insight,474,250,22855,0.1479
+P00710,30-08-2024,14:48,instagram,image,Post about brand building,#analytics #digital #trends,4968,This was genuinely helpful for my workflow,425,449,50897,0.1185
+P00711,29-01-2024,21:30,instagram,image_caurosel,Post about engagement tips,#growth #digital,1693,This was genuinely helpful for my workflow,324,348,31676,0.0777
+P00712,16-06-2024,08:15,instagram,image_caurosel,Post about growth,#marketing #strategy #growth #trends,2315,Clear explanation without unnecessary hype,24,214,21591,0.1398
+P00713,25-05-2024,07:47,facebook,image_caurosel,Post about analytics,#socialmedia #marketing,3518,This confirms what our data showed,648,148,13736,0.3431
+P00714,11-02-2024,02:18,facebook,image_caurosel,Post about analytics,#analytics #socialmedia #content #branding,1788,This actually answered a question I had,192,178,4303,0.6121
+P00715,20-02-2024,01:02,youtube,video,Post about analytics,#growth #content #branding #digital,63,This gave me a new angle to think about,557,293,772,1.6852
+P00716,25-12-2024,14:46,twiter,image_caurosel,Post about brand building,#marketing #growth #branding #trends,986,"Helpful context, thanks for sharing",158,128,2275,0.6941
+P00717,23-11-2024,18:23,facebook,video,Post about engagement tips,#strategy #engagement #trends #marketing,3014,This gave me a new angle to think about,711,463,3642,1.1741
+P00718,07-10-2024,12:01,facebook,image,Post about analytics,#engagement #growth #analytics #marketing,4115,"Not groundbreaking, but very solid advice",423,212,48064,0.1075
+P00719,20-04-2024,22:38,instagram,video,Post about growth,#socialmedia #marketing #analytics,856,Makes sense when you see it laid out like this,799,396,8289,0.2583
+P00720,04-06-2024,19:08,facebook,video,Post about brand building,#analytics #growth #socialmedia #trends,1245,Easy to understand and practical,773,565,19933,0.1448
+P00721,10-05-2024,02:19,youtube,image_caurosel,Post about content strategy,#socialmedia #branding #content #digital,4038,Clear explanation without unnecessary hype,786,311,56580,0.0991
+P00722,09-02-2024,16:13,facebook,image_caurosel,Post about analytics,#analytics #digital #trends,4225,Makes sense when you see it laid out like this,606,119,75676,0.0678
+P00723,06-08-2024,03:08,facebook,image_caurosel,Post about content strategy,#strategy #digital #growth #marketing,51,"Not groundbreaking, but very solid advice",80,428,133,4.3233
+P00724,26-02-2024,02:37,instagram,video,Post about content strategy,#trends #analytics,1619,Clear explanation without unnecessary hype,692,198,14902,0.17
+P00725,08-02-2024,12:07,facebook,video,Post about brand building,#branding #marketing #engagement,4878,"Useful breakdown, especially the last part",564,564,8417,0.7614
+P00726,27-12-2024,18:25,youtube,image,Post about analytics,#content #strategy,3627,"Short and informative, I like it",306,539,53273,0.0846
+P00727,23-05-2024,22:46,facebook,image_caurosel,Post about brand building,#marketing #growth,3304,Appreciate the practical example here,754,11,28309,0.1449
+P00728,07-06-2024,02:06,twiter,video,Post about growth,#engagement #marketing #strategy #socialmedia,2934,Good reminder of the basics,755,121,4319,0.9873
+P00729,12-06-2024,12:38,instagram,image_caurosel,Post about brand building,#growth #branding #analytics,1272,Good reminder of the basics,10,85,1682,0.9744
+P00730,10-12-2024,02:36,twiter,image_caurosel,Post about engagement tips,#strategy #engagement #trends,3656,"Helpful context, thanks for sharing",428,478,20024,0.234
+P00731,04-05-2024,01:25,twiter,image,Post about engagement tips,#strategy #analytics #digital #growth,90,"Not groundbreaking, but very solid advice",577,319,530,2.6698
+P00732,15-03-2024,15:21,instagram,video,Post about content strategy,#marketing #strategy #growth #socialmedia,4359,"Short and informative, I like it",577,367,30266,0.1914
+P00733,23-08-2024,04:54,instagram,image,Post about growth,#branding #growth #strategy #socialmedia,561,Good reminder of the basics,92,184,6810,0.1772
+P00734,07-01-2024,13:21,youtube,video,Post about content strategy,#strategy #engagement #digital,4515,This gave me a new angle to think about,732,596,18277,0.3336
+P00735,23-06-2024,15:53,youtube,image,Post about analytics,#engagement #socialmedia,1534,This saves a lot of trial and error,234,328,17673,0.1293
+P00736,21-11-2024,02:06,twiter,video,Post about brand building,#trends #marketing,4949,I wish more posts explained it this clearly,766,415,77865,0.082
+P00737,08-04-2024,08:49,twiter,image,Post about brand building,#marketing #growth #socialmedia,2287,This actually answered a question I had,488,375,13876,0.2324
+P00738,13-12-2024,07:51,youtube,image,Post about engagement tips,#analytics #socialmedia,2724,This saves a lot of trial and error,104,200,46909,0.0709
+P00739,04-05-2024,09:08,youtube,video,Post about engagement tips,#analytics #engagement,3486,This gave me a new angle to think about,752,588,20601,0.2368
+P00740,22-12-2024,16:54,facebook,video,Post about growth,#marketing #trends #engagement,2133,This aligns with what I’ve been seeing lately,195,310,32714,0.0901
+P00741,12-03-2024,21:16,facebook,video,Post about brand building,#digital #trends #socialmedia,1503,"Useful breakdown, especially the last part",441,24,29010,0.069
+P00742,23-06-2024,07:47,youtube,video,Post about content strategy,#analytics #socialmedia,571,"Short and informative, I like it",550,61,8980,0.1667
+P00743,28-05-2024,03:16,instagram,image,Post about content strategy,#trends #strategy #content,3748,"Useful breakdown, especially the last part",480,127,4986,0.9318
+P00744,19-08-2024,01:56,instagram,image,Post about analytics,#marketing #analytics,3589,"Useful breakdown, especially the last part",235,366,47656,0.0964
+P00745,20-03-2024,10:41,facebook,image,Post about analytics,#branding #content #analytics,2751,"Not groundbreaking, but very solid advice",471,64,49894,0.0732
+P00746,23-09-2024,22:58,youtube,image,Post about engagement tips,#analytics #trends,2461,This was genuinely helpful for my workflow,104,61,43826,0.0665
+P00747,07-05-2024,16:30,youtube,image,Post about growth,#trends #socialmedia #content,4592,This confirms what our data showed,277,535,26808,0.2061
+P00748,17-09-2024,04:43,instagram,image_caurosel,Post about analytics,#digital #branding,2786,I wish more posts explained it this clearly,551,236,55152,0.0708
+P00749,22-12-2024,20:03,twiter,video,Post about brand building,#digital #trends,3251,Makes sense when you see it laid out like this,56,536,17805,0.2386
+P00750,02-06-2024,15:24,twiter,image,Post about engagement tips,#trends #engagement #analytics,173,Good reminder of the basics,378,167,2348,0.4468
+P00751,27-04-2024,00:17,instagram,video,Post about brand building,#branding #growth,4170,"Short and informative, I like it",96,155,58240,0.0843
+P00752,23-08-2024,10:41,facebook,image_caurosel,Post about analytics,#analytics #branding #digital,2648,Good reminder of the basics,29,70,18824,0.1649
+P00753,22-09-2024,02:26,instagram,video,Post about content strategy,#digital #marketing #growth,1204,"Helpful context, thanks for sharing",768,283,21630,0.1203
+P00754,28-11-2024,14:46,instagram,image,Post about growth,#engagement #growth,95,Good reminder of the basics,507,168,1028,1.0457
+P00755,28-01-2024,15:18,youtube,video,Post about growth,#trends #analytics #content,2454,Simple but effective insight,276,400,43123,0.076
+P00756,06-07-2024,09:37,youtube,video,Post about growth,#socialmedia #content,1892,This actually answered a question I had,387,175,34886,0.077
+P00757,04-09-2024,14:46,youtube,image,Post about analytics,#trends #analytics #marketing,1146,This actually answered a question I had,145,442,8752,0.2198
+P00758,12-03-2024,02:47,twiter,image_caurosel,Post about growth,#branding #digital #strategy #marketing,1410,This actually answered a question I had,155,42,26413,0.0777
+P00759,17-02-2024,12:23,facebook,image_caurosel,Post about engagement tips,#engagement #trends #branding #content,2470,Simple but effective insight,374,336,17067,0.2109
+P00760,28-08-2024,23:51,twiter,image,Post about analytics,#strategy #content #analytics #marketing,1858,Good reminder of the basics,97,410,19123,0.1352
+P00761,26-09-2024,09:29,twiter,image_caurosel,Post about content strategy,#digital #engagement,2590,Clear explanation without unnecessary hype,363,0,12802,0.2325
+P00762,20-03-2024,13:31,twiter,image,Post about brand building,#engagement #digital #growth,4699,Makes sense when you see it laid out like this,779,489,78384,0.0772
+P00763,14-12-2024,11:54,instagram,video,Post about brand building,#strategy #branding,3141,"Not groundbreaking, but very solid advice",5,109,28142,0.1331
+P00764,02-02-2024,01:48,instagram,image,Post about brand building,#growth #strategy,4737,Simple but effective insight,219,370,57757,0.0987
+P00765,21-04-2024,15:51,instagram,image,Post about engagement tips,#growth #analytics #trends #content,4141,I tried something similar and got decent results,473,526,51875,0.1069
+P00766,14-07-2024,10:19,facebook,image,Post about engagement tips,#socialmedia #branding #growth #marketing,4943,This actually answered a question I had,782,576,90180,0.0741
+P00767,11-01-2024,12:24,instagram,video,Post about analytics,#content #branding #digital,4349,Good reminder of the basics,77,228,54955,0.0893
+P00768,19-03-2024,17:32,twiter,image_caurosel,Post about engagement tips,#growth #branding #socialmedia,3424,"Not groundbreaking, but very solid advice",209,62,15417,0.2426
+P00769,24-11-2024,11:45,twiter,image_caurosel,Post about growth,#marketing #digital #branding #engagement,4151,"Interesting approach, might test this soon",457,189,4659,1.1138
+P00770,07-04-2024,02:35,instagram,video,Post about brand building,#content #marketing #trends #branding,3126,"Short and informative, I like it",201,32,41524,0.0914
+P00771,27-07-2024,00:52,facebook,image,Post about brand building,#engagement #growth,2936,This actually answered a question I had,242,418,42041,0.0878
+P00772,09-04-2024,08:20,facebook,image,Post about content strategy,#digital #socialmedia,2108,Good reminder of the basics,109,38,9114,0.265
+P00773,30-06-2024,18:31,youtube,image_caurosel,Post about growth,#digital #socialmedia #branding,4432,Simple but effective insight,153,298,10192,0.5009
+P00774,19-12-2024,01:59,youtube,image,Post about growth,#engagement #digital #trends #growth,856,This actually answered a question I had,164,412,7585,0.2376
+P00775,26-07-2024,10:27,instagram,image_caurosel,Post about growth,#growth #engagement #trends,4663,This actually answered a question I had,695,547,49888,0.122
+P00776,26-02-2024,15:41,facebook,image_caurosel,Post about analytics,#growth #strategy #branding,4786,Good reminder of the basics,610,249,19951,0.2991
+P00777,23-05-2024,20:31,youtube,image,Post about brand building,#branding #strategy,3276,"Helpful context, thanks for sharing",468,206,50993,0.0822
+P00778,23-10-2024,23:31,twiter,image,Post about content strategy,#trends #marketing #growth,476,"Helpful context, thanks for sharing",193,526,7018,0.2294
+P00779,04-07-2024,03:43,instagram,image,Post about engagement tips,#trends #digital,684,This gave me a new angle to think about,567,74,2629,0.6219
+P00780,01-10-2024,21:16,instagram,video,Post about growth,#trends #marketing #growth #content,4857,This gave me a new angle to think about,90,461,18197,0.3205
+P00781,17-08-2024,23:07,facebook,video,Post about brand building,#socialmedia #digital,1352,Appreciate the practical example here,92,127,19606,0.096
+P00782,17-12-2024,05:34,twiter,image,Post about content strategy,#strategy #marketing #branding,3183,"Interesting approach, might test this soon",224,28,9774,0.359
+P00783,16-02-2024,05:29,facebook,image_caurosel,Post about brand building,#trends #socialmedia #strategy,514,Simple but effective insight,4,154,7101,0.1639
+P00784,28-11-2024,10:54,instagram,image_caurosel,Post about brand building,#analytics #content #marketing,4006,"Useful breakdown, especially the last part",150,566,19233,0.2696
+P00785,20-02-2024,05:19,facebook,image,Post about analytics,#socialmedia #content #trends #digital,307,"Interesting approach, might test this soon",261,209,4535,0.1881
+P00786,25-05-2024,16:17,youtube,video,Post about content strategy,#analytics #marketing,2433,This actually answered a question I had,776,146,30026,0.1276
+P00787,05-07-2024,03:59,instagram,video,Post about growth,#engagement #marketing #content #trends,3565,Appreciate the practical example here,120,329,40582,0.1109
+P00788,09-04-2024,03:20,instagram,image,Post about analytics,#content #marketing #analytics #growth,829,Easy to understand and practical,407,69,5861,0.2709
+P00789,11-10-2024,21:19,youtube,video,Post about analytics,#branding #analytics #socialmedia #strategy,2886,Appreciate the practical example here,617,332,5921,0.6504
+P00790,24-11-2024,19:32,instagram,image_caurosel,Post about content strategy,#engagement #branding #growth #digital,798,This confirms what our data showed,313,285,7500,0.2199
+P00791,06-10-2024,03:09,twiter,image_caurosel,Post about engagement tips,#content #socialmedia,409,This saves a lot of trial and error,225,32,5759,0.1542
+P00792,15-09-2024,01:47,youtube,video,Post about content strategy,#engagement #socialmedia,4441,Appreciate the practical example here,118,80,78496,0.065
+P00793,12-03-2024,20:05,twiter,image,Post about analytics,#socialmedia #analytics #engagement,2402,Simple but effective insight,484,548,30317,0.1252
+P00794,08-10-2024,01:13,instagram,video,Post about growth,#strategy #growth,3936,This gave me a new angle to think about,557,101,47693,0.1042
+P00795,17-11-2024,05:39,instagram,image,Post about brand building,#growth #digital #content #engagement,4299,I tried something similar and got decent results,562,400,85022,0.0665
+P00796,28-10-2024,03:39,instagram,video,Post about content strategy,#engagement #trends #marketing,3966,I wish more posts explained it this clearly,537,525,60360,0.0834
+P00797,11-02-2024,10:09,youtube,image,Post about content strategy,#strategy #trends #growth,3305,Good reminder of the basics,777,329,16237,0.2969
+P00798,17-10-2024,15:08,instagram,image_caurosel,Post about brand building,#branding #content,405,Appreciate the practical example here,604,137,6169,0.2423
+P00799,11-10-2024,10:04,twiter,image,Post about content strategy,#socialmedia #analytics #engagement,4209,"Useful breakdown, especially the last part",610,310,19756,0.2602
+P00800,30-03-2024,18:29,youtube,video,Post about growth,#content #digital #trends #engagement,1239,"Short and informative, I like it",357,25,13309,0.1487
+P00801,25-08-2024,19:03,facebook,video,Post about analytics,#digital #socialmedia #trends,3456,"Useful breakdown, especially the last part",155,577,24312,0.1881
+P00802,22-08-2024,05:13,instagram,video,Post about analytics,#analytics #branding,2751,This was genuinely helpful for my workflow,601,268,30055,0.1228
+P00803,25-01-2024,21:34,youtube,image,Post about content strategy,#analytics #strategy,4717,"Interesting approach, might test this soon",635,497,56604,0.1092
+P00804,10-03-2024,21:31,youtube,video,Post about analytics,#digital #engagement #content,934,"Useful breakdown, especially the last part",610,151,13325,0.1408
+P00805,17-06-2024,19:42,youtube,video,Post about growth,#content #trends #engagement,4339,This saves a lot of trial and error,550,316,17347,0.3078
+P00806,20-02-2024,09:12,facebook,image_caurosel,Post about engagement tips,#growth #marketing,4763,"Straight to the point, well done",89,19,48925,0.1095
+P00807,07-08-2024,18:18,facebook,image,Post about engagement tips,#analytics #content #trends,1817,This actually answered a question I had,614,55,11706,0.2132
+P00808,28-11-2024,13:16,facebook,image_caurosel,Post about analytics,#trends #marketing #growth,2959,Makes sense when you see it laid out like this,448,515,49650,0.0815
+P00809,28-08-2024,22:55,facebook,image_caurosel,Post about content strategy,#socialmedia #strategy,4633,This confirms what our data showed,36,373,20302,0.2532
+P00810,09-04-2024,10:51,youtube,image,Post about analytics,#trends #digital,3404,Makes sense when you see it laid out like this,640,206,61317,0.0756
+P00811,25-08-2024,09:10,instagram,image,Post about engagement tips,#engagement #socialmedia #digital #growth,2702,Clear explanation without unnecessary hype,578,581,18338,0.2363
+P00812,01-06-2024,23:25,instagram,image,Post about engagement tips,#socialmedia #digital #analytics #engagement,4082,This saves a lot of trial and error,191,430,39374,0.1264
+P00813,07-09-2024,23:25,instagram,image,Post about brand building,#strategy #marketing #branding #growth,3680,"Short and informative, I like it",454,31,33434,0.1251
+P00814,30-09-2024,03:37,twiter,video,Post about engagement tips,#engagement #branding #trends #socialmedia,3647,This saves a lot of trial and error,55,40,23797,0.1607
+P00815,07-12-2024,07:00,twiter,image_caurosel,Post about content strategy,#engagement #digital #socialmedia #marketing,711,"Short and informative, I like it",13,433,2473,0.6644
+P00816,17-02-2024,12:56,youtube,image,Post about content strategy,#growth #digital,2159,"Straight to the point, well done",554,363,6585,0.5024
+P00817,24-05-2024,20:08,youtube,image_caurosel,Post about engagement tips,#digital #branding #marketing #strategy,3607,"Interesting approach, might test this soon",771,400,17077,0.2813
+P00818,26-06-2024,07:59,instagram,image,Post about analytics,#strategy #digital #trends,4577,Appreciate the practical example here,419,400,52776,0.1057
+P00819,07-08-2024,05:36,instagram,image,Post about analytics,#socialmedia #growth #strategy #branding,4492,Makes sense when you see it laid out like this,456,276,52545,0.1045
+P00820,12-11-2024,20:41,youtube,image,Post about engagement tips,#strategy #digital,1143,"Interesting approach, might test this soon",143,92,22326,0.0766
+P00821,15-09-2024,00:57,instagram,video,Post about engagement tips,#strategy #branding #marketing #analytics,1048,This gave me a new angle to think about,792,49,13672,0.1508
+P00822,26-06-2024,04:01,instagram,image,Post about content strategy,#trends #digital #branding,4921,Easy to understand and practical,647,477,60467,0.1069
+P00823,11-12-2024,00:28,instagram,image,Post about engagement tips,#marketing #socialmedia #trends,3358,"Helpful context, thanks for sharing",420,2,10911,0.3529
+P00824,25-01-2024,16:14,twiter,video,Post about analytics,#socialmedia #branding #trends,4064,I wish more posts explained it this clearly,329,484,11835,0.4373
+P00825,28-05-2024,23:30,facebook,image_caurosel,Post about brand building,#engagement #strategy,1956,I wish more posts explained it this clearly,218,31,20374,0.1153
+P00826,24-02-2024,15:49,instagram,video,Post about analytics,#socialmedia #engagement #marketing #strategy,727,Appreciate the practical example here,546,77,6511,0.2338
+P00827,26-07-2024,16:29,instagram,image,Post about analytics,#analytics #trends,3427,Easy to understand and practical,784,473,12037,0.425
+P00828,22-01-2024,23:21,facebook,video,Post about brand building,#analytics #socialmedia #growth,4345,I wish more posts explained it this clearly,296,114,70424,0.0678
+P00829,12-08-2024,11:21,facebook,image_caurosel,Post about content strategy,#trends #engagement,1002,"Straight to the point, well done",478,109,5983,0.3289
+P00830,07-04-2024,07:03,youtube,video,Post about growth,#branding #strategy,3653,I wish more posts explained it this clearly,113,205,12558,0.322
+P00831,31-01-2024,18:03,instagram,video,Post about brand building,#engagement #digital,3207,Makes sense when you see it laid out like this,670,519,19194,0.237
+P00832,23-01-2024,16:09,instagram,image_caurosel,Post about engagement tips,#branding #trends #content,1195,This gave me a new angle to think about,779,308,19086,0.1315
+P00833,16-04-2024,08:32,instagram,image,Post about engagement tips,#digital #trends,2375,This actually answered a question I had,430,239,22614,0.1512
+P00834,22-03-2024,17:51,facebook,video,Post about content strategy,#content #growth #socialmedia #strategy,3647,I wish more posts explained it this clearly,26,450,72310,0.0623
+P00835,26-06-2024,20:07,instagram,image,Post about analytics,#strategy #content,2640,"Not groundbreaking, but very solid advice",189,551,33341,0.1153
+P00836,15-08-2024,16:34,youtube,video,Post about content strategy,#digital #content,1123,Good reminder of the basics,304,459,4645,0.4407
+P00837,12-10-2024,12:12,facebook,image,Post about content strategy,#digital #marketing #engagement,3173,This saves a lot of trial and error,744,586,40991,0.1187
+P00838,25-09-2024,04:36,youtube,video,Post about engagement tips,#content #digital #growth #engagement,3983,I wish more posts explained it this clearly,203,21,12717,0.3535
+P00839,24-06-2024,20:46,youtube,video,Post about content strategy,#digital #strategy #engagement #branding,4389,"Straight to the point, well done",444,373,32840,0.1659
+P00840,03-08-2024,23:36,facebook,image_caurosel,Post about content strategy,#branding #trends #marketing #engagement,3781,"Straight to the point, well done",581,572,72329,0.069
+P00841,25-09-2024,17:11,facebook,image,Post about growth,#growth #digital,4957,Makes sense when you see it laid out like this,250,317,45249,0.1315
+P00842,15-02-2024,05:09,instagram,video,Post about analytics,#branding #growth #strategy #socialmedia,2466,This was genuinely helpful for my workflow,744,376,47616,0.0817
+P00843,10-10-2024,07:46,facebook,video,Post about engagement tips,#strategy #growth,4537,Good reminder of the basics,162,513,67698,0.0787
+P00844,10-08-2024,06:34,facebook,image_caurosel,Post about engagement tips,#analytics #branding #growth,926,This was genuinely helpful for my workflow,235,535,12235,0.1595
+P00845,24-12-2024,12:16,instagram,image,Post about engagement tips,#analytics #marketing,202,This aligns with what I’ve been seeing lately,441,218,1892,0.6496
+P00846,14-06-2024,12:34,facebook,image_caurosel,Post about growth,#branding #content #growth,3052,This gave me a new angle to think about,783,302,31098,0.1393
+P00847,27-01-2024,11:14,youtube,image_caurosel,Post about brand building,#engagement #content #marketing #socialmedia,1900,Appreciate the practical example here,133,409,37679,0.0721
+P00848,04-04-2024,14:03,facebook,video,Post about analytics,#engagement #digital #marketing,1449,"Short and informative, I like it",779,557,15786,0.2066
+P00849,22-01-2024,13:27,facebook,image_caurosel,Post about analytics,#growth #trends #analytics,3065,This confirms what our data showed,272,421,13768,0.2777
+P00850,27-08-2024,13:26,instagram,image,Post about growth,#branding #growth,1079,This actually answered a question I had,31,190,19069,0.0907
+P00851,22-05-2024,09:17,facebook,video,Post about growth,#strategy #trends #socialmedia #engagement,541,I wish more posts explained it this clearly,650,143,7488,0.191
+P00852,12-05-2024,10:26,facebook,image,Post about brand building,#branding #socialmedia #strategy #digital,2117,This confirms what our data showed,176,57,32927,0.0851
+P00853,21-07-2024,13:58,youtube,image,Post about brand building,#growth #engagement #marketing #analytics,2273,Easy to understand and practical,472,253,44771,0.0753
+P00854,18-02-2024,13:54,facebook,video,Post about brand building,#trends #branding #digital,4489,Easy to understand and practical,733,44,20065,0.2724
+P00855,28-07-2024,08:35,twiter,image,Post about analytics,#engagement #socialmedia #content #branding,995,"Not groundbreaking, but very solid advice",120,593,13925,0.1534
+P00856,27-06-2024,19:34,instagram,image_caurosel,Post about brand building,#content #growth,3097,Appreciate the practical example here,707,19,40194,0.1007
+P00857,16-10-2024,07:56,instagram,image_caurosel,Post about engagement tips,#growth #content,2730,Easy to understand and practical,139,324,36890,0.0942
+P00858,01-04-2024,11:41,instagram,video,Post about engagement tips,#branding #digital #trends,1699,"Helpful context, thanks for sharing",734,47,13015,0.2121
+P00859,10-05-2024,22:58,youtube,image,Post about growth,#trends #strategy,3902,Good reminder of the basics,307,31,29168,0.1533
+P00860,08-10-2024,10:52,twiter,video,Post about growth,#growth #content #engagement #strategy,490,Clear explanation without unnecessary hype,671,1,2361,0.504
+P00861,07-06-2024,19:43,instagram,video,Post about brand building,#digital #growth #socialmedia,3887,"Useful breakdown, especially the last part",93,6,11367,0.3921
+P00862,09-03-2024,13:21,instagram,image,Post about analytics,#branding #trends #strategy,1800,Appreciate the practical example here,400,471,24275,0.1296
+P00863,07-02-2024,17:07,instagram,image,Post about growth,#trends #engagement #digital,4721,This actually answered a question I had,443,309,46684,0.1173
+P00864,13-12-2024,03:16,facebook,video,Post about engagement tips,#growth #digital #marketing,2483,This was genuinely helpful for my workflow,292,109,24700,0.1207
+P00865,10-11-2024,00:12,instagram,image,Post about brand building,#strategy #engagement,4569,This gave me a new angle to think about,30,187,77636,0.0645
+P00866,08-09-2024,02:34,facebook,image,Post about growth,#growth #digital,3795,This saves a lot of trial and error,167,42,65494,0.0641
+P00867,05-10-2024,22:06,facebook,video,Post about content strategy,#strategy #content #analytics,1613,"Short and informative, I like it",343,340,1761,1.4191
+P00868,31-07-2024,21:27,facebook,image,Post about growth,#content #digital #strategy #socialmedia,2822,"Not groundbreaking, but very solid advice",665,326,50707,0.0789
+P00869,21-02-2024,09:17,twiter,image_caurosel,Post about content strategy,#content #engagement #trends #marketing,637,This confirms what our data showed,566,40,3445,0.411
+P00870,03-09-2024,03:11,facebook,image_caurosel,Post about growth,#branding #marketing,4331,I tried something similar and got decent results,667,524,83803,0.0681
+P00871,06-10-2024,16:28,twiter,video,Post about growth,#branding #socialmedia #trends,3454,Simple but effective insight,88,586,18500,0.2301
+P00872,17-07-2024,14:07,twiter,video,Post about engagement tips,#content #branding,3085,I wish more posts explained it this clearly,229,373,5317,0.7583
+P00873,11-06-2024,06:20,youtube,video,Post about content strategy,#trends #analytics #strategy #marketing,2094,"Straight to the point, well done",494,326,7651,0.3965
+P00874,17-05-2024,02:10,youtube,video,Post about analytics,#trends #marketing #strategy #analytics,2872,This actually answered a question I had,601,423,29077,0.144
+P00875,13-01-2024,21:31,instagram,image_caurosel,Post about content strategy,#branding #engagement,3436,This confirms what our data showed,600,350,51674,0.0926
+P00876,27-09-2024,15:31,facebook,image,Post about content strategy,#growth #strategy #branding,626,This actually answered a question I had,599,490,11556,0.1649
+P00877,01-04-2024,08:50,instagram,video,Post about brand building,#socialmedia #growth,3457,"Straight to the point, well done",436,176,60148,0.0688
+P00878,30-01-2024,16:26,youtube,video,Post about growth,#marketing #analytics #trends #content,363,"Not groundbreaking, but very solid advice",174,482,692,1.9783
+P00879,16-10-2024,08:21,facebook,video,Post about brand building,#digital #socialmedia #trends,2941,"Useful breakdown, especially the last part",723,584,32170,0.1433
+P00880,24-04-2024,08:24,facebook,image_caurosel,Post about growth,#content #strategy,3505,"Straight to the point, well done",789,5,55993,0.079
+P00881,14-02-2024,10:01,youtube,image_caurosel,Post about brand building,#branding #analytics #marketing,3349,"Straight to the point, well done",293,404,61761,0.0696
+P00882,19-10-2024,07:37,instagram,video,Post about analytics,#socialmedia #analytics #digital,4442,This actually answered a question I had,522,58,27962,0.1855
+P00883,09-05-2024,03:14,youtube,image,Post about engagement tips,#growth #digital #content #analytics,3900,I wish more posts explained it this clearly,708,147,5314,0.9563
+P00884,18-09-2024,13:07,twiter,image,Post about brand building,#analytics #growth #branding,4628,This gave me a new angle to think about,501,518,91214,0.0648
+P00885,05-02-2024,10:32,facebook,video,Post about engagement tips,#strategy #trends #analytics,924,"Interesting approach, might test this soon",664,300,17748,0.1303
+P00886,03-05-2024,07:10,facebook,image,Post about brand building,#analytics #strategy,2866,This gave me a new angle to think about,135,365,46087,0.0766
+P00887,21-04-2024,23:37,youtube,video,Post about analytics,#strategy #engagement #branding,4046,"Short and informative, I like it",113,64,33975,0.1317
+P00888,04-04-2024,23:26,twiter,image,Post about brand building,#engagement #digital,4372,"Straight to the point, well done",354,226,15561,0.3198
+P00889,21-01-2024,03:54,youtube,video,Post about content strategy,#growth #content #strategy,1704,"Useful breakdown, especially the last part",463,585,25875,0.1204
+P00890,15-12-2024,05:50,youtube,image,Post about brand building,#engagement #strategy #trends,2979,This saves a lot of trial and error,305,435,51567,0.0802
+P00891,29-10-2024,16:52,youtube,image,Post about brand building,#content #trends #growth #marketing,4693,"Useful breakdown, especially the last part",292,140,44849,0.1229
+P00892,15-07-2024,12:09,youtube,video,Post about engagement tips,#branding #socialmedia,2331,Good reminder of the basics,46,339,30386,0.0899
+P00893,04-12-2024,21:56,instagram,image,Post about analytics,#trends #socialmedia,3125,Good reminder of the basics,610,165,19489,0.2038
+P00894,03-03-2024,14:41,facebook,video,Post about engagement tips,#content #trends,3451,Makes sense when you see it laid out like this,156,104,28203,0.1469
+P00895,25-10-2024,05:19,facebook,image_caurosel,Post about brand building,#engagement #branding #content,1780,Makes sense when you see it laid out like this,475,215,20587,0.1374
+P00896,05-11-2024,14:56,instagram,image_caurosel,Post about analytics,#analytics #engagement #strategy #socialmedia,3353,"Not groundbreaking, but very solid advice",675,445,50629,0.0919
+P00897,24-02-2024,16:22,twiter,video,Post about growth,#content #digital #trends #branding,3952,Clear explanation without unnecessary hype,113,177,76185,0.0598
+P00898,17-08-2024,13:58,instagram,image,Post about engagement tips,#strategy #digital #trends #engagement,1784,This saves a lot of trial and error,636,350,10889,0.2827
+P00899,05-09-2024,00:30,instagram,image,Post about brand building,#socialmedia #strategy,3629,"Not groundbreaking, but very solid advice",414,576,62192,0.0753
+P00900,26-09-2024,00:46,instagram,image,Post about engagement tips,#digital #growth #strategy,4137,Clear explanation without unnecessary hype,488,431,32214,0.1607
+P00901,23-06-2024,14:00,facebook,video,Post about brand building,#digital #content #branding,379,"Interesting approach, might test this soon",285,409,5023,0.259
+P00902,26-02-2024,05:25,twiter,image_caurosel,Post about brand building,#socialmedia #branding,2718,"Not groundbreaking, but very solid advice",89,110,47780,0.0671
+P00903,17-04-2024,03:24,youtube,image,Post about brand building,#growth #digital #branding,3740,"Interesting approach, might test this soon",761,231,21924,0.2325
+P00904,19-05-2024,17:02,facebook,video,Post about brand building,#digital #analytics #marketing,1597,This was genuinely helpful for my workflow,311,301,14035,0.1808
+P00905,12-07-2024,10:21,youtube,image_caurosel,Post about growth,#engagement #trends,1231,Clear explanation without unnecessary hype,557,61,3359,0.6052
+P00906,21-11-2024,18:49,instagram,image_caurosel,Post about content strategy,#branding #analytics,3634,This actually answered a question I had,441,228,10260,0.4321
+P00907,30-05-2024,21:34,youtube,video,Post about growth,#content #analytics #marketing,3744,"Not groundbreaking, but very solid advice",620,460,54233,0.0919
+P00908,05-12-2024,07:05,twiter,video,Post about brand building,#branding #trends #digital,1573,Good reminder of the basics,291,56,7146,0.2754
+P00909,16-04-2024,00:51,facebook,image,Post about brand building,#growth #strategy #engagement,4800,This was genuinely helpful for my workflow,434,111,86622,0.0673
+P00910,15-05-2024,17:27,twiter,video,Post about content strategy,#content #marketing #trends #analytics,1937,Simple but effective insight,797,126,9985,0.3103
+P00911,02-11-2024,07:28,youtube,image_caurosel,Post about growth,#socialmedia #content,3713,I tried something similar and got decent results,271,81,68768,0.0615
+P00912,19-01-2024,13:38,instagram,video,Post about analytics,#strategy #digital,4928,"Short and informative, I like it",737,211,49600,0.1285
+P00913,14-12-2024,01:03,youtube,image_caurosel,Post about brand building,#branding #digital,1098,Appreciate the practical example here,178,419,8728,0.2246
+P00914,10-12-2024,14:04,instagram,image_caurosel,Post about analytics,#trends #strategy #content,1070,"Straight to the point, well done",635,577,10055,0.2718
+P00915,05-12-2024,11:03,facebook,image,Post about analytics,#branding #digital,2254,Clear explanation without unnecessary hype,166,587,30400,0.1118
+P00916,14-02-2024,10:58,twiter,image,Post about analytics,#trends #growth #strategy,1199,"Straight to the point, well done",371,24,6044,0.278
+P00917,18-12-2024,19:45,facebook,image_caurosel,Post about engagement tips,#digital #trends,3448,This gave me a new angle to think about,240,145,31456,0.1358
+P00918,11-05-2024,08:18,instagram,image_caurosel,Post about growth,#marketing #analytics,4384,This gave me a new angle to think about,539,238,16856,0.3245
+P00919,26-10-2024,00:23,twiter,video,Post about growth,#branding #analytics,1161,"Not groundbreaking, but very solid advice",590,511,20035,0.1178
+P00920,19-12-2024,17:57,instagram,video,Post about content strategy,#analytics #growth #engagement,4271,Easy to understand and practical,187,299,68291,0.0738
+P00921,02-03-2024,20:16,twiter,video,Post about analytics,#marketing #socialmedia #content,2802,"Helpful context, thanks for sharing",760,474,32902,0.1355
+P00922,01-05-2024,07:51,instagram,video,Post about analytics,#content #branding #marketing #analytics,3285,Easy to understand and practical,395,225,12310,0.3183
+P00923,17-03-2024,19:30,youtube,image,Post about analytics,#engagement #analytics #socialmedia,3023,"Not groundbreaking, but very solid advice",174,448,21068,0.1901
+P00924,26-03-2024,10:22,facebook,image_caurosel,Post about growth,#content #trends #analytics #branding,2910,"Helpful context, thanks for sharing",476,513,23085,0.1715
+P00925,12-02-2024,13:11,twiter,image,Post about growth,#analytics #growth,734,Appreciate the practical example here,145,9,5813,0.2002
+P00926,18-08-2024,11:43,youtube,image_caurosel,Post about analytics,#digital #analytics #engagement,2059,"Not groundbreaking, but very solid advice",596,67,23917,0.1163
+P00927,01-12-2024,08:35,instagram,image_caurosel,Post about analytics,#engagement #analytics,2715,This gave me a new angle to think about,93,55,6621,0.4679
+P00928,15-05-2024,21:33,youtube,video,Post about engagement tips,#branding #content #analytics #trends,4805,Appreciate the practical example here,519,339,27282,0.2078
+P00929,31-01-2024,20:56,youtube,video,Post about growth,#marketing #socialmedia,301,This confirms what our data showed,721,18,2877,0.472
+P00930,16-07-2024,11:48,twiter,image_caurosel,Post about growth,#growth #engagement,386,This saves a lot of trial and error,215,451,2304,0.6454
+P00931,08-05-2024,13:27,facebook,image,Post about brand building,#strategy #content,1038,This aligns with what I’ve been seeing lately,421,365,7384,0.2883
+P00932,12-07-2024,00:55,facebook,video,Post about analytics,#strategy #marketing #analytics #digital,3739,This gave me a new angle to think about,39,227,39810,0.1061
+P00933,14-08-2024,16:36,twiter,image_caurosel,Post about analytics,#strategy #analytics #branding,1637,Appreciate the practical example here,779,293,17487,0.1666
+P00934,05-12-2024,17:50,facebook,video,Post about content strategy,#digital #marketing #trends,2725,This actually answered a question I had,107,60,44297,0.0751
+P00935,01-02-2024,12:12,twiter,image,Post about analytics,#trends #branding #growth #content,2011,I wish more posts explained it this clearly,730,186,33434,0.0994
+P00936,04-02-2024,21:49,youtube,image_caurosel,Post about brand building,#branding #marketing #engagement #growth,1948,This gave me a new angle to think about,693,263,23525,0.1356
+P00937,15-01-2024,20:26,youtube,image_caurosel,Post about content strategy,#analytics #trends,90,This confirms what our data showed,357,189,257,4.2724
+P00938,16-05-2024,21:47,facebook,video,Post about engagement tips,#digital #analytics #strategy #engagement,1393,Clear explanation without unnecessary hype,258,285,12962,0.1813
+P00939,26-04-2024,08:58,youtube,video,Post about content strategy,#engagement #marketing #content,2146,Makes sense when you see it laid out like this,758,40,22953,0.1409
+P00940,18-12-2024,01:03,facebook,image,Post about brand building,#marketing #trends #growth #engagement,3580,"Helpful context, thanks for sharing",215,503,16681,0.2776
+P00941,08-01-2024,04:34,instagram,image_caurosel,Post about brand building,#growth #digital,1637,"Helpful context, thanks for sharing",670,71,5885,0.4556
+P00942,19-03-2024,05:16,youtube,video,Post about analytics,#content #socialmedia #analytics,2773,Appreciate the practical example here,73,344,51923,0.0677
+P00943,18-04-2024,15:47,youtube,video,Post about content strategy,#trends #branding #digital #socialmedia,4770,This saves a lot of trial and error,785,597,16854,0.3724
+P00944,14-08-2024,21:37,instagram,image_caurosel,Post about growth,#socialmedia #trends,2519,Clear explanation without unnecessary hype,700,4,17068,0.2076
+P00945,06-12-2024,07:38,youtube,video,Post about growth,#content #branding #trends #engagement,2357,This actually answered a question I had,607,544,12959,0.2839
+P00946,17-05-2024,02:17,facebook,image_caurosel,Post about growth,#marketing #digital #socialmedia,2341,I tried something similar and got decent results,196,10,15302,0.1824
+P00947,13-01-2024,02:44,facebook,video,Post about growth,#marketing #analytics #branding,364,This aligns with what I’ve been seeing lately,211,383,6604,0.1725
+P00948,30-12-2024,16:21,twiter,image_caurosel,Post about engagement tips,#strategy #engagement #branding,2065,This aligns with what I’ve been seeing lately,39,182,16719,0.1559
+P00949,21-12-2024,09:50,twiter,image,Post about engagement tips,#engagement #strategy #digital #branding,3482,Easy to understand and practical,185,141,48967,0.0783
+P00950,08-10-2024,04:28,facebook,image_caurosel,Post about growth,#content #strategy #branding #trends,4266,Makes sense when you see it laid out like this,229,514,50581,0.1038
+P00951,20-08-2024,16:25,facebook,video,Post about growth,#content #strategy #trends,4320,This gave me a new angle to think about,177,230,20589,0.2403
+P00952,03-06-2024,19:22,facebook,video,Post about content strategy,#socialmedia #analytics,3965,Clear explanation without unnecessary hype,62,313,37737,0.1178
+P00953,26-12-2024,00:53,twiter,video,Post about analytics,#marketing #analytics #trends,53,"Useful breakdown, especially the last part",624,178,321,3.4766
+P00954,09-05-2024,00:17,twiter,image_caurosel,Post about brand building,#content #digital,1385,This aligns with what I’ve been seeing lately,409,258,9527,0.2659
+P00955,22-02-2024,01:23,twiter,image_caurosel,Post about analytics,#branding #trends,163,Simple but effective insight,588,139,2194,0.4503
+P00956,15-06-2024,08:45,facebook,image,Post about analytics,#strategy #content,4432,This saves a lot of trial and error,259,291,83828,0.063
+P00957,07-07-2024,20:53,youtube,image_caurosel,Post about growth,#engagement #content #branding #socialmedia,1400,Makes sense when you see it laid out like this,560,125,25248,0.0834
+P00958,12-10-2024,19:00,twiter,image_caurosel,Post about analytics,#branding #marketing #content,3377,Makes sense when you see it laid out like this,453,2,11545,0.3639
+P00959,27-07-2024,13:57,instagram,video,Post about content strategy,#trends #strategy,810,Clear explanation without unnecessary hype,158,2,14843,0.0874
+P00960,29-12-2024,09:30,twiter,image_caurosel,Post about engagement tips,#content #growth,3316,Simple but effective insight,250,37,26236,0.1543
+P00961,26-03-2024,13:35,instagram,image,Post about growth,#digital #strategy #socialmedia,2095,I tried something similar and got decent results,176,262,21950,0.1252
+P00962,14-08-2024,19:01,youtube,video,Post about brand building,#digital #branding #analytics,3994,This saves a lot of trial and error,694,449,66899,0.0806
+P00963,15-12-2024,17:10,youtube,video,Post about growth,#digital #content #trends,4465,"Useful breakdown, especially the last part",257,479,21223,0.2599
+P00964,13-08-2024,04:01,youtube,video,Post about engagement tips,#engagement #marketing,3768,Simple but effective insight,73,485,15097,0.2918
+P00965,05-10-2024,10:44,instagram,image_caurosel,Post about growth,#strategy #branding,2677,This gave me a new angle to think about,668,555,4478,0.981
+P00966,24-03-2024,07:15,facebook,image_caurosel,Post about analytics,#strategy #growth #trends #branding,3284,Simple but effective insight,655,369,64241,0.0733
+P00967,20-11-2024,07:28,facebook,image_caurosel,Post about engagement tips,#content #trends #growth,1757,Appreciate the practical example here,245,230,29137,0.0774
+P00968,27-06-2024,06:43,twiter,image_caurosel,Post about content strategy,#growth #branding #content,469,This confirms what our data showed,329,92,8269,0.1085
+P00969,06-08-2024,05:11,facebook,video,Post about analytics,#digital #content #socialmedia,4903,Easy to understand and practical,328,536,11964,0.4972
+P00970,25-03-2024,15:43,twiter,image,Post about content strategy,#branding #marketing,1685,Appreciate the practical example here,93,522,17467,0.1522
+P00971,20-12-2024,06:11,twiter,image,Post about analytics,#engagement #growth,3017,Appreciate the practical example here,376,297,20067,0.1862
+P00972,25-04-2024,14:17,instagram,image_caurosel,Post about engagement tips,#branding #growth #marketing #strategy,1447,This was genuinely helpful for my workflow,242,34,21074,0.1013
+P00973,16-04-2024,12:17,facebook,video,Post about content strategy,#digital #engagement,4448,This saves a lot of trial and error,555,142,35572,0.1545
+P00974,05-04-2024,16:34,facebook,video,Post about engagement tips,#growth #strategy #trends #socialmedia,4012,"Short and informative, I like it",556,371,34479,0.1544
+P00975,02-07-2024,12:44,instagram,image,Post about brand building,#trends #content #branding #analytics,3110,This confirms what our data showed,309,453,50225,0.0842
+P00976,19-12-2024,06:51,twiter,video,Post about brand building,#branding #socialmedia,2019,Simple but effective insight,397,478,26719,0.1134
+P00977,29-10-2024,12:37,instagram,video,Post about growth,#engagement #branding #digital,2177,This actually answered a question I had,793,352,16545,0.2035
+P00978,28-04-2024,07:18,twiter,video,Post about growth,#trends #analytics #branding,3176,This actually answered a question I had,409,573,39182,0.1185
+P00979,20-02-2024,22:59,instagram,video,Post about brand building,#content #analytics,1238,"Useful breakdown, especially the last part",193,15,13923,0.1391
+P00980,19-01-2024,21:57,instagram,image,Post about content strategy,#digital #marketing,4756,"Useful breakdown, especially the last part",513,176,92327,0.0606
+P00981,30-11-2024,01:46,youtube,image_caurosel,Post about engagement tips,#branding #trends #content #digital,2458,This saves a lot of trial and error,650,227,5630,0.657
+P00982,21-07-2024,05:50,twiter,image_caurosel,Post about growth,#socialmedia #strategy,4688,Good reminder of the basics,702,553,74397,0.0847
+P00983,20-04-2024,05:06,twiter,image_caurosel,Post about growth,#marketing #branding #socialmedia #content,2561,Good reminder of the basics,301,24,22821,0.1433
+P00984,21-06-2024,11:10,twiter,image,Post about growth,#engagement #marketing,2026,Easy to understand and practical,457,596,34020,0.0996
+P00985,11-10-2024,04:11,youtube,image_caurosel,Post about growth,#growth #strategy #marketing #analytics,851,This gave me a new angle to think about,452,199,14534,0.1371
+P00986,01-04-2024,02:35,facebook,video,Post about engagement tips,#content #strategy,1667,Simple but effective insight,80,150,27589,0.0778
+P00987,21-06-2024,09:54,youtube,image,Post about content strategy,#engagement #strategy,800,Simple but effective insight,170,496,7071,0.2472
+P00988,25-03-2024,21:21,youtube,video,Post about growth,#growth #marketing #digital,2762,Easy to understand and practical,458,567,15993,0.2614
+P00989,26-03-2024,06:20,youtube,video,Post about growth,#content #growth #strategy #analytics,4323,Appreciate the practical example here,201,110,69988,0.0724
+P00990,21-02-2024,22:56,twiter,image_caurosel,Post about analytics,#trends #analytics #socialmedia #marketing,4872,Simple but effective insight,481,348,78093,0.0743
+P00991,27-02-2024,15:42,facebook,image,Post about analytics,#branding #content #strategy #engagement,1042,"Useful breakdown, especially the last part",246,370,11517,0.1628
+P00992,06-05-2024,09:51,youtube,image,Post about growth,#growth #trends #content,91,Makes sense when you see it laid out like this,396,261,1622,0.6924
+P00993,30-09-2024,13:02,instagram,video,Post about engagement tips,#engagement #digital #growth,1573,Easy to understand and practical,504,417,11224,0.2643
+P00994,10-03-2024,14:40,instagram,image_caurosel,Post about analytics,#analytics #engagement,4120,"Helpful context, thanks for sharing",493,576,5729,0.9544
+P00995,01-12-2024,11:56,youtube,image_caurosel,Post about brand building,#growth #trends,2535,This confirms what our data showed,41,55,23800,0.1127
+P00996,19-05-2024,12:44,facebook,video,Post about analytics,#engagement #branding #trends #content,694,I tried something similar and got decent results,14,509,6747,0.2294
+P00997,18-04-2024,05:56,instagram,image_caurosel,Post about growth,#marketing #socialmedia #growth #engagement,2977,I wish more posts explained it this clearly,693,555,55228,0.0818
+P00998,03-11-2024,14:07,facebook,video,Post about engagement tips,#trends #branding #marketing #strategy,1037,Appreciate the practical example here,518,288,9974,0.2108
+P00999,21-04-2024,18:29,facebook,video,Post about content strategy,#trends #engagement #digital #content,3846,I wish more posts explained it this clearly,47,252,46119,0.1004
+P01000,10-06-2024,20:41,twiter,video,Post about engagement tips,#trends #socialmedia #growth #digital,2916,This was genuinely helpful for my workflow,700,500,13286,0.3405

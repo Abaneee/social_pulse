@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
     { path: '/insights', icon: LineChart, label: 'Insights Lab' },
     { path: '/ml', icon: Brain, label: 'ML Studio' },
     { path: '/vision', icon: BarChart3, label: 'Vision Deck' },
+    { path: '/mis-dashboard', icon: LayoutDashboard, label: 'MIS Report' },
   ];
 
   const handleLogout = () => {

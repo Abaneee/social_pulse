@@ -23,6 +23,9 @@ from .serializers import (
 )
 from .pipeline import preprocess_csv, get_data_preview, compute_data_health, get_full_dataframe
 from .ml_engine import train_lightgbm, train_catboost, get_insights, get_dashboard_data
+from .mis_utils import calculate_mis_kpis, get_platform_summaries
+from .rag_engine import get_assistant_response, index_dataset_for_rag
+from .models import Dataset, PreprocessingLog, EDAHistory, MLModel, ChatMessage
 
 User = get_user_model()
 
@@ -235,8 +238,15 @@ def process_data_view(request):
         dataset.columns = result['columns']
         dataset.save()
 
+        # Index for RAG
+        try:
+            df = pd.read_csv(log.processed_file.path)
+            index_dataset_for_rag(df)
+        except Exception as rag_err:
+            print(f"RAG Indexing failed: {rag_err}")
+
         return Response({
-            'message': 'Data processed successfully.',
+            'message': 'Data processed and RAG indexed successfully.',
             'preprocessing': PreprocessingLogSerializer(log).data,
             'preview': result['preview_data'],
             'dataHealth': result['data_health'],
@@ -544,5 +554,71 @@ def filter_options_view(request):
     except Exception as e:
         return Response(
             {'error': str(e)},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+# ══════════════════════════════════════════════
+#  MIS DASHBOARD ENDPOINT
+# ══════════════════════════════════════════════
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def mis_dashboard_view(request):
+    """Get high-level business KPIs and platform summaries."""
+    dataset = _get_active_dataset(request.user)
+    if not dataset:
+        return Response(
+            {'error': 'No active dataset. Please upload and activate a dataset first.'},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+    file_path = _get_data_file_path(dataset)
+    try:
+        df = pd.read_csv(file_path)
+        kpis = calculate_mis_kpis(df)
+        platform_summaries = get_platform_summaries(df)
+
+        return Response({
+            'kpis': kpis,
+            'platform_summaries': platform_summaries,
+            'dataset_info': {
+                'filename': dataset.original_filename,
+                'rows': dataset.row_count,
+            }
+        })
+    except Exception as e:
+        return Response(
+            {'error': f'Failed to generate MIS report: {str(e)}'},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+# ══════════════════════════════════════════════
+#  CHAT ASSISTANT ENDPOINT
+# ══════════════════════════════════════════════
+
+@api_view(['POST', 'GET'])
+@permission_classes([IsAuthenticated])
+def chat_assistant_view(request):
+    """Handle AI assistant queries using RAG and fallback logic."""
+    if request.method == 'GET':
+        # Return chat history
+        messages = ChatMessage.objects.filter(user=request.user).order_by('-timestamp')[:50]
+        return Response([{
+            'id': m.id,
+            'role': m.role,
+            'content': m.content,
+            'timestamp': m.timestamp
+        } for m in reversed(messages)])
+
+    query = request.data.get('query', '')
+    if not query:
+        return Response({'error': 'Query is required.'}, status=status.HTTP_400_BAD_REQUEST)
+
+    try:
+        response = get_assistant_response(query, request.user)
+        return Response({'response': response})
+    except Exception as e:
+        return Response(
+            {'error': f'Assistant error: {str(e)}'},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )

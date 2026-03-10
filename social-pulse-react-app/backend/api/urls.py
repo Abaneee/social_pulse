@@ -34,4 +34,9 @@ urlpatterns = [
 
     # Filter Options
     path('filters/', views.filter_options_view, name='filter_options'),
+    # MIS Dashboard
+    path('mis/', views.mis_dashboard_view, name='mis_dashboard'),
+
+    # Chat Assistant
+    path('chat/', views.chat_assistant_view, name='chat_assistant'),
 ]

@@ -95,5 +95,6 @@ export const predictInsights = (filters) => api.post('/predict/insights/', filte
 // Dashboard Service
 export const getDashboardData = (params) => api.get('/dashboard/', { params });
 export const getFilters = () => api.get('/filters/');
+export const getMISData = () => api.get('/mis/');
 
 export default api;

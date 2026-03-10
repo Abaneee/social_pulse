@@ -70,12 +70,15 @@ WSGI_APPLICATION = 'social_pulse.wsgi.application'
 # 1. Parse the database URL safely
 # ── Database (TiDB Cloud SSL Fix) ──
 
-# 1. Parse the database URL
+# 1. Parse the database URL safely
 db_config = dj_database_url.config(
-    default=os.getenv('DATABASE_URL', f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
     conn_max_age=600,
     ssl_require=True
 )
+
+if not db_config:
+    db_config = dj_database_url.parse(f"sqlite:///{BASE_DIR / 'db.sqlite3'}")
+
 
 # 2. SANITIZE: Remove invalid 'sslmode' if present
 if 'OPTIONS' in db_config and 'sslmode' in db_config['OPTIONS']:

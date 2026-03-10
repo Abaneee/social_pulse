@@ -15,7 +15,26 @@ import {
 import { useData } from '../../context/DataContext';
 import { getDashboardData, getFilters } from '../../services/api';
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'];
+const COLORS = ['#00f2ff', '#bd00ff', '#ff8e00', '#00ff88', '#ff0055', '#7000ff'];
+
+const CustomTooltip = ({ active, payload, label, unit = "" }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-slate-900/90 backdrop-blur-md border border-white/10 p-3 rounded-xl shadow-2xl">
+        <p className="text-white/60 text-xs font-semibold uppercase tracking-wider mb-1">{label}</p>
+        {payload.map((item, index) => (
+          <div key={index} className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: item.color || item.fill }} />
+            <p className="text-sm font-bold" style={{ color: item.color || item.fill }}>
+              {item.name}: {item.value.toLocaleString()}{unit}
+            </p>
+          </div>
+        ))}
+      </div>
+    );
+  }
+  return null;
+};
 
 const StatCard = ({ title, value, icon: Icon, color }) => (
   <motion.div
@@ -161,7 +180,7 @@ const VisionDeck = () => {
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip content={<CustomTooltip />} />
               <Legend verticalAlign="bottom" height={36} />
             </PieChart>
           </ResponsiveContainer>
@@ -174,7 +193,7 @@ const VisionDeck = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
               <XAxis dataKey="day" stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
               <YAxis stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
-              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} content={<CustomTooltip unit="%" />} />
               <Bar dataKey="engagement" fill="#8884d8" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
@@ -202,7 +221,7 @@ const VisionDeck = () => {
                 }}
               />
               <YAxis stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
-              <Tooltip contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip content={<CustomTooltip />} />
               <Line type="monotone" dataKey="engagement" stroke="#82ca9d" strokeWidth={2} dot={{ r: 4 }} activeDot={{ r: 6 }} />
             </LineChart>
           </ResponsiveContainer>
@@ -215,7 +234,7 @@ const VisionDeck = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" horizontal={false} />
               <XAxis type="number" stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} hide />
               <YAxis dataKey="hashtag" type="category" stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 12 }} width={100} axisLine={false} tickLine={false} />
-              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} content={<CustomTooltip unit="%" />} />
               <Bar dataKey="reach" fill="#FF8042" radius={[0, 4, 4, 0]} barSize={20} />
             </BarChart>
           </ResponsiveContainer>
@@ -249,7 +268,7 @@ const VisionDeck = () => {
                 }}
               />
               <YAxis stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
-              <Tooltip contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip content={<CustomTooltip />} />
               <Area type="monotone" dataKey="reach" stroke="#00f2ff" fillOpacity={1} fill="url(#colorReach)" strokeWidth={2} />
             </AreaChart>
           </ResponsiveContainer>
@@ -262,7 +281,7 @@ const VisionDeck = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
               <XAxis dataKey="hour" stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
               <YAxis stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
-              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} content={<CustomTooltip unit="%" />} />
               <Bar dataKey="posts" fill="#FFBB28" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
@@ -275,7 +294,7 @@ const VisionDeck = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
               <XAxis type="number" dataKey="reach" name="Reach" stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
               <YAxis type="number" dataKey="engagement" name="Engagement" unit="%" stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
-              <Tooltip cursor={{ strokeDasharray: '3 3' }} contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip cursor={{ strokeDasharray: '3 3' }} content={<CustomTooltip unit="%" />} />
               <Scatter name="Posts" data={data.scatterData} fill="#00C49F" />
             </ScatterChart>
           </ResponsiveContainer>
@@ -288,7 +307,7 @@ const VisionDeck = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
               <XAxis dataKey="category" stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
               <YAxis stroke="rgba(255,255,255,0.4)" tick={{ fill: 'rgba(255,255,255,0.4)' }} axisLine={false} tickLine={false} />
-              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ backgroundColor: '#1a1a2e', border: 'none', borderRadius: '8px' }} />
+              <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} content={<CustomTooltip unit="%" />} />
               <Bar dataKey="engagement" fill="#bd00ff" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>

@@ -9,6 +9,8 @@ import InsightsLab from './components/insights/InsightsLab';
 import MLStudio from './components/ml/MLStudio';
 import VisionDeck from './components/visualization/VisionDeck';
 import EDA from './components/eda/EDA';
+import MISDashboard from './components/dashboard/MISDashboard';
+import VoiceAssistant from './components/assistant/VoiceAssistant';
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated } = useData();
@@ -49,6 +51,11 @@ function AppRoutes() {
           <Layout><VisionDeck /></Layout>
         </ProtectedRoute>
       } />
+      <Route path="/mis-dashboard" element={
+        <ProtectedRoute>
+          <Layout><MISDashboard /></Layout>
+        </ProtectedRoute>
+      } />
     </Routes>
   );
 }
@@ -58,6 +65,7 @@ function App() {
     <DataProvider>
       <Router>
         <AppRoutes />
+        <VoiceAssistant />
       </Router>
     </DataProvider>
   );

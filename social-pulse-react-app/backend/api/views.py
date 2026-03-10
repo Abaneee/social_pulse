@@ -24,7 +24,6 @@ from .serializers import (
 from .pipeline import preprocess_csv, get_data_preview, compute_data_health, get_full_dataframe
 from .ml_engine import train_lightgbm, train_catboost, get_insights, get_dashboard_data
 from .mis_utils import calculate_mis_kpis, get_platform_summaries
-from .rag_engine import get_assistant_response, index_dataset_for_rag
 from .models import Dataset, PreprocessingLog, EDAHistory, MLModel, ChatMessage
 
 User = get_user_model()
@@ -240,6 +239,7 @@ def process_data_view(request):
 
         # Index for RAG
         try:
+            from .rag_engine import index_dataset_for_rag
             df = pd.read_csv(log.processed_file.path)
             index_dataset_for_rag(df)
         except Exception as rag_err:
@@ -615,6 +615,7 @@ def chat_assistant_view(request):
         return Response({'error': 'Query is required.'}, status=status.HTTP_400_BAD_REQUEST)
 
     try:
+        from .rag_engine import get_assistant_response
         response = get_assistant_response(query, request.user)
         return Response({'response': response})
     except Exception as e:

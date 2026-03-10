@@ -29,6 +29,23 @@ export const DataProvider = ({ children }) => {
   // ML state
   const [mlResults, setMlResults] = useState(null);
 
+  // Theme state
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+
+  const toggleTheme = useCallback(() => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  }, [theme]);
+
+  // Apply theme class to document
+  useEffect(() => {
+    document.documentElement.classList.remove('light', 'dark');
+    document.documentElement.classList.add(theme);
+    // Also update body background for immediate visual feedback
+    document.body.className = theme === 'dark' ? 'bg-midnight-darker' : 'bg-slate-50';
+  }, [theme]);
+
   // Fetch active dataset on mount
   useEffect(() => {
     const fetchActiveDataset = async () => {
@@ -91,6 +108,8 @@ export const DataProvider = ({ children }) => {
     setMlResults,
     updateDatasetState,
     loading,
+    theme,
+    toggleTheme,
   };
 
   return (

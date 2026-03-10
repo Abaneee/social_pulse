@@ -22,6 +22,7 @@ from .serializers import (
     TrainRequestSerializer, InsightsRequestSerializer,
 )
 from .pipeline import preprocess_csv, get_data_preview, compute_data_health, get_full_dataframe
+from .ml_engine import train_lightgbm, train_catboost, get_insights, get_dashboard_data
 from .mis_utils import calculate_mis_kpis, get_platform_summaries
 from .models import Dataset, PreprocessingLog, EDAHistory, MLModel, ChatMessage
 import gc

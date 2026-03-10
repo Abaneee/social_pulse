@@ -17,7 +17,6 @@ whitenoise
 langchain
 langchain-community
 faiss-cpu
-sentence-transformers
 groq
 langchain-groq
 langchain-nvidia-ai-endpoints

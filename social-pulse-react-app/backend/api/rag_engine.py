@@ -2,14 +2,20 @@ import os
 import pandas as pd
 from django.conf import settings
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_groq import ChatGroq
-from langchain_nvidia_ai_endpoints import ChatNVIDIA
+from langchain_nvidia_ai_endpoints import ChatNVIDIA, NVIDIAEmbeddings
 from langchain_core.messages import HumanMessage, SystemMessage
 from .models import ChatMessage
 
-# Initialize Embeddings
-embeddings = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
+def get_embeddings():
+    """Returns an Embeddings instance, preferring NVIDIA to save RAM."""
+    nvidia_key = os.getenv("NVIDIA_API_KEY")
+    if nvidia_key:
+        return NVIDIAEmbeddings(model="nvidia/nv-embedqa-e5-v5", nvidia_api_key=nvidia_key)
+    
+    # Fallback only
+    from langchain_community.embeddings import SentenceTransformerEmbeddings
+    return SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
 def get_llm():
     """
@@ -41,6 +47,7 @@ def get_llm():
 
 def create_vector_store(text_chunks):
     """Create and save a FAISS vector store from text chunks."""
+    embeddings = get_embeddings()
     vector_store = FAISS.from_texts(text_chunks, embeddings)
     store_path = os.path.join(settings.MEDIA_ROOT, 'vector_store')
     os.makedirs(store_path, exist_ok=True)
@@ -51,6 +58,7 @@ def load_vector_store():
     """Load the existing FAISS vector store."""
     store_path = os.path.join(settings.MEDIA_ROOT, 'vector_store')
     if os.path.exists(os.path.join(store_path, 'index.faiss')):
+        embeddings = get_embeddings()
         return FAISS.load_local(store_path, embeddings, allow_dangerous_deserialization=True)
     return None
 

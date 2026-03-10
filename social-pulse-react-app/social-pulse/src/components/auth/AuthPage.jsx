@@ -4,8 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Mail, Lock, User, ArrowRight, Zap, TrendingUp, Shield,
   BarChart3, CheckCircle2, ChevronRight, Layers, Globe,
-  BrainCircuit, Target, X, PieChart, Smartphone, Sparkles, FileText
+  BrainCircuit, Target, X, PieChart, Smartphone, Sparkles, FileText,
+  Activity, Users, Database
 } from 'lucide-react';
+import {
+  AreaChart, Area, BarChart, Bar, ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid
+} from 'recharts';
 import { useData } from '../../context/DataContext';
 import { login, register } from '../../services/api';
 
@@ -106,6 +110,65 @@ const SectionHeading = ({ badge, title, subtitle, centered = true }) => {
   );
 };
 
+const MiniMISDashboard = ({ isDark }) => {
+  const data = [
+    { name: 'Mon', growth: 400, health: 80 },
+    { name: 'Tue', growth: 700, health: 85 },
+    { name: 'Wed', growth: 600, health: 75 },
+    { name: 'Thu', growth: 900, health: 90 },
+    { name: 'Fri', growth: 1200, health: 95 },
+    { name: 'Sat', growth: 1000, health: 88 },
+    { name: 'Sun', growth: 1500, health: 98 },
+  ];
+
+  const axisStyle = {
+    fontSize: '10px',
+    fontWeight: 'bold',
+    fill: isDark ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.3)',
+  };
+
+  return (
+    <div className={`w-full h-full flex flex-col gap-6 ${isDark ? 'text-white' : 'text-slate-900'}`}>
+      <div className="grid grid-cols-3 gap-4">
+        {[
+          { label: 'Active Users', val: '12.4K', color: 'text-blue-500' },
+          { label: 'Audit Score', val: '98%', color: 'text-emerald-500' },
+          { label: 'Cloud Load', val: '14%', color: 'text-purple-500' }
+        ].map((kpi, i) => (
+          <div key={i} className={`p-4 rounded-2xl border ${isDark ? 'bg-white/5 border-white/5' : 'bg-slate-50 border-slate-100'}`}>
+            <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">{kpi.label}</p>
+            <p className={`text-xl font-black italic tracking-tighter ${kpi.color}`}>{kpi.val}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex-1 min-h-0">
+        <ResponsiveContainer width="100%" height="100%">
+          <AreaChart data={data}>
+            <defs>
+              <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
+                <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+            <XAxis dataKey="name" {...axisStyle} axisLine={false} tickLine={false} />
+            <Area type="monotone" dataKey="growth" stroke="#3b82f6" fill="url(#grad1)" strokeWidth={3} />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
+
+      <div className="h-24">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data}>
+            <Bar dataKey="health" fill={isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.05)"} radius={[4, 4, 0, 0]} />
+            <Bar dataKey="growth" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+};
+
 const MISSection = ({ onGetStarted }) => {
   const { theme } = useData();
   const isDark = theme === 'dark';
@@ -120,6 +183,27 @@ const MISSection = ({ onGetStarted }) => {
             title="MIS: The Executive View of your Digital World."
             subtitle="High-level decision making shouldn't require manual assembly. Our MIS Dashboard provides a bird's-eye view of your entire data infrastructure."
           />
+
+          {/* Market & User Needs Summary */}
+          <div className="mb-10 space-y-4">
+            <h4 className={`text-xs font-black uppercase tracking-[0.2em] mb-6 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>Market Audit & User Needs</h4>
+            {[
+              { icon: Users, title: "Audience Sentiment Gap", desc: "Identify why users are leaving competitors for your niche.", color: "text-blue-500" },
+              { icon: Target, title: "Unmet Feature Demand", desc: "AI-detected patterns in comment sections revealing high-value needs.", color: "text-emerald-500" },
+              { icon: Activity, title: "Real-time Saturation", desc: "Audit if your market is over-saturated with legacy content.", color: "text-purple-500" }
+            ].map((need, i) => (
+              <div key={i} className={`flex items-start gap-4 p-4 rounded-xl border transition-all hover:scale-[1.02] ${isDark ? 'bg-white/5 border-white/5' : 'bg-slate-50 border-slate-100'}`}>
+                <div className={`p-2 rounded-lg bg-opacity-10 ${need.color} bg-current`}>
+                  <need.icon size={18} />
+                </div>
+                <div>
+                  <h5 className={`text-sm font-black mb-1 ${isDark ? 'text-white' : 'text-slate-900'}`}>{need.title}</h5>
+                  <p className="text-xs text-slate-500 font-medium leading-relaxed">{need.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 gap-6 mb-10">
             <div className={`p-6 rounded-2xl border transition-all hover:bg-blue-600/5 group ${isDark ? 'bg-white/5 border-white/5' : 'bg-slate-50 border-slate-100'}`}>
               <h4 className={`font-black mb-2 flex items-center gap-3 ${isDark ? 'text-white' : 'text-slate-900'}`}>
@@ -143,37 +227,52 @@ const MISSection = ({ onGetStarted }) => {
         </div>
 
         <div className="flex-1 w-full relative">
-          <div className={`aspect-[4/3] rounded-3xl border shadow-2xl overflow-hidden p-6 ${isDark ? 'bg-slate-900/80 border-white/5' : 'bg-white border-slate-200'}`}>
-            <div className="flex items-center justify-between mb-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            className={`aspect-[4/3] rounded-[3rem] border shadow-2xl overflow-hidden p-10 flex flex-col ${isDark ? 'bg-slate-900 border-white/5' : 'bg-white border-slate-200'}`}
+          >
+            <div className="flex items-center justify-between mb-10">
               <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/50" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
-                <div className="w-3 h-3 rounded-full bg-emerald-500/50" />
+                <div className="w-4 h-4 rounded-full bg-rose-500" />
+                <div className="w-4 h-4 rounded-full bg-amber-500" />
+                <div className="w-4 h-4 rounded-full bg-emerald-500" />
               </div>
-              <div className="text-[10px] font-black tracking-widest text-slate-500 uppercase">Executive MIS System v4.0</div>
-            </div>
-            <div className="space-y-6">
-              <div className="grid grid-cols-3 gap-4">
-                {[1, 2, 3].map(i => (
-                  <div key={i} className={`h-20 rounded-xl animate-pulse ${isDark ? 'bg-white/5' : 'bg-slate-100'}`} />
-                ))}
-              </div>
-              <div className={`h-40 w-full rounded-2xl relative ${isDark ? 'bg-white/5' : 'bg-slate-100'}`}>
-                <motion.div
-                  animate={{ height: ['20%', '90%', '40%', '70%'] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 bg-gradient-to-t from-blue-600/40 to-transparent rounded-t-xl"
-                />
-              </div>
-              <div className="space-y-3">
-                <div className={`h-2 w-full rounded-full ${isDark ? 'bg-white/5' : 'bg-slate-100'}`} />
-                <div className={`h-2 w-3/4 rounded-full ${isDark ? 'bg-white/5' : 'bg-slate-100'}`} />
+              <div className="flex items-center gap-4">
+                <div className={`px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest ${isDark ? 'bg-white/5 text-blue-400' : 'bg-blue-50 text-blue-600'}`}>REAL-TIME MISSION CONTROL</div>
+                <Database size={16} className="text-slate-500" />
               </div>
             </div>
-          </div>
-          {/* Decorative Elements */}
-          <div className="absolute -top-10 -left-10 w-32 h-32 bg-blue-600/10 rounded-full blur-3xl" />
-          <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-purple-600/10 rounded-full blur-3xl" />
+
+            <div className="flex-1">
+              <MiniMISDashboard isDark={isDark} />
+            </div>
+
+            <div className={`mt-10 pt-10 border-t flex justify-between items-center ${isDark ? 'border-white/5' : 'border-slate-100'}`}>
+              <div className="flex items-center gap-3 text-slate-500">
+                <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="text-[10px] font-black uppercase tracking-widest leading-none">System Healthy: 12 Nodes Online</span>
+              </div>
+              <button onClick={onGetStarted} className="text-[10px] font-black uppercase tracking-widest text-blue-500 hover:underline">Download Audit.pdf</button>
+            </div>
+          </motion.div>
+
+          {/* Floating UI Elements */}
+          <motion.div
+            animate={{ y: [0, -20, 0] }}
+            transition={{ duration: 5, repeat: Infinity }}
+            className={`absolute -top-10 -right-10 p-6 rounded-3xl border shadow-2xl ${isDark ? 'bg-slate-800 border-white/10' : 'bg-white border-slate-200'}`}
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-500/20 flex items-center justify-center">
+                <BarChart3 className="text-indigo-500" />
+              </div>
+              <div>
+                <div className="text-xs font-black text-slate-500 uppercase">Growth Index</div>
+                <div className={`text-xl font-black italic tracking-tighter ${isDark ? 'text-white' : 'text-slate-900'}`}>+412.5%</div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

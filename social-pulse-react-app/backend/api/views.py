@@ -22,9 +22,9 @@ from .serializers import (
     TrainRequestSerializer, InsightsRequestSerializer,
 )
 from .pipeline import preprocess_csv, get_data_preview, compute_data_health, get_full_dataframe
-from .ml_engine import train_lightgbm, train_catboost, get_insights, get_dashboard_data
 from .mis_utils import calculate_mis_kpis, get_platform_summaries
 from .models import Dataset, PreprocessingLog, EDAHistory, MLModel, ChatMessage
+import gc
 
 User = get_user_model()
 
@@ -245,6 +245,10 @@ def process_data_view(request):
         except Exception as rag_err:
             print(f"RAG Indexing failed: {rag_err}")
 
+        # Trigger Garbage Collection before returning
+        del df
+        gc.collect()
+
         return Response({
             'message': 'Data processed and RAG indexed successfully.',
             'preprocessing': PreprocessingLogSerializer(log).data,
@@ -253,6 +257,8 @@ def process_data_view(request):
         })
 
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         return Response(
             {'error': f'Preprocessing failed: {str(e)}'},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
@@ -279,25 +285,24 @@ def eda_report_view(request):
     try:
         df = pd.read_csv(file_path)
 
-        # Generate profiling report
+        # Generate profiling report - manually forcing custom EDA to save memory
         try:
-            from ydata_profiling import ProfileReport
-            profile = ProfileReport(
-                df,
-                title="Social Pulse EDA",
-                minimal=True,
-                explorative=False,
-            )
-            report_json = json.loads(profile.to_json())
-        except ImportError:
-            # Fallback: manual EDA if ydata-profiling not available
+            # We explicitly enforce _manual_eda() because ydata-profiling consumes
+            # an unacceptably high amount of RAM (>500MB) which instantly crashes 
+            # Render's Free tier instances.
             report_json = _manual_eda(df)
+        except Exception as eda_err:
+            print(f"Manual EDA failed: {eda_err}")
+            raise eda_err
 
         # Save EDA history
         eda = EDAHistory.objects.create(
             dataset=dataset,
             report_json=report_json,
         )
+
+        del df
+        gc.collect()
 
         return Response({
             'eda': EDAHistorySerializer(eda).data,
@@ -427,12 +432,17 @@ def train_model_view(request):
             except Exception as e:
                 results['classification'] = {'error': str(e)}
 
+        del df
+        gc.collect()
+
         return Response({
             'message': 'Training complete.',
             'results': results,
         })
 
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         return Response(
             {'error': f'Training failed: {str(e)}'},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
@@ -466,6 +476,9 @@ def predict_insights_view(request):
     try:
         df = pd.read_csv(file_path)
         insights = get_insights(df, platform, content_type)
+
+        del df
+        gc.collect()
 
         return Response({
             'insights': insights,
@@ -503,6 +516,10 @@ def dashboard_view(request):
         df = pd.read_csv(file_path)
         platform = request.query_params.get('platform')
         dashboard = get_dashboard_data(df, platform=platform)
+
+        
+        del df
+        gc.collect()
 
         return Response(dashboard)
 

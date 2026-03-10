@@ -8,13 +8,9 @@ import joblib
 import numpy as np
 import pandas as pd
 from django.conf import settings
+import gc
 
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import (
-    mean_squared_error, r2_score,
-    accuracy_score, f1_score,
-)
-from sklearn.preprocessing import LabelEncoder
+
 
 
 def _prepare_features(df):
@@ -73,6 +69,9 @@ def train_lightgbm(df):
     if X.empty or len(feature_columns) == 0:
         raise ValueError("No valid features found for training.")
 
+    from sklearn.model_selection import train_test_split
+    from sklearn.metrics import mean_squared_error, r2_score
+    
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
@@ -92,6 +91,10 @@ def train_lightgbm(df):
     os.makedirs(models_dir, exist_ok=True)
     model_path = os.path.join(models_dir, 'lgbm_regression.pkl')
     joblib.dump({'model': model, 'feature_columns': feature_columns}, model_path)
+
+    # Aggressive memory cleanup
+    del X, X_train, X_test, y, y_train, y_test, model
+    gc.collect()
 
     return {
         'model_path': model_path,
@@ -130,6 +133,10 @@ def train_catboost(df):
         else:
             return 'High'
 
+    from sklearn.preprocessing import LabelEncoder
+    from sklearn.model_selection import train_test_split
+    from sklearn.metrics import accuracy_score, f1_score
+
     y_labels = engagement.apply(categorize)
     le = LabelEncoder()
     y = le.fit_transform(y_labels)
@@ -162,6 +169,10 @@ def train_catboost(df):
         'model': model, 'feature_columns': feature_columns,
         'label_encoder': le, 'class_names': list(class_names),
     }, model_path)
+
+    # Aggressive memory cleanup
+    del X, X_train, X_test, y, y_train, y_test, model, engagement, le, y_labels
+    gc.collect()
 
     return {
         'model_path': model_path,
@@ -393,6 +404,10 @@ def get_insights(df, platform='', content_type=''):
     else:
         insights['platform_engagement'] = []
 
+    # Aggressive memory cleanup
+    del filtered
+    gc.collect()
+
     return insights
 
 
@@ -578,5 +593,9 @@ def get_dashboard_data(df, platform=None):
         kpis['peakTime'] = 'N/A'
 
     result['kpis'] = kpis
+
+    # Aggressive memory cleanup
+    del filtered_df
+    gc.collect()
 
     return result

@@ -93,7 +93,9 @@ def train_lightgbm(df):
     joblib.dump({'model': model, 'feature_columns': feature_columns}, model_path)
 
     # Aggressive memory cleanup
-    del X, X_train, X_test, y, y_train, y_test, model
+    for var in ['X', 'X_train', 'X_test', 'y', 'y_train', 'y_test', 'model']:
+        if var in locals():
+            del locals()[var]
     gc.collect()
 
     return {
@@ -171,7 +173,9 @@ def train_catboost(df):
     }, model_path)
 
     # Aggressive memory cleanup
-    del X, X_train, X_test, y, y_train, y_test, model, engagement, le, y_labels
+    for var in ['X', 'X_train', 'X_test', 'y', 'y_train', 'y_test', 'model', 'engagement', 'le', 'y_labels']:
+        if var in locals():
+            del locals()[var]
     gc.collect()
 
     return {
@@ -282,6 +286,7 @@ def get_insights(df, platform='', content_type=''):
             ]
         else:
             insights['best_hashtags'] = []
+        del hashtag_df
     else:
         insights['best_hashtags'] = []
 
@@ -556,6 +561,8 @@ def get_dashboard_data(df, platform=None):
         for cat in order:
             if cat in len_eng:
                 result['captionData'].append({'category': cat, 'engagement': round(float(len_eng[cat]), 2)})
+        
+        del temp_df
     else:
         result['captionData'] = []
 

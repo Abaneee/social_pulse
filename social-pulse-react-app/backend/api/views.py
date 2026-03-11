@@ -24,7 +24,8 @@ from .serializers import (
 from .pipeline import preprocess_csv, get_data_preview, compute_data_health, get_full_dataframe
 from .ml_engine import train_lightgbm, train_catboost, get_insights, get_dashboard_data
 from .mis_utils import calculate_mis_kpis, get_platform_summaries
-from .models import Dataset, PreprocessingLog, EDAHistory, MLModel, ChatMessage
+from .models import Dataset, PreprocessingLog, EDAHistory, MLModel
+
 import gc
 
 User = get_user_model()
@@ -238,13 +239,8 @@ def process_data_view(request):
         dataset.columns = result['columns']
         dataset.save()
 
-        # Index for RAG
-        try:
-            from .rag_engine import index_dataset_for_rag
-            df = pd.read_csv(log.processed_file.path)
-            index_dataset_for_rag(df)
-        except Exception as rag_err:
-            print(f"RAG Indexing failed: {rag_err}")
+
+
 
         # Trigger Garbage Collection before returning
         del df
@@ -490,6 +486,8 @@ def predict_insights_view(request):
         })
 
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         return Response(
             {'error': f'Insights generation failed: {str(e)}'},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
@@ -525,6 +523,8 @@ def dashboard_view(request):
         return Response(dashboard)
 
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         return Response(
             {'error': f'Dashboard data failed: {str(e)}'},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
@@ -610,34 +610,5 @@ def mis_dashboard_view(request):
         )
 
 
-# ══════════════════════════════════════════════
-#  CHAT ASSISTANT ENDPOINT
-# ══════════════════════════════════════════════
 
-@api_view(['POST', 'GET'])
-@permission_classes([IsAuthenticated])
-def chat_assistant_view(request):
-    """Handle AI assistant queries using RAG and fallback logic."""
-    if request.method == 'GET':
-        # Return chat history
-        messages = ChatMessage.objects.filter(user=request.user).order_by('-timestamp')[:50]
-        return Response([{
-            'id': m.id,
-            'role': m.role,
-            'content': m.content,
-            'timestamp': m.timestamp
-        } for m in reversed(messages)])
 
-    query = request.data.get('query', '')
-    if not query:
-        return Response({'error': 'Query is required.'}, status=status.HTTP_400_BAD_REQUEST)
-
-    try:
-        from .rag_engine import get_assistant_response
-        response = get_assistant_response(query, request.user)
-        return Response({'response': response})
-    except Exception as e:
-        return Response(
-            {'error': f'Assistant error: {str(e)}'},
-            status=status.HTTP_500_INTERNAL_SERVER_ERROR
-        )

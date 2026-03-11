@@ -9,6 +9,7 @@ const InsightsLab = () => {
   const { activeDataset, theme } = useData();
   const isDark = theme === 'dark';
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   const [insights, setInsights] = useState(null);
   const [filterOptions, setFilterOptions] = useState({ platforms: [], content_types: [] });
   const [filters, setFilters] = useState({ platform: '', content_type: '' });
@@ -18,20 +19,29 @@ const InsightsLab = () => {
     if (activeDataset) {
       getFilters()
         .then(res => setFilterOptions(res.data))
-        .catch(err => console.error('Failed to load filters:', err));
+        .catch(err => {
+          console.error('Failed to load filters:', err);
+          setError('Failed to load platform/content filters. Some insights may be limited.');
+        });
 
-      // Load initial insights without filters
+      // Load initial insights
       fetchInsights();
     }
   }, [activeDataset]);
 
   const fetchInsights = async () => {
     setLoading(true);
+    setError(null);
     try {
       const response = await predictInsights(filters);
-      setInsights(response.data.insights);
+      if (response.data.error) {
+         setError(response.data.error);
+      } else {
+         setInsights(response.data.insights);
+      }
     } catch (err) {
       console.error('Failed to fetch insights:', err);
+      setError(err.response?.data?.error || 'Neural analysis failed. Please verify your dataset and try again.');
     } finally {
       setLoading(false);
     }
@@ -43,6 +53,26 @@ const InsightsLab = () => {
         <TrendingUp className={`w-16 h-16 mb-4 animate-pulse ${isDark ? 'text-slate-700' : 'text-slate-300'}`} />
         <h2 className={`text-2xl font-black italic tracking-tighter ${isDark ? 'text-slate-500' : 'text-slate-400'}`}>NO ACTIVE DATASET</h2>
         <p className={`mt-2 max-w-xs uppercase text-xs tracking-[0.2em] font-medium ${isDark ? 'text-slate-600' : 'text-slate-500'}`}>Initiate a mission in the Studio to unlock tactical analysis.</p>
+      </div>
+    );
+  }
+
+  if (error && !insights) {
+    return (
+      <div className="flex flex-col items-center justify-center h-[60vh] text-center p-8">
+        <div className={`w-16 h-16 mb-6 rounded-3xl flex items-center justify-center ${isDark ? 'bg-rose-500/10' : 'bg-rose-50'}`}>
+          <TrendingUp className="w-8 h-8 text-rose-500" />
+        </div>
+        <h2 className={`text-2xl font-black italic tracking-tighter ${isDark ? 'text-rose-400' : 'text-rose-600'}`}>INTELLIGENCE BREACH</h2>
+        <p className={`mt-3 max-w-md uppercase text-[10px] tracking-[0.2em] font-black leading-relaxed ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+          {error}
+        </p>
+        <button 
+          onClick={fetchInsights}
+          className={`mt-10 px-8 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] transition-all ${isDark ? 'bg-white/5 border border-white/10 hover:bg-white/10' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
+        >
+          Retry Analysis Mission
+        </button>
       </div>
     );
   }

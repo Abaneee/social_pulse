@@ -279,105 +279,8 @@ const MISSection = ({ onGetStarted }) => {
   );
 };
 
-const AIAssistantSection = ({ onGetStarted }) => {
-  const { theme } = useData();
-  const isDark = theme === 'dark';
 
-  const floatingChats = [
-    { text: "What's the sentiment in Europe?", delay: 0 },
-    { text: "Predict next week's viral trend.", delay: 2 },
-    { text: "Our brand's ROI vs Competitor X.", delay: 4 },
-    { text: "Alert me if 'Crisis' sentiment > 10%.", delay: 1 },
-    { text: "Analyze buying intent in Gen Z.", delay: 3 },
-  ];
 
-  return (
-    <section className={`py-32 px-6 relative overflow-hidden ${isDark ? 'bg-slate-900/40' : 'bg-white'}`}>
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-        <div className="flex-1 text-left">
-          <SectionHeading
-            centered={false}
-            badge="AI Intelligence"
-            title="Ask the Pulse AI. Clear your Data Doubts."
-            subtitle="Don't spend hours diving into charts. Just ask. Our Neural Engine processes billions of signals to give you human-like answers in milliseconds."
-          />
-          <div className="space-y-6 mb-10">
-            <div className="flex gap-4 p-5 rounded-2xl border transition-all hover:border-blue-500/30 group bg-blue-500/5">
-              <BrainCircuit className="text-blue-500 flex-shrink-0" size={24} />
-              <div>
-                <h4 className={`font-black mb-1 ${isDark ? 'text-white' : 'text-slate-900'}`}>Zero-Latency Context</h4>
-                <p className="text-sm text-slate-500 font-medium tracking-tight leading-relaxed">Instantly identify sarcasm, slang, and cultural context that legacy tools miss.</p>
-              </div>
-            </div>
-            <div className="flex gap-4 p-5 rounded-2xl border transition-all hover:border-purple-500/30 group bg-purple-500/5">
-              <Target className="text-purple-500 flex-shrink-0" size={24} />
-              <div>
-                <h4 className={`font-black mb-1 ${isDark ? 'text-white' : 'text-slate-900'}`}>Decision Mapping</h4>
-                <p className="text-sm text-slate-500 font-medium tracking-tight leading-relaxed">The AI doesn't just show data; it provides a 'Decision Map' for your next strategic move.</p>
-              </div>
-            </div>
-          </div>
-          <button
-            onClick={onGetStarted}
-            className={`px-8 py-4 font-black rounded-full transition-all flex items-center gap-3 ${isDark ? 'bg-blue-600 text-white hover:bg-blue-500' : 'bg-blue-600 text-white hover:bg-blue-700 shadow-xl'}`}>
-            Try Voice Mode <Smartphone size={18} />
-          </button>
-        </div>
-
-        <div className="flex-1 relative w-full max-w-lg aspect-square flex items-center justify-center">
-          {/* Animated Robot Illustration */}
-          <motion.div
-            animate={{ y: [0, -15, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="relative z-20 w-64 h-84"
-          >
-            {/* Robot Head */}
-            <div className={`w-32 h-32 mx-auto rounded-3xl border-4 relative ${isDark ? 'bg-slate-950 border-blue-500/50 shadow-[0_0_50px_rgba(37,99,235,0.3)]' : 'bg-white border-blue-600 shadow-xl'}`}>
-              <div className="absolute top-8 left-6 w-4 h-4 rounded-full bg-blue-500 animate-pulse" />
-              <div className="absolute top-8 right-6 w-4 h-4 rounded-full bg-blue-500 animate-pulse" />
-              <motion.div
-                animate={{ scaleX: [0.8, 1, 0.8] }}
-                transition={{ duration: 0.5, repeat: Infinity }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 w-12 h-1 bg-blue-500/50"
-              />
-            </div>
-            {/* Robot Body */}
-            <div className={`w-48 h-40 mx-auto mt-2 rounded-[2.5rem] border-4 flex flex-col items-center justify-center gap-3 ${isDark ? 'bg-slate-950 border-blue-500/50' : 'bg-white border-blue-600'}`}>
-              <div className="w-24 h-1 bg-blue-500/20 rounded-full" />
-              <div className="w-16 h-1 bg-blue-500/20 rounded-full" />
-              <div className="w-20 h-4 bg-gradient-to-r from-blue-600 to-indigo-500 rounded-full animate-pulse" />
-            </div>
-            {/* Hover Flare */}
-            <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-40 h-8 bg-blue-500/20 blur-xl rounded-full" />
-          </motion.div>
-
-          {/* Flying Chat Options */}
-          {floatingChats.map((chat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: 50, y: 100 }}
-              whileInView={{
-                opacity: [0, 1, 1, 0],
-                x: [50, -100, -250],
-                y: [100, -50, -200],
-              }}
-              transition={{
-                duration: 6,
-                delay: chat.delay,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              className={`absolute z-30 px-6 py-3 rounded-2xl border backdrop-blur-xl whitespace-nowrap text-sm font-bold shadow-2xl ${isDark ? 'bg-slate-900/80 border-white/10 text-blue-400' : 'bg-white/90 border-blue-100 text-blue-600'
-                }`}
-            >
-              {chat.text}
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
 /* --- 2. MAIN LANDING PAGE CONTENT --- */
 
@@ -460,8 +363,8 @@ const LandingPageContent = ({ onGetStarted }) => {
         </div>
       </section>
 
-      {/* AI Assistant Section (V4 New) */}
-      <AIAssistantSection onGetStarted={onGetStarted} />
+
+
 
       {/* Vision Section */}
       <section className={`py-24 px-6 border-y ${isDark ? 'border-white/5 bg-slate-950/40' : 'bg-white'}`}>

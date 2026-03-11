@@ -192,12 +192,36 @@ def train_catboost(df):
     }
 
 
+def _sanitize_json(data):
+    """
+    Recursively replace NaN and Inf values with None/0 to ensure valid JSON.
+    """
+    if isinstance(data, dict):
+        return {k: _sanitize_json(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [_sanitize_json(i) for i in data]
+    elif isinstance(data, float):
+        if np.isnan(data) or np.isinf(data):
+            return 0.0
+    return data
+
+
 def get_insights(df, platform='', content_type=''):
     """Generate dynamic insights for a given platform and content type."""
     filtered = df.copy()
 
-    platform_col = 'Platform' if 'Platform' in df.columns else 'platform' if 'platform' in df.columns else None
-    ctype_col = 'Content_Type' if 'Content_Type' in df.columns else 'content_type' if 'content_type' in df.columns else None
+    # Normalize column names to find Platform and Content Type
+    platform_col = None
+    for col in df.columns:
+        if col.lower() == 'platform':
+            platform_col = col
+            break
+
+    ctype_col = None
+    for col in df.columns:
+        if col.lower() in ['content_type', 'content type']:
+            ctype_col = col
+            break
 
     if platform and platform_col and platform in df[platform_col].values:
         filtered = filtered[filtered[platform_col] == platform]
@@ -207,11 +231,22 @@ def get_insights(df, platform='', content_type=''):
     if len(filtered) == 0:
         filtered = df.copy()
 
-    eng_col = 'Engagement_Rate' if 'Engagement_Rate' in filtered.columns else 'engagement_rate' if 'engagement_rate' in filtered.columns else None
+    # Find Engagement Rate column
+    eng_col = None
+    for col in filtered.columns:
+        if col.lower() in ['engagement_rate', 'engagement rate', 'engagement']:
+            eng_col = col
+            break
+
     insights = {}
 
     # 1. Best Time to Post
-    hour_col = 'Hour' if 'Hour' in filtered.columns else 'hour' if 'hour' in filtered.columns else None
+    hour_col = None
+    for col in filtered.columns:
+        if col.lower() == 'hour':
+            hour_col = col
+            break
+
     if hour_col and eng_col:
         hour_eng = filtered.groupby(hour_col)[eng_col].mean().sort_values(ascending=False)
         top_hours = hour_eng.head(3)
@@ -223,7 +258,12 @@ def get_insights(df, platform='', content_type=''):
         insights['best_times'] = []
 
     # 2. Best Day
-    day_col = 'Day_of_Week' if 'Day_of_Week' in filtered.columns else 'day_of_week' if 'day_of_week' in filtered.columns else None
+    day_col = None
+    for col in filtered.columns:
+        if col.lower() in ['day_of_week', 'day', 'dayofweek']:
+            day_col = col
+            break
+
     if day_col and eng_col:
         day_names_map = {0: 'Mon', 1: 'Tue', 2: 'Wed', 3: 'Thu', 4: 'Fri', 5: 'Sat', 6: 'Sun'}
         day_eng = filtered.groupby(day_col)[eng_col].mean().sort_values(ascending=False)
@@ -241,9 +281,13 @@ def get_insights(df, platform='', content_type=''):
         insights['best_day'] = {'day': 'N/A', 'avg_engagement': 0}
 
     # 3. Best Caption Length Strategy
-    caption_col = 'Caption_Length' if 'Caption_Length' in filtered.columns else 'caption_length' if 'caption_length' in filtered.columns else None
+    caption_col = None
+    for col in filtered.columns:
+        if col.lower() in ['caption_length', 'caption length']:
+            caption_col = col
+            break
+
     if caption_col and eng_col:
-        # Create bins for analysis without modifying original df permanently
         temp_df = filtered[[caption_col, eng_col]].copy()
         
         def get_len_cat(x):
@@ -266,7 +310,12 @@ def get_insights(df, platform='', content_type=''):
         insights['best_caption_length'] = 'Medium (50-150 chars)'
 
     # 3. Best Hashtags
-    hashtag_col = 'Hashtags' if 'Hashtags' in filtered.columns else 'hashtag' if 'hashtag' in filtered.columns else None
+    hashtag_col = None
+    for col in filtered.columns:
+        if col.lower() in ['hashtags', 'hashtag']:
+            hashtag_col = col
+            break
+            
     if hashtag_col and eng_col:
         hashtag_df = filtered[[hashtag_col, eng_col]].copy()
         hashtag_df[hashtag_col] = hashtag_df[hashtag_col].astype(str)
@@ -355,12 +404,14 @@ def get_insights(df, platform='', content_type=''):
 
     # 4c. Average Reach (Historical)
     insights['predicted_reach'] = 0
-    if 'Reach' in filtered.columns:
-        valid_reach = pd.to_numeric(filtered['Reach'], errors='coerce').dropna()
-        if not valid_reach.empty:
-            insights['predicted_reach'] = int(valid_reach.mean())
-    elif 'reach' in filtered.columns:
-        valid_reach = pd.to_numeric(filtered['reach'], errors='coerce').dropna()
+    reach_col = None
+    for col in filtered.columns:
+        if col.lower() == 'reach':
+            reach_col = col
+            break
+
+    if reach_col:
+        valid_reach = pd.to_numeric(filtered[reach_col], errors='coerce').dropna()
         if not valid_reach.empty:
             insights['predicted_reach'] = int(valid_reach.mean())
 
@@ -392,8 +443,8 @@ def get_insights(df, platform='', content_type=''):
                 'content_type': str(row.get(ctype_col or 'Content_Type', 'Unknown')),
                 'engagement_rate': round(float(row.get(eng_col, 0)), 2),
             }
-            if 'Reach' in filtered.columns:
-                post['reach'] = int(float(row.get('Reach', 0)))
+            if reach_col:
+                post['reach'] = int(float(row.get(reach_col, 0)))
             top_posts.append(post)
         insights['top_posts'] = top_posts
     else:
@@ -413,30 +464,38 @@ def get_insights(df, platform='', content_type=''):
     del filtered
     gc.collect()
 
-    return insights
+    return _sanitize_json(insights)
 
 
 def get_dashboard_data(df, platform=None):
     """Compute aggregated dashboard data for VisionDeck with platform filtering."""
-    # Common column names
-    eng_col = 'Engagement_Rate' if 'Engagement_Rate' in df.columns else 'engagement_rate' if 'engagement_rate' in df.columns else None
-    platform_col = 'Platform' if 'Platform' in df.columns else 'platform' if 'platform' in df.columns else None
-    ctype_col = 'Content_Type' if 'Content_Type' in df.columns else 'content_type' if 'content_type' in df.columns else None
-    date_col = 'Date' if 'Date' in df.columns else 'date' if 'date' in df.columns else None
-    reach_col = 'Reach' if 'Reach' in df.columns else 'reach' if 'reach' in df.columns else None
-    hashtag_col = 'Hashtags' if 'Hashtags' in df.columns else 'hashtag' if 'hashtag' in df.columns else None
-    hour_col = 'Hour' if 'Hour' in df.columns else 'hour' if 'hour' in df.columns else None
-    day_col = 'Day_of_Week' if 'Day_of_Week' in df.columns else 'day_of_week' if 'day_of_week' in df.columns else None
-    caption_len_col = 'Caption_Length' if 'Caption_Length' in df.columns else 'caption_length' if 'caption_length' in df.columns else None
+    # Common column names normalization
+    eng_col = None
+    platform_col = None
+    ctype_col = None
+    date_col = None
+    reach_col = None
+    hashtag_col = None
+    hour_col = None
+    day_col = None
+    caption_len_col = None
+
+    for col in df.columns:
+        c_low = col.lower()
+        if c_low in ['engagement_rate', 'engagement rate', 'engagement']: eng_col = col
+        elif c_low == 'platform': platform_col = col
+        elif c_low in ['content_type', 'content type']: ctype_col = col
+        elif c_low == 'date': date_col = col
+        elif c_low == 'reach': reach_col = col
+        elif c_low in ['hashtags', 'hashtag']: hashtag_col = col
+        elif c_low == 'hour': hour_col = col
+        elif c_low in ['day_of_week', 'day']: day_col = col
+        elif c_low in ['caption_length', 'caption length']: caption_len_col = col
 
     # Filter by platform if provided
     filtered_df = df.copy()
     if platform and platform_col:
         filtered_df = filtered_df[filtered_df[platform_col] == platform]
-    
-    # If filtering results in empty dataframe, fallback to original to show something (or show zeros)
-    # But usually we want to show zeros/empty if filter excludes everything.
-    # Let's keep it empty if filter matches nothing to be accurate with "No Data".
     
     result = {}
 
@@ -461,16 +520,11 @@ def get_dashboard_data(df, platform=None):
     # 3. LINE CHART: Engagement Rate by Month (last 12 months)
     if date_col and eng_col:
         df_copy = filtered_df.copy()
-        # Ensure date column is datetime
         df_copy['dt'] = pd.to_datetime(df_copy[date_col], errors='coerce')
-        # Drop invalid dates
         df_copy = df_copy.dropna(subset=['dt'])
-        # Create month period
         df_copy['month_key'] = df_copy['dt'].dt.to_period('M')
         
-        # Group by month_key
         month_eng = df_copy.groupby('month_key')[eng_col].mean().reset_index()
-        # Sort and take last 12 months
         month_eng = month_eng.sort_values('month_key').tail(12)
         
         result['lineData'] = [
@@ -482,18 +536,15 @@ def get_dashboard_data(df, platform=None):
 
     # 4. HISTOGRAM -> BAR CHART: Average Reach by Top Hashtags
     if hashtag_col and reach_col:
-        # Explode hashtags
         hashtag_df = filtered_df[[hashtag_col, reach_col]].copy()
         hashtag_df[hashtag_col] = hashtag_df[hashtag_col].astype(str)
         hashtag_df = hashtag_df.assign(
             **{hashtag_col: hashtag_df[hashtag_col].str.split(r'[\s,]+')}
         ).explode(hashtag_col)
         
-        # Clean hashtags
         hashtag_df[hashtag_col] = hashtag_df[hashtag_col].str.strip()
         hashtag_df = hashtag_df[hashtag_df[hashtag_col] != '']
 
-        # Group by hashtag, calc mean reach
         hash_reach = hashtag_df.groupby(hashtag_col)[reach_col].mean().sort_values(ascending=False).head(10)
         result['hashtagData'] = [
             {'hashtag': str(k), 'reach': int(v)}
@@ -531,7 +582,6 @@ def get_dashboard_data(df, platform=None):
 
     # 7. SCATTER CHART: Reach vs Engagement Rate
     if reach_col and eng_col:
-        # Limit to 100 points for performance
         sample_df = filtered_df.sample(n=min(100, len(filtered_df)), random_state=42)
         result['scatterData'] = [
             {'reach': int(row[reach_col]), 'engagement': round(float(row[eng_col]), 2)}
@@ -555,7 +605,6 @@ def get_dashboard_data(df, platform=None):
 
         temp_df['Length_Cat'] = temp_df[caption_len_col].apply(get_len_cat)
         len_eng = temp_df.groupby('Length_Cat')[eng_col].mean()
-        # Order: Short, Medium, Long
         order = ['Short', 'Medium', 'Long']
         result['captionData'] = []
         for cat in order:
@@ -566,8 +615,7 @@ def get_dashboard_data(df, platform=None):
     else:
         result['captionData'] = []
 
-
-    # KPIs (Calculated based on filtered data)
+    # KPIs
     kpis = {}
     if reach_col:
         kpis['totalReach'] = int(pd.to_numeric(filtered_df[reach_col], errors='coerce').fillna(0).sum())
@@ -581,7 +629,6 @@ def get_dashboard_data(df, platform=None):
         kpis['avgEngagement'] = 0
 
     if hashtag_col:
-        # Recalculate top hashtag for filtered data
         hashtag_series = filtered_df[hashtag_col].astype(str).str.split(r'[\s,]+').explode()
         hashtag_series = hashtag_series[hashtag_series.str.strip() != '']
         hashtag_counts = hashtag_series.value_counts()
@@ -605,4 +652,4 @@ def get_dashboard_data(df, platform=None):
     del filtered_df
     gc.collect()
 
-    return result
+    return _sanitize_json(result)

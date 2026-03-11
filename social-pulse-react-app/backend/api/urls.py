@@ -37,6 +37,5 @@ urlpatterns = [
     # MIS Dashboard
     path('mis/', views.mis_dashboard_view, name='mis_dashboard'),
 
-    # Chat Assistant
-    path('chat/', views.chat_assistant_view, name='chat_assistant'),
 ]
+

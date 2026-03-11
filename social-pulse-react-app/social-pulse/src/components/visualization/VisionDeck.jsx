@@ -89,6 +89,7 @@ const VisionDeck = () => {
   const isDark = theme === 'dark';
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   const [platforms, setPlatforms] = useState([]);
   const [selectedPlatform, setSelectedPlatform] = useState('');
 
@@ -99,36 +100,74 @@ const VisionDeck = () => {
         .then(res => {
           setPlatforms(res.data.platforms || []);
         })
-        .catch(err => console.error('Filters error:', err));
+        .catch(err => {
+          console.error('Filters error:', err);
+          // Non-critical error, filters just won't show
+        });
     }
   }, [activeDataset]);
 
   // Fetch Dashboard Data
   useEffect(() => {
     if (activeDataset) {
-      setLoading(true);
-      const params = selectedPlatform ? { platform: selectedPlatform } : {};
-      getDashboardData(params)
-        .then(res => setData(res.data))
-        .catch(err => console.error('Dashboard error:', err))
-        .finally(() => setLoading(false));
+      fetchDashboard();
     }
   }, [activeDataset, selectedPlatform]);
+
+  const fetchDashboard = async () => {
+    setLoading(true);
+    setError(null);
+    const params = selectedPlatform ? { platform: selectedPlatform } : {};
+    try {
+      const res = await getDashboardData(params);
+      if (res.data.error) {
+        setError(res.data.error);
+      } else {
+        setData(res.data);
+      }
+    } catch (err) {
+      console.error('Dashboard error:', err);
+      setError(err.response?.data?.error || 'Failed to aggregate visualization data. The signal may be too weak or the dataset corrupted.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   if (!activeDataset) {
     return (
       <div className="flex flex-col items-center justify-center h-[60vh] text-center p-8">
         <LayoutDashboard className={`w-16 h-16 mb-4 animate-pulse ${isDark ? 'text-slate-700' : 'text-slate-300'}`} />
         <h2 className={`text-2xl font-black italic tracking-tighter ${isDark ? 'text-slate-500' : 'text-slate-400'}`}>NO ACTIVE DATASET</h2>
-        <p className={`mt-2 max-w-xs uppercase text-xs tracking-[0.2em] font-medium ${isDark ? 'text-slate-600' : 'text-slate-500'}`}>Initiate a mission in the Studio to unlock tactical visualizations.</p>
+        <p className={`mt-2 max-w-xs uppercase text-xs tracking-[0.2em] font-medium ${isDark ? 'text-slate-600' : 'text-slate-50'}`}>Initiate a mission in the Studio to unlock tactical visualizations.</p>
       </div>
     );
   }
 
-  if (loading || !data) {
+  if (loading || (!data && !error)) {
     return (
       <div className="flex items-center justify-center h-[60vh]">
         <div className={`w-16 h-16 border-8 border-t-transparent rounded-full animate-spin ${isDark ? 'border-indigo-500' : 'border-indigo-600'}`} />
+      </div>
+    );
+  }
+
+  if (error && !data) {
+
+    return (
+      <div className="flex flex-col items-center justify-center h-[60vh] text-center p-8">
+        <div className={`w-16 h-16 mb-6 rounded-3xl flex items-center justify-center ${isDark ? 'bg-indigo-500/10' : 'bg-indigo-50'}`}>
+          <LayoutDashboard className="w-8 h-8 text-indigo-500" />
+        </div>
+        <h2 className={`text-2xl font-black italic tracking-tighter ${isDark ? 'text-indigo-400' : 'text-indigo-600'}`}>AGGREGATION FAILURE</h2>
+        <p className={`mt-3 max-w-md uppercase text-[10px] tracking-[0.2em] font-black leading-relaxed ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+          {error}
+        </p>
+        <button
+          onClick={fetchDashboard}
+          className={`mt-10 px-8 py-3 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] transition-all ${isDark ? 'bg-white/5 border border-white/10 hover:bg-white/10' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
+        >
+          Retry Data Feed
+        </button>
       </div>
     );
   }
